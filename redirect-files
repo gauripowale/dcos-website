@@ -23,7 +23,6 @@
 /docs/1.7/usage/services/uninstall/index.html /docs/1.7/usage/managing-services/uninstall/
 /docs/1.7/usage/tutorials/marathon/index.html /docs/1.7/usage/tutorials/marathon/
 /docs/1.7/usage/tutorials/marathon/inline-update/index.html /docs/1.7/usage/tutorials/marathon/
-/docs/1.7/usage/tutorials/marathon/marathon101/index.html /docs/1.7/usage/tutorials/marathon/marathon101/
 /docs/1.7/usage/tutorials/marathon/stateful-services/index.html /docs/1.7/usage/tutorials/marathon/stateful-services/
 /docs/1.7/usage/tutorials/ruby-on-rails/index.html /docs/1.7/usage/tutorials/
 /docs/1.8/administration/haproxy-adminrouter/index.html /docs/1.8/administration/tls-ssl/haproxy-adminrouter/
@@ -59,7 +58,6 @@
 /docs/1.8/usage/tutorials/inline-update/index.html /docs/1.8/usage/managing-services/update-user-service/
 /docs/1.8/usage/tutorials/marathon/index.html /docs/1.7/usage/tutorials/marathon/
 /docs/1.8/usage/tutorials/marathon/inline-update/index.html /docs/1.7/usage/tutorials/marathon/
-/docs/1.8/usage/tutorials/marathon/marathon101/index.html /docs/1.7/usage/tutorials/marathon/marathon101/
 /docs/1.8/usage/tutorials/marathon/stateful-services/index.html /docs/1.7/usage/tutorials/marathon/stateful-services/
 /docs/1.8/usage/tutorials/public-app/index.html /docs/1.8/usage/managing-services/expose-service/
 /docs/1.8/usage/tutorials/registry/index.html https://github.com/dcos/examples/tree/master/1.8/registry
