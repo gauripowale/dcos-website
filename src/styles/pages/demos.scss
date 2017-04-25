@@ -1,3 +1,8 @@
 .demo-card .card-content {
   height: 100%;
 }
+
+.demos-cards .cta--button,
+.demos-cards-featured .cta--button {
+  display: inline-block;
+}

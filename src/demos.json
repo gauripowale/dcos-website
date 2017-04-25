@@ -1,55 +1,54 @@
 [
   {
-    "image": "/assets/images/demos/geo-iot.png",
-    "title": "Internet of Things",
+    "featured": false,
+    "image": "http://placehold.it/480x220",
+    "name": "Geospatial IoT",
+    "demo_name": "IoT",
     "dcos_version": ["1.8"],
+    "language": "Javascript",
     "description": "Configure a full stack geo-enabled Internet of Things (IoT) solution with the Geospatial IoT demo",
     "packages": ["Apache Kafka", "Apache Spark", "Elasticsearch"],
     "callouts": {
       "GitHub": "https://github.com/amollenkopf/dcos-iot-demo",
-      "Video": "https://www.youtube.com/watch?v=tOPmPIHuV-o",
-    },
+    }
   },
   {
-    "image": "/assets/images/demos/tweeter.png",
-    "title": "Application Operations",
+    "featured": true,
+    "image": "http://placehold.it/480x220",
+    "name": "Tweeter",
+    "demo_name": "Fast Data, Full stack",
     "dcos_version": ["1.8", "1.9"],
-    "description": "Configure and run a Twitter clone, including analytics with the Tweeter demo",
-    "packages": ["Apache Cassandra", "Apache Kafka", "Apache Zeppelin", "Maraton-LB"],
+    "language": "Ruby on Rails",
+    "description": "",
+    "packages": ["Apache Cassandra", "Apache Kafka", "Marathon-LB", "Zeppelin"],
     "callouts": {
-      "1.8 GitHub": "https://github.com/dcos/demos/tree/master/1.8/tweeter#tweeter",
-      "1.9 GitHub": "https://github.com/dcos/demos/tree/master/1.9/tweeter#tweeter",
-    },
+      "GitHub": "https://github.com/dcos/demos/tree/master/1.9",
+    }
   },
   {
-    "image": "/assets/images/demos/cd.png",
-    "title": "Continuous Delivery",
-    "dcos_version": ["1.9"],
-    "description": "Set up a CD pipeline, with advanced options in the Continuous Delivery demo",
+    "featured": false,
+    "image": "http://placehold.it/480x220",
+    "name": "Continuous delivery",
+    "demo_name": "CI/CD",
+    "dcos_version": ["1.8"],
+    "language": "Ruby on Rails",
+    "description": "Data comes from many sources, and is proliferating faster than ever before. Ordinary people are now able to track every click on their website and every beat of their heart.",
     "packages": ["Jenkins"],
     "callouts": {
       "GitHub": "https://github.com/mesosphere/cd-demo",
-      "Video": "https://www.youtube.com/watch?v=cnIfSrMxgyE",
-    },
+    }
   },
   {
-    "image": "/assets/images/demos/github-stream.png",
-    "title": "Streaming Data Processing",
+    "featured": false,
+    "image": "http://placehold.it/480x220",
+    "name": "Github Streaming Data",
+    "demo_name": "Fast Data",
     "dcos_version": ["1.8"],
-    "description": "Process streaming data from the GitHub API with the GitHub Streaming Data demo",
-    "packages": ["Apache Cassandra", "KairosDB", "Grafana"],
+    "language": "Ruby on Rails",
+    "description": "",
+    "packages": ["GitHub API", "Apache Cassandra", "KairosDB", "Grafana"],
     "callouts": {
       "GitHub": "https://github.com/mesosphere/cassandra-kairosdb-tutorial",
-    },
-  },
-  {
-    "image": "/assets/images/demos/crimebuster.png",
-    "title": "Streaming Data Processing",
-    "dcos_version": ["1.8"],
-    "description": "Process and visualize streaming crime data online and offline with the Crime Buster demo",
-    "packages": ["Apache Kafka", "Apache Spark", "Grafana", "InfluxDB"],
-    "callouts": {
-      "GitHub": "https://github.com/mesosphere/time-series-demo",
-    },
-  },
+    }
+  }
 ]
