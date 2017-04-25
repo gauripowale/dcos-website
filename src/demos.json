@@ -1,7 +1,7 @@
 [
   {
     "featured": false,
-    "image": "/assets/images/demos/geo-iot.png",
+    "image": "http://placehold.it/480x220",
     "name": "Geospatial IoT",
     "demo_name": "IoT",
     "dcos_version": ["1.8"],
@@ -14,7 +14,7 @@
   },
   {
     "featured": true,
-    "image": "/assets/images/demos/tweeter.png",
+    "image": "http://placehold.it/480x220",
     "name": "Tweeter",
     "demo_name": "Fast Data, Full stack",
     "dcos_version": ["1.8", "1.9"],
@@ -27,7 +27,7 @@
   },
   {
     "featured": false,
-    "image": "/assets/images/demos/cd.png",
+    "image": "http://placehold.it/480x220",
     "name": "Continuous delivery",
     "demo_name": "CI/CD",
     "dcos_version": ["1.8"],
@@ -40,7 +40,7 @@
   },
   {
     "featured": false,
-    "image": "/assets/images/demos/github-stream.png",
+    "image": "http://placehold.it/480x220",
     "name": "Github Streaming Data",
     "demo_name": "Fast Data",
     "dcos_version": ["1.8"],
