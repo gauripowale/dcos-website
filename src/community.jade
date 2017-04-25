@@ -129,7 +129,7 @@ block content
 
         .card-container.px2.recent-events.hide
         
-          each event in locals.events
+          each event in locals.events.reverse()
             if (new Date(event.date)).getTime() < Date.now()
               a(href!=event.url target='_blank').card
                 .card-header(style='background-image: url(#{event.image})')
