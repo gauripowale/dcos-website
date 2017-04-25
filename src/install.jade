@@ -48,34 +48,22 @@ block content
                 a.btn.btn-primary.mb0.block.center.no-arrow.text-white.bg-heliotrope Install in the cloud
                   img.ml1.align-middle(src='/assets/images/icons/arrow-down-docs-unselected-white.svg' style='margin-top: -2px;')
                 ul
-                  li: a(href='https://dcos.io/docs/latest/administration/installing/cloud/aws/', target='_blank') Amazon Web Services
-                  li: a(href='https://dcos.io/docs/latest/administration/installing/cloud/azure/', target='_blank') Azure
-                  li: a(href='https://dcos.io/docs/latest/administration/installing/cloud/packet/') Packet
-                  li: a(href='https://dcos.io/docs/latest/administration/installing/cloud/gce/') Google Cloud Platform
-              //- a(href='/get-started', style='width: 100%;').btn.btn-primary.center Install in the cloud
+                  li: a(href='https://downloads.dcos.io/dcos/stable/aws.html', target='_blank') Amazon Web Services
+                  li: a(href='https://downloads.dcos.io/dcos/stable/azure.html', target='_blank') Azure
 
-          div.lg-col-4.col-6.xs-col-12.xs-center.px3.py3.center.card.bg-white.relative(style="justify-content: inherit; padding-bottom: 2.45rem;")
+          a.lg-col-4.col-6.xs-col-12.xs-center.px3.py3.center.card.bg-white.relative(href="https://dcos.io/docs/latest/administration/installing/local/" style="justify-content: inherit; padding-bottom: 2.45rem;")
             img.hero-list__item__image(src="/assets/images/icons/local.svg")
             h4 Local
             p.hero-list__item__copy__paragraph.small.pb3 The cheapest option, with limited functionality. Run DC/OS on a Vagrant cluster on your machine.
             .flex.flex-end.mt-auto(style='width: 100%')
-              div.dropdown.z-500(style='text-align: left; left: 0; width: 100%; position: relative;')
-                a.btn.btn-primary.mb0.block.center.no-arrow.text-white.bg-heliotrope Install locally
-                  img.ml1.align-middle(src='/assets/images/icons/arrow-down-docs-unselected-white.svg' style='margin-top: -2px;')
-                ul
-                  li: a(href='https://dcos.io/docs/latest/administration/installing/local/', target='_blank') Vagrant
+              span(href='https://dcos.io/docs/latest/administration/installing/local/', style='width: 100%;').btn.btn-primary.center Install locally
 
-          div.lg-col-4.col-6.xs-col-12.xs-center.px3.py3.center.card.bg-white.relative(style="justify-content: inherit; padding-bottom: 2.45rem;")
+          a.lg-col-4.col-6.xs-col-12.xs-center.px3.py3.center.card.bg-white.relative(href="https://downloads.dcos.io/dcos/stable/commit/0ce03387884523f02624d3fb56c7fbe2e06e181b/dcos_generate_config.sh" style="justify-content: inherit; padding-bottom: 2.45rem;")
             img.hero-list__item__image(src="/assets/images/icons/on-premesis.svg")
             h4 On-premises
             p.hero-list__item__copy__paragraph.small.pb3 The most nuanced option. Control everything about your installation. The other install methods are automated versions of this process.
             .flex.flex-end.mt-auto(style='width: 100%')
-              div.dropdown.z-500(style='text-align: left; left: 0; width: 100%; position: relative;')
-                a.btn.btn-primary.mb0.block.center.no-arrow.text-white.bg-heliotrope Install on premises
-                  img.ml1.align-middle(src='/assets/images/icons/arrow-down-docs-unselected-white.svg' style='margin-top: -2px;')
-                ul
-                  li: a(href='https://dcos.io/docs/latest/administration/installing/custom/', target='_blank') CentOS
-                  li: a(href='https://dcos.io/docs/latest/administration/installing/custom/advanced/', target='_blank') Core OS
+              span(href='https://downloads.dcos.io/dcos/stable/commit/0ce03387884523f02624d3fb56c7fbe2e06e181b/dcos_generate_config.sh', style='width: 100%;').btn.btn-primary.center Install on premises
                     
   //- DC/OS enables Get Started
   .outer-container.bg-white.clearfix.py5.px2
