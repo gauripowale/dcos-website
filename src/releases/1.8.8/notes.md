@@ -116,7 +116,7 @@ For more information, see the [documentation](https://docs.mesosphere.com/1.8/us
 ## Enhanced Cloud Templates
 
 - You can use customized Amazon Machine Images (AMI) based on CentOS 7 or CoreOS to launch DC/OS with the advanced templates. For more information, see the [documentation](/docs/1.8/administration/installing/cloud/aws/advanced/aws-ami/).
-- You can create custom advanced templates for DC/OS and then deploy and run DC/OS from your own private S3 bucket. For more information, see the [documentation](/docs/1.8/administration/installing/cloud/aws/advanced/aws-custom/).
+- You can create custom advanced templates for DC/OS and then deploy and run DC/OS from your own private S3 bucket. For more information, see the [documentation](/docs/1.8/administration/installing/cloud/aws/advanced/).
 
 ## Improved UI and CLI improvements
 - See the CLI [release notes](https://github.com/dcos/dcos-cli/releases).
