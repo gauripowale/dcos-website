@@ -26,7 +26,7 @@ function clean () {
 function getDemoItem(demo) {
 
   const contentClass = demo.featured ? 'px2 lg-col-6 col-6 xs-col-12' : 'pt2';
-  const imageClass = demo.featured ? 'lg-col-6 col-6 xs-col-12' : '';
+  const imageClass = demo.featured ? 'lg-col-6 col-6 xs-col-12 pr2' : '';
   const image = demo.image ? `<div class="${imageClass}"><img src="${ demo.image }" alt=""></div>` : ``;
   const classNames = demo.featured ? 'lg-col-12 col-12 xs-col-12 flex flex-wrap' : 'lg-col-6 col-6 xs-col-12 bg-white'
 
