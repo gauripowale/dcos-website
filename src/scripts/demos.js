@@ -23,25 +23,55 @@ function clean () {
   $(".demos-cards").empty()
 }
 
-function render (items) {
-  items.forEach(demo => {
-    $(".demos-cards").prepend(
-      `
-      <div class="card card-content col-4 left-align bg-white has-footer">
-        <h4 class="mt3 mb1 bold">${demo.title}</h4>
-        <a href="#${demo.dcos_version}" style="font-size: .95rem;" class="block text-space-gray border-box my0">DC/OS ${demo.dcos_version.toString()}</a>
-        <p class="block mt2">${demo.description}</p>
-        <div class="callouts">
-          ${$.map(demo.callouts, (calloutUrl, name) => `<a class="inline-block mt0 bold" href="${calloutUrl}">${name}</a>`).join(' &bull; ').toString()}
+function getDemoItem(demo) {
+
+  const contentClass = demo.featured ? 'px2' : '';
+  const image = demo.image ? `<img src="${ demo.image }" alt="">` : ``;
+  const classNames = demo.featured ? 'col-12 xs-col-12 flex' : 'lg-col-6 col-6 xs-col-12 bg-white'
+
+  return `
+    <div class="${classNames} xs-center px2 pb3 left-align has-footer">
+      ${image}
+      <div class="${contentClass}">
+        <h5 class="mt2 mb0 bold">${demo.demo_name}</h5>
+        <h4 class="mt1 mb1">${demo.name}</h4>
+        <p class="block mt1">${demo.description}</p>
+        <div class="specs flex flex-wrap">
+          <div class="col-4 mb1"><p class="my0"><strong>Packages</strong></p></div>
+          <div class="col-8 mb1"><p class="my0">${demo.packages.join(', ').toString()}</p></div>
+          <div class="col-4 mb1"><p class="my0"><strong>Version</strong></p></div>
+          <div class="col-8 mb1"><p class="my0">${$.map(demo.dcos_version, (version) => `<a href="#${version}">${version}</a>`).join(', ').toString()}</p></div>
+          <div class="col-4 mb1"><p class="my0"><strong>Language</strong></p></div>
+          <div class="col-8 mb1"><p class="my0">${demo.language}</p></div>
         </div>
-        <div class="card-footer mt2">
-          ${demo.packages.map(name => `<span href="#${hash(name)}" class="pill bg-light-gray text-space-gray mt0 mb1">${name}</span>`).join(' ').toString()}
+        <div class="callouts">
+          ${$.map(demo.callouts, (calloutUrl, name) => `<a class="cta cta--button" href="${calloutUrl}">View demo</a>`).join(' &bull; ').toString()}
         </div>
       </div>
+    </div>
 
-      `
-    );
+    `;
+}
+
+function render (items) {
+
+  const featured_items = items.filter(function(value) {
+    return value.featured == true
+  })
+
+  const other_items = items.filter(function(value) {
+    return value.featured == false
+  })
+
+  other_items.forEach(demo => {
+    const item = getDemoItem(demo);
+    $(".demos-cards").append(item);
   });
+
+  if (featured_items.length) {
+    const featured_item = getDemoItem(featured_items[0]);
+    $(".demos-cards-featured").prepend(featured_item);
+  }
 }
 
 function main () {
