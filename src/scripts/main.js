@@ -76,6 +76,7 @@ $('.dropdown').click(function(event){
     $('.dropdown').removeClass('is-active')
   });
 
+  $('.dropdown.is-active').removeClass('is-active')
   $(this).toggleClass('is-active')
 
   event.stopPropagation()
