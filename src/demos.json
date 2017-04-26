@@ -19,7 +19,7 @@
     "demo_name": "Fast Data, Full stack",
     "dcos_version": ["1.8", "1.9"],
     "language": "Ruby on Rails",
-    "description": "",
+    "description": "install and deploy a containerized Ruby on Rails app named Tweeter. Then, use Zeppelin to perform real-time analytics on the data created by the Tweeter app.",
     "packages": ["Apache Cassandra", "Apache Kafka", "Marathon-LB", "Zeppelin"],
     "callouts": {
       "GitHub": "https://github.com/dcos/demos/tree/master/1.9",
