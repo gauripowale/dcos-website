@@ -27,12 +27,13 @@ function getDemoItem(demo) {
 
   const contentClass = demo.featured ? 'px2 lg-col-6 col-6 xs-col-12' : 'pt2';
   const imageClass = demo.featured ? 'lg-col-6 col-6 xs-col-12 pr2' : '';
-  const image = demo.image ? `<div class="${imageClass}"><img src="${ demo.image }" alt=""></div>` : ``;
+  let media = demo.image ? `<div class="${imageClass}"><img src="${ demo.image }" alt=""></div>` : ``;
+  media = demo.youtube_id ? `<div class="${imageClass} youtube"><iframe width="480" height="220" src="https://www.youtube.com/embed/${ demo.youtube_id }" frameborder="0" allowfullscreen></iframe></div>` : media;
   const classNames = demo.featured ? 'lg-col-12 col-12 xs-col-12 flex flex-wrap' : 'lg-col-6 col-6 xs-col-12 bg-white'
 
   return `
     <div class="${classNames} xs-left px2 pb3 left-align has-footer">
-      ${image}
+      ${media}
       <div class="${contentClass}">
         <h5 class="mt0 mb0 bold">${demo.demo_name}</h5>
         <h3 class="mt1 mb1">${demo.name}</h3>
