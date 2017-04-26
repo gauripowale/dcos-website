@@ -35,13 +35,13 @@ function getDemoItem(demo) {
       ${image}
       <div class="${contentClass}">
         <h5 class="mt0 mb0 bold">${demo.demo_name}</h5>
-        <h4 class="mt1 mb1">${demo.name}</h4>
+        <h3 class="mt1 mb1">${demo.name}</h3>
         <p class="block mt1">${demo.description}</p>
         <div class="specs flex flex-wrap">
           <div class="col-4 mb1"><p class="my0"><strong>Packages</strong></p></div>
           <div class="col-8 mb1"><p class="my0">${demo.packages.join(', ').toString()}</p></div>
           <div class="col-4 mb1"><p class="my0"><strong>Version</strong></p></div>
-          <div class="col-8 mb1"><p class="my0">${$.map(demo.dcos_version, (version) => `<a href="#${version}">${version}</a>`).join(', ').toString()}</p></div>
+          <div class="col-8 mb1"><p class="my0">${demo.dcos_version.join(', ').toString()}</p></div>
           <div class="col-4 mb1"><p class="my0"><strong>Language</strong></p></div>
           <div class="col-8 mb1"><p class="my0">${demo.language}</p></div>
         </div>
