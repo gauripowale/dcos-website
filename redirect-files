@@ -2,6 +2,7 @@
 /brand /brand/
 /brand/index.html https://brand.ai/mesosphere/dc-os-brand-guidelines
 /docs /docs/latest/
+/docs/ /docs/latest/
 /docs/1.7/administration/dcosarchitecture/security/index.html /docs/1.7/overview/
 /docs/1.7/administration/installing/custom/automated-installer/system-requirements/index.html /docs/1.7/administration/installing/custom/system-requirements/
 /docs/1.7/administration/installing/custom/gui/index.html /docs/1.7/administration/installing/custom/gui/
