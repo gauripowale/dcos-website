@@ -20,7 +20,7 @@
     "url": "/blog/2017/reflecting-on-scale-15x/" },
 
   { "title": "Meetup - Presenting the Instana Package for DC/OS",
-    "image": "/assets/images/events/San_Francisco_2.jpg",
+    "image": "/assets/images/events/2017-03-22_Instana_Meetup.jpg",
     "date": "2017-03-22",
     "url": "https://www.youtube.com/watch?v=JFkOmETATYc&feature=youtu.be" },
 
@@ -54,15 +54,10 @@
     "date": "2017-04-04",
     "url": "https://www.meetup.com/IGTCloud/events/236958368/" },
 
-  { "title": "Apex Big Data World",
-    "image": "/assets/images/events/Mountain_View.jpg",
-    "date": "2017-04-04",
-    "url": "http://www.apexbigdata.com/mountain-view.html" },
-
-  { "title": "#INGLovesIT",
-    "image": "/assets/images/events/Bucharest.jpg",
+  { "title": "#INGLovesIT - Fast Data and Microservices",
+    "image": "/assets/images/events/2017-04-07_IngLovesIT_Joerg.jpg",
     "date": "2017-04-07",
-    "url": "https://www.ing-events.com/inglovesit/en/jarg-schad/" },
+    "url": "https://youtu.be/-aE8crBVRIE" },
 
   { "title": "Flink Forward",
     "image": "/assets/images/blog/2017-04-17_flink_forward_presentation.jpg",
@@ -84,14 +79,14 @@
     "url": "https://www.meetup.com/DevOps-Norway/events/239005757/" },
 
   { "title": "Oracle Code",
-    "image": "/assets/images/events/Berlin.jpg",
+    "image": "/assets/images/events/2017-04-24_OracleCode.jpg",
     "date": "2017-04-24",
-    "url": "https://developer.oracle.com/code/berlin" },
+    "url": "https://youtu.be/Nqrq8PyiOcc" },
 
-  { "title": "Meetup - Ben Hindman at London Mesos User Group",
-    "image": "/assets/images/events/London.jpg",
+  { "title": "Meetup - Ben Hindman at Skills Matter",
+    "image": "/assets/images/events/2017-04-25_Ben_Skills_Mater.jpg",
     "date": "2017-04-25",
-    "url": "https://www.meetup.com/London-Mesos-User-Group/events/238440599/" },
+    "url": "https://skillsmatter.com/skillscasts/10117-taking-production-container-operations-and-data-services-automation-to-the-next-level?tc=fed445&utm_source=Skills+Matter+-+MEMBER+NEWSLETTER+List&utm_campaign=6ea8af4807-Devops_Apr_2017&utm_medium=email&utm_term=0_3b77997a7e-6ea8af4807-355582293" },
 
   { "title": "DevOpsDays Seattle",
     "image": "/assets/images/events/Seattle.jpg",
