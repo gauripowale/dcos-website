@@ -83,8 +83,8 @@ This took my DC/OS cluster 11 minutes.
 1. Toggle to the **JSON Editor** and paste the following [application definition](https://docs.mesosphere.com/1.9/deploying-services/creating-services/) into the editor.
   ```json
   {
-	  "id": "my-tensorflow-gpus-1",
-		"acceptedResourceRoles": ["slave_public"],
+    "id": "my-tensorflow-gpus-1",
+    "acceptedResourceRoles": ["slave_public"],
     "cpus": 4,
     "gpus": 4,
     "mem": 2048,
