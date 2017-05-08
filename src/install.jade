@@ -6,7 +6,7 @@ block head
   meta(property='og:type', content='article')
   meta(property='og:title', content='Install | DC/OS')
   meta(property='og:image', content='https://dcos.io/assets/images/social-img.png')
-  meta(property='og:description', content='Find detailed installation guides for Vagrant, AWS, Windows Azure, packet, Google Compute Engine, CentOS, CoreOS using the CLI, GUI or the advanced custom installer.')
+  meta(property='og:description', content='Install the latest version of DC/OS locally, on-premises, or in the cloud, and find resources for beginners.')
   meta(property='og:url', content='https://dcos.io/')
   meta(property='og:site_name', content='DC/OS')
   meta(name='twitter:card', content='summary')
@@ -14,7 +14,7 @@ block head
   meta(name='twitter:title', content='Install | DC/OS')
   meta(name='twitter:card', content='summary_large_image')
   meta(name='twitter:image', content='https://dcos.io/assets/images/social-img.png')
-  meta(name='twitter:description', content='Find detailed installation guides for Vagrant, AWS, Windows Azure, packet, Google Compute Engine, CentOS, CoreOS using the CLI, GUI or the advanced custom installer.')
+  meta(name='twitter:description', content='Install the latest version of DC/OS locally, on-premises, or in the cloud, and find resources for beginners.')
 
 block content
 
@@ -38,11 +38,11 @@ block content
             p.sm-center.mx-auto.pb4 Installation involves configuring your infrastructure and installing DC/OS bits on top, so the infrastructure provider you choose determines your installation method.
 
         .mxn2.flex.flex-auto.flex-wrap.flex-start
-          
+
           a.lg-col-4.col-6.xs-col-12.xs-center.px3.py3.center.card.bg-gray.relative(href="https://dcos.io/docs/latest/administration/installing/local/" style="justify-content: inherit; padding-bottom: 2.45rem;")
             img.hero-list__item__image(src="/assets/images/icons/local.svg")
-            h4 Local
-            p.hero-list__item__copy__paragraph.small.pb3 The cheapest option, with limited functionality. Run DC/OS on a Vagrant cluster on your machine.
+            h4 Development
+            p.hero-list__item__copy__paragraph.small.pb3 The cheapest option, with limited functionality. Run DC/OS on a Vagrant cluster on your local machine.
             .flex.flex-end.mt-auto(style='width: 100%')
               span(href='https://dcos.io/docs/latest/administration/installing/local/', style='width: 100%;').btn.btn-primary.center Install locally
             
@@ -68,7 +68,7 @@ block content
               a(href='https://dcos.io/docs/latest/installing/custom/' style='color: #9351E5') Read the docs
             .flex.flex-end.mt-auto(style='width: 100%')
               a(href='https://downloads.dcos.io/dcos/stable/commit/0ce03387884523f02624d3fb56c7fbe2e06e181b/dcos_generate_config.sh', style='width: 100%;').btn.btn-primary.center.m0 Install on premises
-                    
+              
   //- DC/OS enables Get Started
   .outer-container.bg-gray.clearfix.py4.px2
     .row
@@ -76,10 +76,7 @@ block content
         .mxn2.flex.flex-auto.flex-wrap.center
           .lg-col-8.col-12.xs-col-12.px2.mx-auto.pb2.center
             h2 DC/OS 101 tutorial
-            p
-              | If you already have DC/OS
-              a(href='#install')  installed
-              |  on your cluster and aren't sure what to do next, try walking through the 101 tutorial, which is designed to give you hands-on experience with the essential pieces of DC/OS right away. Follow the simple recipes, or read and try the "deep dives" to learn how DC/OS works behind the scenes.
+            p If you already have DC/OS installed on your cluster and aren't sure what to do next, try walking through the 101 tutorial, which is designed to give you hands-on experience with the essential pieces of DC/OS right away. Follow the simple recipes, or read and try the "deep dives" to learn how DC/OS works behind the scenes.
 
         .flex.flex-auto.flex-wrap.lg-col-8.col-12.xs-col-12.mx-auto.pb2
           h4(style='max-width: inherit;') The DC/OS 101 tutorial covers the following topics:
