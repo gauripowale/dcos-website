@@ -69,16 +69,11 @@ block content
                 p.cta--video__text.inline-block.mt0.mb2 Play Video
             .sm-col-6.col-12
               +image('/assets/images/hero-image.png')
-
-      button.Wallop-buttonPrevious.xs-hide.sm-hide
-        img(src="/assets/images/icons/chevron-white-left.svg")
-      button.Wallop-buttonNext.xs-hide.sm-hide
-        img(src="/assets/images/icons/chevron-white-right.svg")
         
-      .hero-nav.row.flex.flex-wrap
-          a(href='#', data-target='0').hero-nav--item.col-4.m0.py3.active Fast data
-          a(href='#', data-target='1').hero-nav--item.col-4.m0.py3 Operations
-          a(href='#', data-target='2').hero-nav--item.col-4.m0.py3 Data services
+      .hero-nav.center
+          a(href='#', data-target='0').hero-nav--item.m0.active
+          a(href='#', data-target='1').hero-nav--item.m0
+          a(href='#', data-target='2').hero-nav--item.m0
 
 
   //- Platform section
@@ -90,37 +85,40 @@ block content
         //- a(href='/why-dcos').cta.cta--button.button--secondary(style="display: inline-block;") Learn More
       
   //- Features
-  .outer-container.bg-gray.clearfix.py5.px2
+  .outer-container.clearfix.py3.px2
     .row
       .max-width-4.mx-auto
         .mxn2.flex.flex-wrap.flex-auto
         
           .lg-col-3.col-6.left-align.px2.mb4.md-mb4.lg-mb0
-            img.hero-list__item__image(src="/assets/images/icons/open-source-dark.svg")
-            h5.hero-list__item__copy__title 100% Open Source
-            p.hero-list__item__copy__paragraph.small DC/OS is completely open source and supported by a vibrant (and friendly) community! Get connected with fellow members.
-            a(href='/community').inline-block.mt2.small Join the community
+            a(href='/community').block.m0
+              img.hero-list__item__image(src="/assets/images/icons/open-source-dark.svg")
+              h5.hero-list__item__copy__title 100% Open Source
+              p.hero-list__item__copy__paragraph.small DC/OS is completely open source and supported by a vibrant (and friendly) community! Get connected with fellow members.
             
           .lg-col-3.col-6.left-align.px2.mb4.md-mb4.lg-mb0
-            img.hero-list__item__image(src="/assets/images/icons/containersbigdata.svg")
-            h5.hero-list__item__copy__title Built with Apache Mesos
-            p.hero-list__item__copy__paragraph.small Mesos' two-level scheduling increases your resource utilization, and DC/OS lowers the barrier of entry to Mesos cluster administration
-            a(href='http://mesos.apache.org/').inline-block.mt2.small Learn about Mesos
+            a(href='http://mesos.apache.org/').block.m0
+              img.hero-list__item__image(src="/assets/images/icons/mesos.svg")
+              h5.hero-list__item__copy__title Built with Apache Mesos
+              p.hero-list__item__copy__paragraph.small Mesos' two-level scheduling increases your resource utilization, and DC/OS lowers the barrier of entry to Mesos cluster administration
 
           .lg-col-3.col-6.left-align.px2
-            img.hero-list__item__image(src="/assets/images/icons/productionproven.svg")
-            h5.hero-list__item__copy__title Over 100 packages
-            p.hero-list__item__copy__paragraph.small Installing distributed data services, databases, CI/CD tools, and monitoring solutions on DC/OS takes just a few clicks or commands.
-            a(href='/packages').inline-block.mt2.small Learn about Packages
+            a(href='/packages').block.m0
+              img.hero-list__item__image(src="/assets/images/icons/packages.svg")
+              h5.hero-list__item__copy__title Over 100 packages
+              p.hero-list__item__copy__paragraph.small Installing distributed data services, databases, CI/CD tools, and monitoring solutions on DC/OS takes just a few clicks or commands.
 
           .lg-col-3.col-6.left-align.px2
-            img.hero-list__item__image(src="/assets/images/icons/serviceecosystem.svg")
-            h5.hero-list__item__copy__title Easy to start
-            p.hero-list__item__copy__paragraph.small DC/OS can be installed in the cloud, on-premises, or locally on a Vagrant cluster. Try it out today and let us know what you think!
-            a(href='/install').inline-block.mt2.small Get started with DC/OS
+            a(href='/install').block.m0
+              img.hero-list__item__image(src="/assets/images/icons/timer.svg")
+              h5.hero-list__item__copy__title Easy to start
+              p.hero-list__item__copy__paragraph.small DC/OS can be installed in the cloud, on-premises, or locally on a Vagrant cluster. Try it out today and let us know what you think!
 
 
   .outer-container.bg-white.clearfix.py3.px2
+    .row.flex.flex-column
+      .sm-col.sm-col-12.md-col-8.mx-auto.center.mt2
+        h2 Your app on any infrastructure
     .max-width-4.mx-auto
       .stack-diagram(style='margin-left: 0; margin-right: 0;').mxn2
         .stack-diagram__top
