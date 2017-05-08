@@ -1,0 +1,24 @@
+extends ../layouts/base-whitefooter.jade
+
+block head
+  title Tutorials
+
+block content
+
+  .container.container--dark-background
+    +header
+
+    .container__content
+      h1 Tutorials
+      p.hero-subtitle(style='max-width: 46rem;').mb0 Tutorials are learning tools for people who want to get more familiar with DC/OS. They're designed to provide hands on walkthroughs accompanied by explanations of what's going on under the hood.
+
+  .outer-container.clearfix.pt5.px2(style='background-color: #fafafa')
+    .tutorial-cards-featured.cards.flex.flex-auto.items-start.flex-wrap.max-width-4.mx-auto
+
+  .outer-container.bg-white.clearfix.py5.px2
+    .tutorial-cards.cards.flex.flex-auto.items-start.flex-wrap.max-width-4.mx-auto
+      //- This is where the demos cards are automagically added
+
+
+  .container
+    +footer
