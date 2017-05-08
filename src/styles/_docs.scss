@@ -150,6 +150,10 @@ ul > li > .nav-wrapper > .docs-nav__item__arrow {
       .docs-nav__item {
         line-height: 1.4;
         font-size: 0.9rem;
+
+        a {
+          margin: 0;
+        }
       }
 
       ul {
