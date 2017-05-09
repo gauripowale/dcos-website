@@ -16,6 +16,8 @@ require('./typer2.js')
 require('./html-include.js')
 require('swagger-ui-browserify')
 require('./ngindox.js')
+require('./demos')
+require('./tutorials')
 
 import Wallop from 'wallop';
 import Hammer from 'hammerjs';
