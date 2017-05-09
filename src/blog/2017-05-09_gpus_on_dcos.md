@@ -1,6 +1,6 @@
 ---
 title: 'Tutorial: Deep learning with TensorFlow, Nvidia and Apache Mesos (DC/OS), Part 2'
-date: 2017-05-04
+date: 2017-05-09
 author: Kevin Klues and Suzanne Scala, Mesosphere
 category: services
 description: Try out TensorFlow with GPU acceleration on DC/OS.
