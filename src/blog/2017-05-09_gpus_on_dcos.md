@@ -9,7 +9,7 @@ collection: posts
 lunr: true
 ---
 
-In the last post, we demonstrated how GPUs can dramatically reduce the time you need for a TensorFlow job. But what if we want to run this in production, not just from the laptop? You’d want reliability and efficiency: that’s where Mesos comes in. And you’d want to be able to deploy your TensorFlow service quickly and manage it easily: that’s where DC/OS comes in.
+In the last post, we demonstrated how GPUs can dramatically reduce the time you need for a TensorFlow job. But what if we want to run this in production, not just from the laptop? You’d want to be able to deploy your TensorFlow service quickly and manage it easily in production across multiple teams: that’s where DC/OS comes in.
 
 Watch a video version of this tutorial:
 [![GPUs on DCOS](https://img.youtube.com/vi/VzHVM0SCF44/0.jpg)](https://www.youtube.com/watch?v=VzHVM0SCF44)
