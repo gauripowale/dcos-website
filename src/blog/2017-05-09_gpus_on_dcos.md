@@ -36,21 +36,22 @@ First, let's get TensorFlow running on your DC/OS cluster.
 1. Click **+** to add a service.
 1. Choose **Single Container**.
 1. Toggle to the **JSON Editor** and paste the following [application definition](https://docs.mesosphere.com/1.9/deploying-services/creating-services/) into the editor.
+
   ```json
   {
-		"id": "my-tensorflow-no-gpus",
+    "id": "my-tensorflow-no-gpus",
     "cpus": 4,
     "gpus": 0,
     "mem": 2048,
-		"disk": 0,
-		"instances": 1,
-		"container": {
-		    "type": "MESOS",
-				"docker": {
-				      "image": "tensorflow/tensorflow"
-				}
-		}
-	}
+    "disk": 0,
+    "instances": 1,
+    "container": {
+      "type": "MESOS",
+      "docker": {
+        "image": "tensorflow/tensorflow"
+      }
+    }
+  }
   ```
 
   This application definition specifies _no_ GPUs and the standard TensorFlow Docker image.
