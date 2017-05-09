@@ -91,7 +91,7 @@
   { "title": "DevOpsDays Seattle",
     "image": "/assets/images/events/2017-04-28_DevOpsDaysSEA_Elizabeth.jpg",
     "date": "2017-04-26",
-    "url": "https://www.devopsdays.org/events/2017-seattle/welcome/" },
+    "url": "https://www.youtube.com/watch?v=WCmdPm8GNps" },
 
   { "title": "Meetup - Refactoring Legacy Java Apps with Akka Cluster and DC/OS",
     "image": "/assets/images/events/Toronto.jpg",
@@ -127,6 +127,11 @@
     "image": "/assets/images/events/Malaga.jpg",
     "date": "2017-05-17",
     "url": "http://jonthebeach.com/" },
+
+  { "title": "JFrog swampUP 2017",
+    "image": "/assets/images/events/Napa.jpg",
+    "date": "2017-05-25",
+    "url": "https://swampup.jfrog.com/" },
 
   { "title": "Meetup - From zero to a highly available, production grade DC/OS",
     "image": "/assets/images/events/Warsaw.jpg",
