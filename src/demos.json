@@ -86,12 +86,12 @@
   {
     "featured": false,
     "image": "/assets/images/demos/Bus_floating_map.png",
-    "name": "Bus Floating",
+    "name": "Bus Tracking SMACK Stack",
     "demo_name": ["Fast Data", "Full Stack", "SMACK"],
     "dcos_version": ["1.8", "1.9"],
     "language": "Java",
     "description": "Receive live data from the Los Angeles METRO API. The data is streamed to Apache Kafka and consumed by Apache Spark and an Akka application. This demo shows you how to run the SMACK stack on DC/OS with a stream of data.",
-    "packages": ["Minio", "WordPress", "Apache Drill"],
+    "packages": ["Apache Kafka", "Apache Cassandra", "Apache Spark", "Akka"],
     "youtube_id": "",
     "callouts": {
       "GitHub": "https://github.com/dcos/demos/tree/master/1.9/IoT-FloatingBusData",
