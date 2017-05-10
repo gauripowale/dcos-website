@@ -110,7 +110,7 @@ block content
 
           .lg-col-3.col-6.left-align.px2
             a(href='/install').block.m0
-              img.hero-list__item__image(src="/assets/images/icons/timer.svg")
+              img.hero-list__item__image(src="/assets/images/icons/mesosphere-gray.svg")
               h5.hero-list__item__copy__title Easy to start
               p.hero-list__item__copy__paragraph.small DC/OS can be installed in the cloud, on-premises, or locally on a Vagrant cluster. Try it out today and let us know what you think!
 
@@ -139,7 +139,18 @@ block content
             p DC/OS can run on AWS, Azure, DigitalOcean, Packet, on-premises, or locally for testing, which lends portability to your applications.
             .stack-diagram__arrow
               .stack-diagram__dot
-
+              
+              
+  //- Platform section
+  .outer-container.bg-white.clearfix.pb4
+    .row.flex.flex-column
+      .sm-col.sm-col-12.md-col-8.mx-auto.center
+        
+        img(src='/assets/images/icons/mesosphere.svg' style='width: 72px; height: 72px;')
+        h2 Backed by Mesosphere
+        p 
+          | DC/OS is created and maintained by Mesosphere, Inc., which offers an enterprise version of DC/OS that includes advanced features for security, compliance, multitenancy, networking and storage, and is backed by 24x7, SLA-governed support. For more information about Mesosphere DC/OS Enterprise, please visit 
+          a(href='https://mesosphere.com/') mesosphere.com
 
   .overlay(data-overlay='video-overlay')
     .overlay__close-cta
