@@ -3,42 +3,28 @@
     "featured": false,
     "image": "/assets/images/demos/geo-iot.png",
     "name": "Geospatial Internet of Things",
-    "demo_name": "IoT, Full stack",
-    "dcos_version": ["1.8"],
-    "language": "Javascript",
+    "demo_name": ["IoT", "Full stack", "SMACK"],
+    "dcos_version": ["1.8", "1.9"],
+    "language": ["Javascript", "Scala"],
     "description": "Configure a full stack geo-enabled Internet of Things (IoT) solution using the Datacenter Operating System (DC/OS) using Docker containerization and frameworks for Mesos including Marathon, Kafka, Spark, and Elasticsearch.",
     "packages": ["Apache Kafka", "Apache Spark", "Elasticsearch"],
     "youtube_id": "tOPmPIHuV-o",
     "callouts": {
-      "GitHub": "https://github.com/amollenkopf/dcos-iot-demo",
+      "GitHub": "",
     }
   },
   {
     "featured": true,
     "image": "/assets/images/demos/tweeter.png",
     "name": "Tweeter data visualization",
-    "demo_name": "Streaming Data, Full stack",
+    "demo_name": ["Streaming Data", "Full stack"],
     "dcos_version": ["1.8", "1.9"],
-    "language": "Ruby on Rails",
+    "language": ["Ruby on Rails", "Java"],
     "description": "Install and deploy a containerized Ruby on Rails app named Tweeter. Then, use Zeppelin to perform real-time analytics on the data created by the Tweeter app.",
     "packages": ["Apache Cassandra", "Apache Kafka", "Marathon-LB", "Zeppelin"],
     "youtube_id": "6ZeBukvKmFI",
     "callouts": {
       "GitHub": "https://github.com/dcos/demos/tree/master/1.9/tweeter",
-    }
-  },
-  {
-    "featured": false,
-    "image": "/assets/images/demos/cd.png",
-    "name": "Continuous delivery pipeline",
-    "demo_name": "CI/CD",
-    "dcos_version": ["1.8"],
-    "language": "Python",
-    "description": "Set up a CD pipeline, with advanced options using Jenkins to run atuomated tests on new container images added to DockerHub.",
-    "packages": ["Jenkins"],
-    "youtube_id": "cnIfSrMxgyE",
-    "callouts": {
-      "GitHub": "https://github.com/mesosphere/cd-demo",
     }
   },
   {
@@ -60,7 +46,7 @@
     "image": "/assets/images/demos/FinTrans_dcos-dashboard.png",
     "name": "Finacial Transactions",
     "demo_name": "Fast Data",
-    "dcos_version": ["1.8, 1.9"],
+    "dcos_version": ["1.8", "1.9"],
     "language": "Go",
     "description": "This demo is all about processing, visualizing and understanding high-volume financial transactions. There are several challenges that we tackle here: 1. the frequency of transactions, 2. the volume of transactions, 3. scaling out the processing.",
     "packages": ["Apache Kafka", "InfluxDB", "Grafana"],
@@ -74,7 +60,7 @@
     "image": "/assets/images/demos/SensorAnalytics_osm-overlay-marker.png",
     "name": "Sensor Analytics",
     "demo_name": "Fast Data",
-    "dcos_version": ["1.8, 1.9"],
+    "dcos_version": ["1.8", "1.9"],
     "language": "Go",
     "description": "Ingest real-time traffic data from the Open Data Aarhus, join it with a static dataset containing metadata about the sensors and finally shows the rendering of the tracked vehicles on a map.",
     "packages": ["Apache Kafka", "InfluxDB", "Grafana"],
@@ -87,14 +73,28 @@
     "featured": false,
     "image": "/assets/images/demos/applogs-architecture.png",
     "name": "Application Logs",
-    "demo_name": "Fast Data, Logging",
-    "dcos_version": ["1.8, 1.9"],
+    "demo_name": ["Fast Data", "Logging"],
+    "dcos_version": ["1.8", "1.9"],
     "language": "Go",
     "description": "In this demo we have a look into interactively analyzing application logs. As a source for the application logs we're using WordPress, a popular blogging engine.The demo shows how to ingest the application logs into Minio, an object store akin to Amazon S3 and demonstrates how to query those logs with SQL, using Apache Drill, a distributed schema-free query engine.",
     "packages": ["Minio", "WordPress", "Apache Drill"],
     "youtube_id": "",
     "callouts": {
       "GitHub": "https://github.com/dcos/demos/tree/master/1.9/applogs",
+    }
+  },
+  {
+    "featured": false,
+    "image": "/assets/images/demos/Bus_floating_map.png",
+    "name": "Bus Floating",
+    "demo_name": ["Fast Data", "Full Stack", "SMACK"],
+    "dcos_version": ["1.8", "1.9"],
+    "language": "Java",
+    "description": "Receive live data from the Los Angeles METRO API. The data is streamed to Apache Kafka and consumed by Apache Spark and an Akka application. This demo shows you how to run the SMACK stack on DC/OS with a stream of data.",
+    "packages": ["Minio", "WordPress", "Apache Drill"],
+    "youtube_id": "",
+    "callouts": {
+      "GitHub": "https://github.com/dcos/demos/tree/master/1.9/IoT-FloatingBusData",
     }
   }
 ]
