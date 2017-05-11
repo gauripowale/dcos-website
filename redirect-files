@@ -21,7 +21,6 @@
 /docs/1.7/usage/services/repo/index.html /docs/1.7/usage/repo/
 /docs/1.7/usage/services/uninstall/#framework-cleaner /docs/1.7/usage/managing-services/uninstall/#framework-cleaner
 /docs/1.7/usage/services/uninstall/index.html /docs/1.7/usage/managing-services/uninstall/
-/docs/1.7/usage/tutorials/marathon/index.html /docs/1.7/usage/tutorials/marathon/
 /docs/1.7/usage/tutorials/marathon/inline-update/index.html /docs/1.7/usage/tutorials/marathon/
 /docs/1.7/usage/tutorials/marathon/stateful-services/index.html /docs/1.7/usage/tutorials/marathon/stateful-services/
 /docs/1.7/usage/tutorials/ruby-on-rails/index.html /docs/1.7/usage/tutorials/
@@ -56,7 +55,7 @@
 /docs/1.8/usage/service-discovery/virtual-ip-addresses/index.html /docs/1.8/usage/service-discovery/load-balancing-vips/virtual-ip-addresses/
 /docs/1.8/usage/tutorials/docker-app/index.html /docs/1.8/usage/managing-services/creating-services/deploy-docker-app/
 /docs/1.8/usage/tutorials/inline-update/index.html /docs/1.8/usage/managing-services/update-user-service/
-/docs/1.8/usage/tutorials/marathon/index.html /docs/1.7/usage/tutorials/marathon/
+/docs/1.8/usage/tutorials/marathon/index.html /docs/1.8/usage/tutorials/dcos-101/
 /docs/1.8/usage/tutorials/marathon/inline-update/index.html /docs/1.7/usage/tutorials/marathon/
 /docs/1.8/usage/tutorials/marathon/stateful-services/index.html /docs/1.7/usage/tutorials/marathon/stateful-services/
 /docs/1.8/usage/tutorials/public-app/index.html /docs/1.8/usage/managing-services/expose-service/
