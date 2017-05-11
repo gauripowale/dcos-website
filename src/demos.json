@@ -1,7 +1,7 @@
 [
   {
     "featured": false,
-    "image": "/assets/images/demos/geo-iot.png",
+    "image": "/assets/images/demos/geo-iot.jpg",
     "name": "Geospatial Internet of Things",
     "demo_name": ["IoT", "Full stack", "SMACK"],
     "dcos_version": ["1.8", "1.9"],
@@ -29,7 +29,7 @@
   },
   {
     "featured": false,
-    "image": "/assets/images/demos/github-stream.png",
+    "image": "/assets/images/demos/github-stream.jpg",
     "name": "Github Streaming Data",
     "demo_name": "Fast Data",
     "dcos_version": ["1.8"],
@@ -43,7 +43,7 @@
   },
   {
     "featured": false,
-    "image": "/assets/images/demos/FinTrans_dcos-dashboard.png",
+    "image": "/assets/images/demos/FinTrans.jpg",
     "name": "Finacial Transactions",
     "demo_name": "Fast Data",
     "dcos_version": ["1.8", "1.9"],
@@ -57,7 +57,7 @@
   },
   {
     "featured": false,
-    "image": "/assets/images/demos/SensorAnalytics_osm-overlay-marker.png",
+    "image": "/assets/images/demos/SensorAnalytics.jpg",
     "name": "Sensor Analytics",
     "demo_name": "Fast Data",
     "dcos_version": ["1.8", "1.9"],
@@ -71,7 +71,7 @@
   },
   {
     "featured": false,
-    "image": "/assets/images/demos/applogs-architecture.png",
+    "image": "/assets/images/demos/applogs.JPG",
     "name": "Application Logs",
     "demo_name": ["Fast Data", "Logging"],
     "dcos_version": ["1.8", "1.9"],
@@ -85,7 +85,7 @@
   },
   {
     "featured": false,
-    "image": "/assets/images/demos/Bus_floating_map.png",
+    "image": "/assets/images/demos/Bus.jpg",
     "name": "Bus Tracking SMACK Stack",
     "demo_name": ["Fast Data", "Full Stack", "SMACK"],
     "dcos_version": ["1.8", "1.9"],
