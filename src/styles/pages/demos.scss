@@ -12,10 +12,6 @@
 .demos-cards,
 .demos-cards-featured {
 
-  .thumb {
-    height: 310px;
-  }
-
   .cta--button {
     margin-right: 1rem;
   }
@@ -40,4 +36,10 @@
     border: 1px solid #e5e5e5;
   }
 
+}
+
+.demos-cards .thumb {
+  width: 100%;
+  height: 310px;
+  background-size: cover;
 }

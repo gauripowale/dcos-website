@@ -25,9 +25,9 @@ function clean () {
 
 function getDemoItem(demo) {
 
-  const contentClass = demo.featured ? 'px2 lg-col-6 col-6 xs-col-12' : 'pt2';
+  const contentClass = demo.featured ? 'px2 lg-col-6 col-6 xs-col-12' : 'pt3';
   const imageClass = demo.featured ? 'lg-col-6 col-6 xs-col-12 pr2 thumb' : 'thumb';
-  let media = demo.image ? `<div class="${imageClass}"><img src="${ demo.image }" alt=""></div>` : ``;
+  let media = demo.image ? `<div class="${imageClass}" style="background-image: url('${ demo.image }')"></div>` : ``;
   media = demo.youtube_id && demo.featured ? `<div class="${imageClass}"><div class="youtube"><iframe width="480" height="220" src="https://www.youtube.com/embed/${ demo.youtube_id }" frameborder="0" allowfullscreen></iframe></div></div>` : media;
   const classNames = demo.featured ? 'lg-col-12 col-12 xs-col-12 flex flex-wrap' : 'lg-col-6 col-6 xs-col-12 bg-white'
 
