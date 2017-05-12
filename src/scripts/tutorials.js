@@ -25,25 +25,24 @@ function clean () {
 
 function getTutorialItem(demo) {
 
-  const contentClass = demo.featured ? 'px2 lg-col-6 col-6 xs-col-12' : 'pt2';
-  const imageClass = demo.featured ? 'lg-col-6 col-6 xs-col-12 pr2' : '';
+  const contentClass = demo.featured ? 'px2 pt2' : 'pt2';
+  const imageClass = demo.featured ? ' pr2' : '';
   let media = demo.image ? `<div class="${imageClass}"><img src="${ demo.image }" alt=""></div>` : ``;
   media = demo.youtube_id ? `<div class="${imageClass}"><div class="youtube"><iframe width="480" height="220" src="https://www.youtube.com/embed/${ demo.youtube_id }" frameborder="0" allowfullscreen></iframe></div></div>` : media;
-  const classNames = demo.featured ? 'lg-col-12 col-12 xs-col-12 flex flex-wrap mb3' : 'lg-col-6 col-6 xs-col-12 bg-white'
+  const classNames = demo.featured ? 'lg-col-12 col-12 flex flex-wrap mb3 bg-white' : 'bg-white'
 
   return `
-    <div class="${classNames} xs-left px2 pb3 left-align has-footer">
+    <div class="${classNames} xs-left px2 mb3 left-align has-footer tutorial">
       ${media}
       <div class="${contentClass}">
-        <h3 class="mt1 mb1">${demo.title}</h3>
+        <strong class="mt1 block">${demo.difficulty}</strong>
+        <div class="tutorial-title">
+          <h3 class="mt1 mb1 left">${demo.title}</h3>
+          <div class="right tutorial-versions">${$.map(demo.dcos_version, (version, url) => `<a href="${url}">${version}</a>`).reverse().join(' ').toString()}</div>
+        </div>
         <p class="block mt1">${demo.description}</p>
         <div class="specs flex flex-wrap">
-          <div class="col-4 mb1"><p class="my0"><strong>Version</strong></p></div>
-          <div class="col-8 mb1"><p class="my0">${demo.dcos_version.join(', ').toString()}</p></div>
-          <div class="col-4 mb1"><p class="my0"><strong>Difficulty</strong></p></div>
-          <div class="col-8 mb1"><p class="my0">${demo.difficulty}</p></div>
-          <div class="col-4 mb1"><p class="my0"><strong>Links</strong></p></div>
-          <div class="col-8 mb1"><p class="my0">${$.map(demo.callouts, (calloutUrl, name) => `<a class="block m0" href="${calloutUrl}">&bull; Tutorial ${name}</a>`).join(' ').toString()}</p></div>
+          <div class="mb1"><a href="${demo.tutorial}" class="cta cta--button">Start Tutorial</a></div>
         </div>
       </div>
     </div>

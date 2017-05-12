@@ -9,14 +9,41 @@ block content
     +header
 
     .container__content
-      h1 Tutorials
-      p.hero-subtitle(style='max-width: 46rem;').mb0 Tutorials are learning tools for people who want to get more familiar with DC/OS. They're designed to provide hands on walkthroughs accompanied by explanations of what's going on under the hood.
+      h1 Learning
+      
+      .row
+        .max-width-4.mx-auto
+          .mxn2.flex.flex-wrap.flex-auto
+            .lg-col-3.col-6.left-align.px2.mb4.md-mb4.lg-mb0
+              h4 Training
+              p.small Learn to use and administer DC/OS in paid, real-time training courses---in person or online---offered by Mesosphere.
+              a(href='https://mesosphere.com/training/').bold.small Learn about training →
+              
+            .lg-col-3.col-6.left-align.px2.mb4.md-mb4.lg-mb0
+              h4 Community
+              p.small Learn from DC/OS users and admins by joining the DC/OS community. Find talk recordings, join community meetings, and ask questions via chat.
+              a(href='https://dcos.io/community/').bold.small Join the community →
+              
+            .lg-col-3.col-6.left-align.px2.mb4.md-mb4.lg-mb0
+              h4 Pro-services
+              p.small Mesosphere provides paid consulting services and support to address specific DC/OS deployment and operations challenges.
+              a(href='https://mesosphere.com/services/').bold.small Learn about pro-services →
+                
+            .lg-col-3.col-6.left-align.px2.mb4.md-mb4.lg-mb0
+              h4 FAQ
+              p.small Mesosphere provides paid consulting services and support to address specific DC/OS deployment and operations challenges.
+              a(href='#').bold.small Read the FAQ →
 
-  .outer-container.clearfix.pt5.px2(style='background-color: #fafafa')
+      
+  .outer-container.clearfix.pt3.px2(style='background-color: #fafafa')
+    div.flex.flex-wrap.max-width-4.mx-auto
+      div.lg-col-8.col-12.xs-col-12.px2.mx-auto.pb2.mb2.center
+        h3(style='max-width: 46rem;') Tutorials
+        p Tutorials are learning tools for people who want to get more familiar with DC/OS. They're designed to provide hands on walkthroughs accompanied by explanations of what's going on under the hood.
     .tutorial-cards-featured.cards.flex.flex-auto.items-start.flex-wrap.max-width-4.mx-auto
 
   .outer-container.bg-white.clearfix.py5.px2
-    .tutorial-cards.cards.flex.flex-auto.items-start.flex-wrap.max-width-4.mx-auto
+    .tutorial-cards.cards.flex.flex-wrap.max-width-4.mx-auto
       //- This is where the demos cards are automagically added
 
 
