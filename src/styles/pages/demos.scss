@@ -3,12 +3,22 @@
 }
 
 .demos-cards .cta--button,
-.demos-cards-featured .cta--button {
+.demos-cards-featured .cta--button,
+.demos-cards .cta--text,
+.demos-cards-featured .cta--text {
   display: inline-block;
 }
 
 .demos-cards,
 .demos-cards-featured {
+
+  .thumb {
+    height: 310px;
+  }
+
+  .cta--button {
+    margin-right: 1rem;
+  }
 
   .youtube {
     position: relative;

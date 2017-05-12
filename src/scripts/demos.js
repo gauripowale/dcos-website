@@ -26,7 +26,7 @@ function clean () {
 function getDemoItem(demo) {
 
   const contentClass = demo.featured ? 'px2 lg-col-6 col-6 xs-col-12' : 'pt2';
-  const imageClass = demo.featured ? 'lg-col-6 col-6 xs-col-12 pr2' : '';
+  const imageClass = demo.featured ? 'lg-col-6 col-6 xs-col-12 pr2 thumb' : 'thumb';
   let media = demo.image ? `<div class="${imageClass}"><img src="${ demo.image }" alt=""></div>` : ``;
   media = demo.youtube_id && demo.featured ? `<div class="${imageClass}"><div class="youtube"><iframe width="480" height="220" src="https://www.youtube.com/embed/${ demo.youtube_id }" frameborder="0" allowfullscreen></iframe></div></div>` : media;
   const classNames = demo.featured ? 'lg-col-12 col-12 xs-col-12 flex flex-wrap' : 'lg-col-6 col-6 xs-col-12 bg-white'
@@ -43,12 +43,12 @@ function getDemoItem(demo) {
           <div class="col-8 mb1"><p class="my0">${demo.packages.join(', ').toString()}</p></div>
           <div class="col-4 mb1"><p class="my0"><strong>DC/OS Version</strong></p></div>
           <div class="col-8 mb1"><p class="my0">${demo.dcos_version.join(', ').toString()}</p></div>
-          <div class="col-4 mb1"><p class="my0"><strong>Language</strong></p></div>
+          <div class="col-4 mb1"><p class="my0"><strong>Languages</strong></p></div>
           <div class="col-8 mb1"><p class="my0">${demo.language}</p></div>
         </div>
         <div class="callouts">
           ${$.map(demo.callouts, (calloutUrl, name) => `<a class="cta cta--button" href="${calloutUrl}">Try demo</a>`).join(' &bull; ').toString()}
-          ${ demo.youtube_id && !demo.featured ? `<a class="cta cta--button" href="https://www.youtube.com/watch?v=${demo.youtube_id}">Watch Video</a>` : ``  }
+          ${ demo.youtube_id && !demo.featured ? `<a class="cta cta--text" href="https://www.youtube.com/watch?v=${demo.youtube_id}">Watch Video</a>` : ``  }
         </div>
       </div>
     </div>
