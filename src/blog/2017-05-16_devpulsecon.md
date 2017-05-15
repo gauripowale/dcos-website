@@ -22,7 +22,7 @@ The afternoon panels were closed to outside participation so that everyone could
 
 <img src="/assets/images/blog/2017-05-16_devpulsecon_presentation.jpg" alt="DevPulseCon presentation" />
 
-It’s really nice to see Mesosphere investing in events for women in tech.. In addition to my attendance at DevPulseCon, we recently hosted a Women in Big Data meetup at the San Francisco office, where engineers Amita Ekbote and Susan Huynh spoke about and gave a demo of DC/OS. Our own Suzanne Scala wrote about it on the Women in Big Data blog, [Big Data on DC/OS](https://www.womeninbigdata.org/2017/04/07/big-data-on-dcos/). In October Mesosphere will also be one of the Silver [sponsors for the 2017 Grace Hopper Celebration of Women in Computing](https://ghc.anitaborg.org/2017-sponsorships/corporate-sponsors/), which I’m really looking forward to attending!
+It’s really nice to see Mesosphere investing in events for women in tech. In addition to my attendance at DevPulseCon, we recently hosted a Women in Big Data meetup at the San Francisco office, where engineers Amita Ekbote and Susan Huynh spoke about and gave a demo of DC/OS. Our own Suzanne Scala wrote about it on the Women in Big Data blog, [Big Data on DC/OS](https://www.womeninbigdata.org/2017/04/07/big-data-on-dcos/). In October Mesosphere will also be one of the Silver [sponsors for the 2017 Grace Hopper Celebration of Women in Computing](https://ghc.anitaborg.org/2017-sponsorships/corporate-sponsors/), which I’m really looking forward to attending!
 
 I wrote more about some of the other talks and the rest of DevPulseCon over [on my blog](http://princessleia.com/journal/2017/05/devpulsecon-2017/).
 
