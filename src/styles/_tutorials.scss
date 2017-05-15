@@ -1,17 +1,21 @@
 .tutorial-cards,
 .tutorial-cards-featured {
   .tutorial {
-    width: 48%;
+    width: 100%;
     background-color: $snow;
     border-radius: 4px;
     @include box-shadow(0px 0px 0px 1px rgba($black, 0.10), 0px 1px 2px 0px rgba($black, 0.05));
 
-      &:nth-child(odd) {
-        margin-right: 1rem;
-      }
+      @include break($tablet-landscape) {
+        width: 48%;
 
-      &:nth-child(even) {
-        margin-left: 1rem;
+        &:nth-child(odd) {
+          margin-right: 1rem;
+        }
+
+        &:nth-child(even) {
+          margin-left: 1rem;
+        }
       }
   }
 
