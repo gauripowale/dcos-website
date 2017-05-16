@@ -154,6 +154,7 @@
 /docs/1.9/administration/virtual-networks/isolation/index.html /docs/1.9/networking/virtual-networks/isolation/
 /docs/1.9/debugging/cli-debugging/task-exec/quickstart/index.html /docs/1.9/monitoring/debugging/cli-debugging/task-exec/
 /docs/1.9/development/index.html /docs/1.9/developing-services/
+/docs/1.9/monitoring/debugging/cli-debugging/task-exec/index.html /docs/1.9/monitoring/debugging/task-exec/
 /docs/1.9/overview/components/index.html /docs/1.9/overview/architecture/components/
 /docs/1.9/usage/cli/command-reference/dcos-auth/dcos-auth-list-providers/index.html /docs/1.9/cli/command-reference/dcos-auth/dcos-auth-list-providers/
 /docs/1.9/usage/cli/command-reference/dcos-auth/dcos-auth-login/index.html /docs/1.9/cli/command-reference/dcos-auth/dcos-auth-login/
