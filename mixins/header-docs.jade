@@ -21,6 +21,9 @@ mixin header()
           a(href='/install/') Install
 
         li.menu-item
+          a(href='/releases/') Releases
+
+        li.menu-item
           a(href='/docs/latest/') Docs
 
         li.menu-item
@@ -37,6 +40,8 @@ mixin header()
         a(href='/why-dcos/') Why&nbsp;DC/OS
       li.menu-item
         a(href='/install/') Install
+      li.menu-item
+        a(href='/releases/') Releases
       li.menu-item
         if (locals.filename.includes('docs'))
           a(href='/docs/latest/').active Docs
