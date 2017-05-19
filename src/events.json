@@ -180,12 +180,20 @@
   { "title": "Open Source Summit - Doing DropBox the Cloud Native Way",
     "image": "/assets/images/events/Tokyo.jpg",
     "date": "2017-05-31",
-    "url": "http://sched.co/AMS0" },
+    "url": "http://sched.co/AMS0"
+  },
 
   { "title": "Open Source Summit - Container Networking for Mesos Services",
     "image": "/assets/images/events/Tokyo2.jpg",
     "date": "2017-05-31",
-    "url": "http://sched.co/AOmR" },
+    "url": "http://sched.co/AOmR"
+  },
+
+  { "title": "Meetup - Mesos DC/OS en Argentina",
+      "image": "/assets/images/events/Buenos_Aires.jpg",
+      "date": "2017-05-31",
+      "url": "https://www.meetup.com/mesos-dcos-argentina/events/239335651/?_locale=es-ES"
+  },
 
   { "title": "Meetup - How Apache Mesos - DC/OS keeps apps running",
       "image": "/assets/images/events/San_Francisco_2.jpg",
@@ -199,6 +207,18 @@
       "url": "https://conferences.oreilly.com/velocity/vl-ca/public/schedule/detail/58702"
   },
 
+  { "title": "Meetup - Azure Thüringen Meetup",
+      "image": "/assets/images/events/Weimar.jpg",
+      "date": "2017-06-19",
+      "url": "https://www.meetup.com/Azure-Thueringen-Meetup/events/239034049/"
+  },
+
+  { "title": "Meetup - How Marathon uses Akka to orchestrate containers at scale",
+      "image": "/assets/images/events/Hamburg.jpg",
+      "date": "2017-06-21",
+      "url": "https://www.meetup.com/Reactive-Systems-Hamburg/events/239325421/"
+  },
+
   { "title": "EuroPython",
       "image": "/assets/images/events/palacongressi_di_rimini.jpg",
       "date": "07-09-2017",
@@ -209,6 +229,12 @@
       "image": "/assets/images/events/San_Francisco.jpg",
       "date": "2017-07-15",
       "url": "http://www.cdnextcon.com/" },
+
+      { "title": "Meetup - Tobi Knaup, CTO and Co-Founder of Mesosphere",
+          "image": "/assets/images/events/Salt_Lake_City.jpg",
+          "date": "2017-07-20",
+          "url": "https://www.meetup.com/DevOpsUT/events/240003317/"
+      },
 
   { "title": "FOSSCON 2017",
       "image": "/assets/images/events/Philadelphia.jpg",
