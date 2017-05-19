@@ -35,7 +35,7 @@ function getDemoItem(demo) {
     <div class="${classNames} xs-left px2 pb3 left-align has-footer">
       ${media}
       <div class="${contentClass}">
-        <h5 class="mt0 mb0 bold">${demo.demo_name}</h5>
+        <h5 class="mt0 mb0 bold">${demo.use_cases.join(', ').toString()}</h5>
         <h3 class="mt1 mb1">${demo.name}</h3>
         <p class="block mt1">${demo.description}</p>
         <div class="specs flex flex-wrap">
@@ -44,7 +44,7 @@ function getDemoItem(demo) {
           <div class="col-4 mb1"><p class="my0"><strong>DC/OS Version</strong></p></div>
           <div class="col-8 mb1"><p class="my0">${demo.dcos_version.join(', ').toString()}</p></div>
           <div class="col-4 mb1"><p class="my0"><strong>Languages</strong></p></div>
-          <div class="col-8 mb1"><p class="my0">${demo.language}</p></div>
+          <div class="col-8 mb1"><p class="my0">${demo.language.join(', ').toString()}</p></div>
         </div>
         <div class="callouts">
           ${$.map(demo.callouts, (calloutUrl, name) => `<a class="cta cta--button" href="${calloutUrl}">Try demo</a>`).join(' &bull; ').toString()}

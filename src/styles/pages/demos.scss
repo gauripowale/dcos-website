@@ -12,6 +12,11 @@
 .demos-cards,
 .demos-cards-featured {
 
+  h3 {
+    font-family: $clio-light;
+    font-weight: normal;
+  }
+
   .cta--button {
     margin-right: 1rem;
   }
