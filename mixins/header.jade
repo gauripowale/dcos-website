@@ -62,11 +62,11 @@ mixin header(lightHeader)
         else
           a(href='/install/') Install
 
-          li.menu-item
-            if(locals.filename === 'releases.html')
-              a(href='/releases/').active Releases
-            else
-              a(href='/releases/') Releases
+      li.menu-item
+        if(locals.filename === 'releases.html')
+          a(href='/releases/').active Releases
+        else
+          a(href='/releases/') Releases
 
       li.menu-item
         a(href='/docs/latest/') Docs
