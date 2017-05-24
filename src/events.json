@@ -195,6 +195,18 @@
       "url": "https://www.meetup.com/mesos-dcos-argentina/events/239335651/?_locale=es-ES"
   },
 
+  { "title": "Meetup - Ben Hindman: How Fast Data and Microservices Change the Datacenter",
+      "image": "/assets/images/events/San_Jose.jpg",
+      "date": "2017-05-31",
+      "url": "https://www.meetup.com/Bay-Area-Mesos-User-Group/events/240192263/?rv=ea1&_af=event&_af_eid=240192263&https=on"
+  },
+
+  { "title": "Meetup - Let's talk SMACK: Meet the SMACK Stack Experts AMA",
+      "image": "/assets/images/events/San_Francisco.jpg",
+      "date": "2017-06-05",
+      "url": "https://www.eventbrite.com/e/lets-talk-smack-meet-the-smack-stack-experts-ama-meetup-tickets-34758244846"
+  },
+
   { "title": "Meetup - How Apache Mesos - DC/OS keeps apps running",
       "image": "/assets/images/events/San_Francisco_2.jpg",
       "date": "2017-06-13",
@@ -211,6 +223,12 @@
       "image": "/assets/images/events/Weimar.jpg",
       "date": "2017-06-19",
       "url": "https://www.meetup.com/Azure-Thueringen-Meetup/events/239034049/"
+  },
+
+  { "title": "ContainerDays",
+      "image": "/assets/images/events/Hamburg.jpg",
+      "date": "2017-06-20",
+      "url": "https://containerdays.io/"
   },
 
   { "title": "Meetup - How Marathon uses Akka to orchestrate containers at scale",
