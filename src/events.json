@@ -92,7 +92,8 @@
 
   { "title": "DevPulseCon",
     "image": "/assets/images/events/2017-04-20-DevPulseCon_Elizabeth.jpg",
-    "date": "2017-04-20", "url": "http://devpulsecon.squarespace.com/" },
+    "date": "2017-04-20", "url": "http://devpulsecon.squarespace.com/",
+    "url": "https://dcos.io/blog/2017/devpulsecon-2017-in-mountain-view/" },
 
   { "title": "Meetup - Build, deploy and automate your applications across the clouds.",
     "image": "/assets/images/events/Oslo.jpg",
@@ -140,7 +141,7 @@
     "url": "https://www.meetup.com/Kubernetes-Mesos-User-Group/events/238937445/" },
 
   { "title": "DevOpsDays Salt Lake City",
-    "image": "/assets/images/events/Salt_Lake_City.jpg",
+    "image": "/assets/images/events/2017-05-17_SLC_DevOpsDays.jpg",
     "date": "2017-05-16",
     "url": "https://www.devopsdays.org/events/2017-salt-lake-city/welcome/" },
 
