@@ -76,6 +76,7 @@ $('.dropdown').click(function(event){
     $('.dropdown').removeClass('is-active')
   });
 
+  $('.dropdown.is-active').removeClass('is-active')
   $(this).toggleClass('is-active')
 
   event.stopPropagation()
@@ -201,7 +202,7 @@ $('#submit-feedback').attr('href', `https://jira.dcos.io/secure/CreateIssueDetai
 const currentUrlPath = window.location.pathname
 var pathArray = currentUrlPath.split('/')
 
-$('button.dropdown a.option').click(function(event){
+$('.dropdown a.option').click(function(event){
   event.preventDefault()
   pathArray[2] = $(this).attr('data-version')
   var newUrlPath = window.location.origin + pathArray.join('/')
