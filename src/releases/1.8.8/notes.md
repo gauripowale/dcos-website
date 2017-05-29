@@ -116,7 +116,7 @@ For more information, see the [documentation](https://docs.mesosphere.com/1.8/us
 ## Enhanced Cloud Templates
 
 - You can use customized Amazon Machine Images (AMI) based on CentOS 7 or CoreOS to launch DC/OS with the advanced templates. For more information, see the [documentation](/docs/1.8/administration/installing/cloud/aws/advanced/aws-ami/).
-- You can create custom advanced templates for DC/OS and then deploy and run DC/OS from your own private S3 bucket. For more information, see the [documentation](/docs/1.8/administration/installing/cloud/aws/advanced/aws-custom/).
+- You can create custom advanced templates for DC/OS and then deploy and run DC/OS from your own private S3 bucket. For more information, see the [documentation](/docs/1.8/administration/installing/cloud/aws/advanced/).
 
 ## Improved UI and CLI improvements
 - See the CLI [release notes](https://github.com/dcos/dcos-cli/releases).
@@ -164,3 +164,8 @@ For more information, see the [documentation](https://docs.mesosphere.com/1.8/us
 
 - MESOS-6621 - Nodes continuously restarting, cannot recover.
 - MESOS-6917 - Segfault when the executor sets an invalid UUID when sending a status update.
+
+### Known issues
+
+- DCOS_OSS-683 - Admin Router on DC/OS 1.8 fails with newer versions of curl. This behavior has been observed in CoreOS 1298.5.0 or newer. This can occur if you install DC/OS 1.8 with a recent version of CoreOS, or upgrade your existing distribution. This is fixed in DC/OS 1.9.
+- DCOS_OSS-824 - HDFS 0.9.2-2.6.0 does not work on DC/OS 1.8 with newer versions of CoreOS. This is fixed in DC/OS 1.9.

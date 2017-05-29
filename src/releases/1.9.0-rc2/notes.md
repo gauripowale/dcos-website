@@ -18,8 +18,8 @@ DC/OS 1.9 includes many new capabilities for Operators, and expands the collecti
 
 ## <a name="container-orchestration"></a>Container Orchestration
 
-- Pods - Multiple co-located containers per instance, scheduled on the same host. For more information, see the [documentation](/docs/1.9/usage/pods/).
-- GPU - Leverage GPUs to run novel algorithms. For more information, see the [documentation](/docs/1.9/usage/gpu/).
+- Pods - Multiple co-located containers per instance, scheduled on the same host. For more information, see the [documentation](/docs/1.9/deploying-services/pods/).
+- GPU - Leverage GPUs to run novel algorithms. For more information, see the [documentation](/docs/1.9/deploying-services/gpu/).
 - Significant scalability improvements.
 
 ## <a name="monitoring-and-operations"></a>DC/OS Monitoring and Operations
@@ -31,7 +31,7 @@ The new `dcos task exec` command allows you to remotely execute a process inside
 - Attach to a remote pseudoterminal (aka PTY) inside a container via the optional `--tty` flag.
 - Combine the `--interactive` and `--tty` flags to launch an interactive bash session or to run `top` and see the resource usage of your container in real time.
 
-For more information, see the documentation for the debugging [documentation](/docs/1.9/usage/debugging/).
+For more information, see the documentation for the debugging [documentation](/docs/1.9/monitoring/debugging/).
 
 ### Logging
 
@@ -40,7 +40,7 @@ Stream task and system logs to journald by setting the `mesos_container_log_sink
 - Use new DC/OS CLI commands `dcos node log` and `dcos task log` DC/OS CLI commands to query the logs. You can also make requests directly against the new Logging API.
 - Set up log aggregation solutions such as Logstash to get logs into their aggregated storage solutions.
 
-For more information, see the [documentation](/docs/1.9/administration/logging/).
+For more information, see the [documentation](/docs/1.9/monitoring/logging/).
 
 ### Metrics
 
@@ -48,7 +48,7 @@ For more information, see the [documentation](/docs/1.9/administration/logging/)
 - StatsD endpoint in every container for forwarding metrics to the DC/OS metrics service. This service is what exposes the HTTP API.
 - Any metric sent to STATSD_UDP_HOST/PORT is available in the HTTP API `/container/<container_id>/app` endpoint.
 
-For more information, see the [documentation](/docs/1.9/administration/monitoring/metrics/).
+For more information, see the [documentation](/docs/1.9/metrics/).
 
 ### Tool for Troubleshooting Service Deployment Failures
 
@@ -78,28 +78,28 @@ For more information, see the [documentation](/docs/1.9/administration/monitorin
 - Update DC/OS internal JDK to 8u112 for security [fixes](http://www.oracle.com/technetwork/java/javase/2col/8u112-bugfixes-3124974.html).
 - Update DC/OS internal Python from 3.4 to 3.5.
 - The `dcos_generate_config.sh --aws-cloudformation` command will now determine the region of the s3 bucket automatically, preventing region mistakes.
-- Added the `dcos_add_user.py` script, which you can use to add or invites users to a DC/OS cluster from the command line. For more information, see the [documentation](/docs/1.9/administration/id-and-access-mgt/add-user-script/). <!-- OSS only -->
+- Added the `dcos_add_user.py` script, which you can use to add or invites users to a DC/OS cluster from the command line. For more information, see the [documentation](/docs/1.9/security/add-user-script/). <!-- OSS only -->
 - Added `dcos-shell` which activates the DC/OS environment for running other DC/OS command line tools.
 
 ### Expanded OS Support
 
-- CentOS [7.3](https://access.redhat.com/documentation/en-US/Red_Hat_Enterprise_Linux/7/html/7.3_Release_Notes/index.html) is the default version. If you install DC/OS 1.9 by using the [GUI](/docs/1.9/administration/installing/custom/gui/) or [CLI](/docs/1.9/administration/installing/custom/cli/) install methods, your system will be automatically upgraded to CentOS 7.3.
+- CentOS [7.3](https://access.redhat.com/documentation/en-US/Red_Hat_Enterprise_Linux/7/html/7.3_Release_Notes/index.html) is the default version. If you install DC/OS 1.9 by using the [GUI](/docs/1.9/installing/custom/gui/) or [CLI](/docs/1.9/installing/custom/cli/) install methods, your system will be automatically upgraded to CentOS 7.3.
 - CoreOS [1235.8.0](https://coreos.com/releases/#1235.8.0).
 
 ### Expanded Docker Engine Support
 
-- Docker 1.12 and 1.13 are now [supported](/docs/1.9/administration/installing/custom/system-requirements/). Docker 1.13 is the default version.
+- Docker 1.12 and 1.13 are now [supported](/docs/1.9/installing/custom/system-requirements/). Docker 1.13 is the default version.
 
 ### Upgrades
 
 Improved upgrade tooling and experience for on-premise installations. Upgrades now use internal DC/OS APIs to ensure nodes can be upgraded with minimal disruption to running DC/OS services on a node. The upgrade procedure has also been simplified to improve user experience.
 
-For more information, see the [documentation](/docs/1.9/administration/upgrading/).
+For more information, see the [documentation](/docs/1.9/installing/upgrading/).
 
 # <a name="known-issues"></a>Known Issues and Limitations
 
 - Marathon-LB does not support pods.
-- This release candidate has [task logging to journald](/docs/1.9/administration/logging/) disabled by default, so task logs will continue to be written to their sandboxes, and logrotated out. The `dcos task log` command will work as it did before.
+- This release candidate has [task logging to journald](/docs/1.9/monitoring/logging/) disabled by default, so task logs will continue to be written to their sandboxes, and logrotated out. The `dcos task log` command will work as it did before.
 - [4137](https://github.com/mesosphere/marathon/issues/4137) - Volumes do not persist.
 
 # <a name="fixed-issues"></a>Issues Fixed Since 1.9.0-rc1
