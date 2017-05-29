@@ -36,7 +36,7 @@ function getDemoItem(demo) {
       ${media}
       <div class="${contentClass}">
         <h5 class="mt0 mb0 bold">${demo.use_cases.join(', ').toString()}</h5>
-        <h3 class="mt1 mb1">${demo.name}</h3>
+        <h3 class="mt0 mb1">${demo.name}</h3>
         <p class="block mt1">${demo.description}</p>
         <div class="specs flex flex-wrap">
           <div class="col-4 mb1"><p class="my0"><strong>Services</strong></p></div>
