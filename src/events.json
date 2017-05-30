@@ -220,6 +220,12 @@
       "url": "http://www.phillylinux.org/"
   },
 
+  { "title": "Spark Summit 2017",
+      "image": "/assets/images/events/San_Francisco_3.jpg",
+      "date": "2017-06-07",
+      "url": "https://spark-summit.org/2017/events/powering-predictive-mapping-at-scale-with-spark-kafka-and-elastic-search/"
+  },
+
   { "title": "Meetup - How Apache Mesos - DC/OS keeps apps running",
       "image": "/assets/images/events/San_Francisco_2.jpg",
       "date": "2017-06-13",
