@@ -163,9 +163,9 @@
   },
 
   { "title": "JFrog swampUP 2017",
-    "image": "/assets/images/events/Napa.jpg",
+    "image": "/assets/images/events/2017-05-25_swampup.jpg",
     "date": "2017-05-25",
-    "url": "https://swampup.jfrog.com/" },
+    "url": "https://github.com/mesosphere/presentations/tree/gh-pages/2017-05-25-swampup" },
 
   { "title": "Meetup - From zero to a highly available, production grade DC/OS",
     "image": "/assets/images/events/Warsaw.jpg",
@@ -206,6 +206,18 @@
       "image": "/assets/images/events/San_Francisco.jpg",
       "date": "2017-06-05",
       "url": "https://www.eventbrite.com/e/lets-talk-smack-meet-the-smack-stack-experts-ama-meetup-tickets-34758244846"
+  },
+
+  { "title": "Meetup - Ben Hindman, creator of Apache Mesos and DC/OS",
+      "image": "/assets/images/events/New_York.jpg",
+      "date": "2017-06-06",
+      "url": "https://www.eventbrite.com/e/nyc-meetup-with-ben-hindman-creator-of-apache-mesos-and-dcos-tickets-34869443444"
+  },
+
+  { "title": "Meetup - SMACK Stack at the Philadelphia Linux Users Group",
+      "image": "/assets/images/events/2017-06-07-phillylinux.jpg",
+      "date": "2017-06-07",
+      "url": "http://www.phillylinux.org/"
   },
 
   { "title": "Meetup - How Apache Mesos - DC/OS keeps apps running",
