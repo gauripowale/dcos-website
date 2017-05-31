@@ -1,19 +1,5 @@
 [
   {
-    "featured": false,
-    "image": "/assets/images/demos/geo-iot.jpg",
-    "name": "Geospatial Internet of Things",
-    "use_cases": ["IoT", "Full stack", "SMACK"],
-    "dcos_version": ["1.8", "1.9"],
-    "language": ["Javascript", "Scala"],
-    "description": "Configure a full stack geo-enabled Internet of Things (IoT) solution using the Datacenter Operating System (DC/OS) using Docker containerization and frameworks for Mesos including Marathon, Kafka, Spark, and Elasticsearch.",
-    "packages": ["Apache Kafka", "Apache Spark", "Elasticsearch"],
-    "youtube_id": "tOPmPIHuV-o",
-    "callouts": {
-      "GitHub": "",
-    }
-  },
-  {
     "featured": true,
     "image": "/assets/images/demos/tweeter.png",
     "name": "Tweeter data visualization",
