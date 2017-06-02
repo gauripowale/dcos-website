@@ -189,6 +189,7 @@ html
     script(src='//cdnjs.cloudflare.com/ajax/libs/highlight.js/9.3.0/languages/yaml.min.js')
     script(src='//cdnjs.cloudflare.com/ajax/libs/highlight.js/9.3.0/languages/powershell.min.js')
     script(src='//cdnjs.cloudflare.com/ajax/libs/highlight.js/9.3.0/languages/dockerfile.min.js')
+    script(src='//cdn.jsdelivr.net/docsearch.js/2/docsearch.min.js')
 
     block head
       title!= locals.post_title
@@ -283,8 +284,6 @@ html
 
       .container
         +footer
-  
-  script(src='//cdn.jsdelivr.net/docsearch.js/2/docsearch.min.js')
   
   script.
     docsearch({
