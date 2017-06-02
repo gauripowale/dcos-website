@@ -99,7 +99,8 @@
 /docs/1.9/administration/installing/custom/add-a-node/index.html /docs/1.9/administering-clusters/add-a-node/
 /docs/1.9/administration/installing/custom/advanced/index.html /docs/1.9/installing/custom/advanced/
 /docs/1.9/administration/installing/custom/cli/index.html /docs/1.9/installing/custom/cli/
-/docs/1.9/administration/installing/custom/configuration-parameters/index.html /docs/1.9/installing/custom/configuration-parameters/
+/docs/1.9/administration/installing/custom/configuration-parameters/index.html /docs/1.9/installing/custom/configuration/configuration-parameters/
+/docs/1.9/installing/custom/configuration-parameters/index.html /docs/1.9/installing/custom/configuration/configuration-parameters/
 /docs/1.9/administration/installing/custom/configure-proxy/index.html /docs/1.9/installing/custom/configure-proxy/
 /docs/1.9/administration/installing/custom/convert-agent-type/index.html /docs/1.9/administering-clusters/convert-agent-type/
 /docs/1.9/administration/installing/custom/gui/index.html /docs/1.9/installing/custom/gui/
