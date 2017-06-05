@@ -3,11 +3,12 @@
     "featured": true,
     "title": "DC/OS 101",
     "description": "Get hands on experience with the basics of DC/OS right away",
-    "dcos_version": ["1.8"],
+    "dcos_version": ["1.8","1.9"],
     "difficulty": "Beginner",
     "tutorial" : "https://dcos.io/docs/1.8/usage/tutorials/dcos-101/",
     "callouts": {
-      "1.8": "https://dcos.io/docs/1.8/usage/tutorials/dcos-101/"
+      "1.8": "https://dcos.io/docs/1.8/usage/tutorials/dcos-101/",
+      "1.9": "https://dcos.io/docs/1.9/usage/tutorials/dcos-101/"
     }
   },
   {
