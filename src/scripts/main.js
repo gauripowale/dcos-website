@@ -118,13 +118,16 @@ if(wallopEl){
   // Add auto-play functionality
   var autoPlayMs = 6000;
   var nextTimeout;
+  var navItems = document.querySelectorAll('.hero-nav--item');
   var loadNext = function() {
     var nextIndex = (slider.currentItemIndex + 1) % slider.allItemsArray.length;
     slider.goTo(nextIndex);
   }
   nextTimeout = new Timer(function() { loadNext(); }, autoPlayMs);
-  slider.on('change', function() {
+  slider.on('change', function(e) {
     nextTimeout.resume();
+    document.querySelector('.hero-nav--item.active').classList.remove('active');
+    navItems[e.detail.currentItemIndex].classList.add('active');
   });
 
   slider.on('mouseenter', function(){
@@ -147,6 +150,15 @@ if(wallopEl){
   }).on('swiperight', function() {
     slider.previous();
   });
+
+  for (var i = 0; i < navItems.length; i++) {
+    navItems[i].addEventListener('click', function(e){
+      e.preventDefault();
+      slider.goTo(e.target.dataset.target);
+      nextTimeout.resume();
+    });
+
+  }
 }
 
 /****************
