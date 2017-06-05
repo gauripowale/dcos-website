@@ -17,10 +17,23 @@
           margin-left: 1rem;
         }
       }
-  }
 
-  .tutorial-versions {
-    padding-top: 1rem;
+      .specs {
+        width: 100%;
+        border-top: 1px solid rgba($black, 0.10);
+
+          .advanced {
+            color: #f24455;
+          }
+
+          .beginner {
+            color: #a1d966;
+          }
+
+          .intermediate {
+            color: #f88161;
+          }
+      }
   }
 
   .tutorial-versions a {
@@ -36,8 +49,13 @@
 
 .tutorial-cards-featured {
   .tutorial {
+    width: 100%;
     margin-left: auto !important;
     margin-right: auto !important;
+
+      @include break($tablet-landscape) {
+        width: 65%;
+      }
   }
 }
 

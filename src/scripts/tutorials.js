@@ -25,24 +25,25 @@ function clean () {
 
 function getTutorialItem(demo) {
 
-  const contentClass = demo.featured ? 'px2 pt2' : 'pt2';
+  const contentClass = 'px2 pt2';
   const imageClass = demo.featured ? ' pr2' : '';
   let media = demo.image ? `<div class="${imageClass}"><img src="${ demo.image }" alt=""></div>` : ``;
   media = demo.youtube_id ? `<div class="${imageClass}"><div class="youtube"><iframe width="480" height="220" src="https://www.youtube.com/embed/${ demo.youtube_id }" frameborder="0" allowfullscreen></iframe></div></div>` : media;
   const classNames = demo.featured ? 'lg-col-12 col-12 flex flex-wrap mb3 bg-white' : 'bg-white'
 
   return `
-    <div class="${classNames} xs-left px2 mb3 left-align has-footer tutorial">
+    <div class="${classNames} xs-left mb3 left-align has-footer tutorial">
       ${media}
       <div class="${contentClass}">
-        <strong class="mt1 block">${demo.difficulty}</strong>
         <div class="tutorial-title">
-          <h3 class="mt1 mb1 left">${demo.title}</h3>
-          <div class="right tutorial-versions">${$.map(demo.dcos_version, (version, url) => `<a href="${url}">${version}</a>`).reverse().join(' ').toString()}</div>
+          <h3 class="mt0 mb1">${demo.title}</h3>
         </div>
         <p class="block mt1">${demo.description}</p>
-        <div class="specs flex flex-wrap">
-          <div class="mb1"><a href="${demo.tutorial}" class="cta cta--button">Start Tutorial</a></div>
+      </div>
+      <div class="specs clearfix px2 py2">
+        <div class="left"><strong>Difficultly:</strong> <span class="${demo.difficulty.toLowerCase()}">${demo.difficulty}</span></div>
+        <div class="right tutorial-versions">
+          ${$.map(demo.callouts, (url, version) => `<a href="${url}">${version}</a>`).reverse().join(' ').toString()}
         </div>
       </div>
     </div>
