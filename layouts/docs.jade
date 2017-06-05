@@ -219,10 +219,10 @@ html
                   span.rss-icon
 
             div.dropdown.z-500.relative.mb2.left-align(style='width: calc(100% - 30px);')
-                a.btn.mb0.block DC/OS #{(docsVersion === currentDevVersion ? `${docsVersion} Early Access` : docsVersion)}
+                a.btn.mb0.block DC/OS #{(docsVersion === currentDevVersion ? `${docsVersion} Development` : docsVersion)}
                 ul
                   each version in docsVersionsReversed
-                    li: a(href='/docs/#{version}', data-version='#{version}', class=(version === docsVersion ? 'text-heliotrope current option' : 'option')) DC/OS #{(version === currentDevVersion ? `${version} Early Access` : version)}
+                    li: a(href='/docs/#{version}', data-version='#{version}', class=(version === docsVersion ? 'text-heliotrope current option' : 'option')) DC/OS #{(version === currentDevVersion ? `${version} Development` : version)}
 
 
             +renderMenu(locals.navs.header).docs-menu
