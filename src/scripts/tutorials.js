@@ -32,11 +32,13 @@ function getTutorialItem(demo) {
   const classNames = demo.featured ? 'lg-col-12 col-12 flex flex-wrap mb3 bg-white' : 'bg-white'
 
   return `
-    <div class="${classNames} xs-left mb3 left-align has-footer tutorial">
+    <div class="${classNames} xs-left mb3 left-align has-footer tutorial bg-snow">
       ${media}
       <div class="${contentClass}">
         <div class="tutorial-title">
-          <h3 class="mt0 mb1">${demo.title}</h3>
+          <h3 class="mt0 mb1">
+            <a href="${demo.tutorial}" title="${demo.title}">${demo.title}</a>
+          </h3>
         </div>
         <p class="block mt1">${demo.description}</p>
       </div>
