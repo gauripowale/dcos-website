@@ -29,18 +29,18 @@ function getTutorialItem(demo) {
   const imageClass = demo.featured ? ' pr2' : '';
   let media = demo.image ? `<div class="${imageClass}"><img src="${ demo.image }" alt=""></div>` : ``;
   media = demo.youtube_id ? `<div class="${imageClass}"><div class="youtube"><iframe width="480" height="220" src="https://www.youtube.com/embed/${ demo.youtube_id }" frameborder="0" allowfullscreen></iframe></div></div>` : media;
-  const classNames = demo.featured ? 'lg-col-12 col-12 flex flex-wrap mb3 bg-white' : 'bg-white'
+  const classNames = demo.featured ? 'mb3 bg-white' : 'bg-white'
 
   return `
     <div class="${classNames} xs-left mb3 left-align has-footer tutorial bg-snow">
       ${media}
-      <div class="${contentClass}">
+      <div class="${contentClass} tutorial-content">
         <div class="tutorial-title">
           <h3 class="mt0 mb1">
             <a href="${demo.tutorial}" title="${demo.title}">${demo.title}</a>
           </h3>
         </div>
-        <p class="block mt1">${demo.description}</p>
+        <p class="block mt1"><a href="${demo.tutorial}" title="${demo.title}">${demo.description}</a></p>
       </div>
       <div class="specs clearfix px2 py2">
         <div class="left"><strong>Difficultly:</strong> <span class="${demo.difficulty.toLowerCase()}">${demo.difficulty}</span></div>
@@ -69,8 +69,10 @@ function render (items) {
   });
 
   if (featured_items.length) {
-    const featured_item = getTutorialItem(featured_items[0]);
-    $(".tutorial-cards-featured").prepend(featured_item);
+    featured_items.forEach(demo => {
+      const featured_item = getTutorialItem(demo);
+      $(".tutorial-cards-featured").append(featured_item);
+    });
   }
 }
 

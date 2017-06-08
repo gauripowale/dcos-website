@@ -12,7 +12,7 @@
     }
   },
   {
-    "featured": false,
+    "featured": true,
     "title": "Autoscaling",
     "description": "Increase or decrease computing resources based on usage",
     "dcos_version": ["1.7","1.8","1.9"],
