@@ -40,7 +40,8 @@ function getTutorialItem(demo) {
             <a href="${demo.tutorial}" title="${demo.title}">${demo.title}</a>
           </h3>
         </div>
-        <p class="block mt1"><a href="${demo.tutorial}" title="${demo.title}">${demo.description}</a></p>
+        <p class="block mt1 mb2"><a href="${demo.tutorial}" title="${demo.title}">${demo.description}</a></p>
+        <a class="btn btn-primary inline-block" href="#" title="">Start tutorial</a>
       </div>
       <div class="specs clearfix px2 py2">
         <div class="left"><strong>Difficultly:</strong> <span class="${demo.difficulty.toLowerCase()}">${demo.difficulty}</span></div>

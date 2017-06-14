@@ -20,7 +20,7 @@
       }
 
       .tutorial-content {
-        height: 185px;
+        height: 245px;
       }
 
       p a {
@@ -68,14 +68,6 @@
 
       @include break($tablet-landscape) {
         width: 49%;
-
-        &:first-child {
-          margin-left: 0 !important;
-        }
-
-        &:last-child {
-          margin-right: 0 !important;
-        }
       }
 
       .tutorial-content {
