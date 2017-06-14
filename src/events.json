@@ -205,7 +205,7 @@
   { "title": "Let's talk SMACK: Meet the SMACK Stack Experts AMA",
       "image": "/assets/images/events/San_Francisco.jpg",
       "date": "2017-06-05",
-      "url": "https://www.eventbrite.com/e/lets-talk-smack-meet-the-smack-stack-experts-ama-meetup-tickets-34758244846"
+      "url": "https://www.youtube.com/watch?v=eMn8WkMwQE0"
   },
 
   { "title": "NYC Meetup with Ben Hindman, creator of Apache Mesos and DC/OS",
@@ -220,10 +220,10 @@
       "url": "http://www.phillylinux.org/"
   },
 
-  { "title": "Spark Summit 2017",
+  { "title": "Spark Summit 2017 - Powering Predictive Mapping At Scale",
       "image": "/assets/images/events/San_Francisco_3.jpg",
       "date": "2017-06-07",
-      "url": "https://spark-summit.org/2017/events/powering-predictive-mapping-at-scale-with-spark-kafka-and-elastic-search/"
+      "url": "https://youtu.be/5gYsKacl3wg"
   },
 
   { "title": "Containers Meetup Milan - #AperiTech by Codemotion",
@@ -268,6 +268,18 @@
       "url": "https://www.meetup.com/Reactive-Systems-Hamburg/events/239325421/"
   },
 
+  { "title": "Workshop - Deep Learning with DC/OS and TensorFlow",
+      "image": "/assets/images/events/London.jpg",
+      "date": "2017-06-23",
+      "url": "https://www.eventbrite.com/e/deep-learning-with-dcos-and-tensorflow-tickets-34806646617"
+  },
+
+  { "title": "Meetup - Managing Microservices & Fast Data w/ Apache Mesos & DC/OS",
+      "image": "/assets/images/events/chicago.jpg",
+      "date": "2017-06-26",
+      "url": "https://www.eventbrite.com/e/managing-microservices-fast-data-w-apache-mesos-dcos-tickets-35096724247"
+  },
+
   { "title": "EuroPython",
       "image": "/assets/images/events/palacongressi_di_rimini.jpg",
       "date": "07-09-2017",
@@ -285,16 +297,22 @@
       "url": "https://www.meetup.com/DevOpsUT/events/240003317/"
   },
 
+  { "title": "Meetup 2 - Mesos User Group Tokyo (MUGT) ",
+      "image": "/assets/images/events/Tokyo.jpg",
+      "date": "2017-07-25",
+      "url": "https://mesos.connpass.com/event/58545/"
+  },
+
   { "title": "FOSSCON 2017",
       "image": "/assets/images/events/Philadelphia.jpg",
       "date": "2017-08-26",
       "url": "https://fosscon.us/about"
   },
 
-  { "title": "",
-      "image": "/assets/images/events/.jpg",
-      "date": "",
-      "url": ""
+  { "title": "Meetup - Laying down the SMACK on your datapipelines",
+      "image": "/assets/images/events/San_Francisco_3.jpg",
+      "date": "2017-09-14",
+      "url": "https://www.meetup.com/San-Francisco-Bay-Area-Big-Data-and-Scalable-Systems/events/238629855/"
   },
 
   { "title": "",
