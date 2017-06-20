@@ -2,7 +2,7 @@
   {
     "featured": true,
     "title": "DC/OS 101",
-    "description": "Get hands on experience with the basics of DC/OS right away",
+    "description": "Get hands on experience with the basics of DC/OS right away.",
     "dcos_version": ["1.8","1.9"],
     "difficulty": "Beginner",
     "tutorial" : "/docs/latest/tutorials/dcos-101/",
@@ -14,7 +14,7 @@
   {
     "featured": false,
     "title": "Autoscaling",
-    "description": "Increase or decrease computing resources based on usage",
+    "description": "Increase or decrease computing resources based on usage.",
     "dcos_version": ["1.7","1.8","1.9"],
     "difficulty": "Advanced",
     "tutorial" : "/docs/latest/tutorials/autoscaling/",
@@ -27,7 +27,7 @@
   {
     "featured": false,
     "title": "Building an IoT Pipeline",
-    "description": "Deploy a containerized Ruby on Rails app, and analyze the data it produces",
+    "description": "Deploy a containerized Ruby on Rails app, and analyze the data it produces.",
     "dcos_version": ["1.8","1.9"],
     "difficulty": "Intermediate",
     "tutorial" : "/docs/latest/tutorials/iot_pipeline/",
@@ -39,7 +39,7 @@
   {
     "featured": false,
     "title": "Running a Service",
-    "description": "Create and deploy simple services using the DC/OS GUI and CLI",
+    "description": "Create and deploy simple services using the DC/OS GUI and CLI.",
     "dcos_version": ["1.8","1.9"],
     "difficulty": "Beginner",
     "tutorial" : "/docs/latest/tutorials/create-service/",
@@ -51,7 +51,7 @@
   {
     "featured": false,
     "title": "Running Stateful Services",
-    "description": "Create and reserve persistent volumes for tasks that require state",
+    "description": "Create and reserve persistent volumes for tasks that require state.",
     "dcos_version": ["1.8","1.9"],
     "difficulty": "Advanced",
     "tutorial" : "/docs/latest/tutorials/stateful-services/",
@@ -63,7 +63,7 @@
   {
     "featured": false,
     "title": "Labeling Tasks and Jobs",
-    "description": "Track and report cluster resources uses by different app components",
+    "description": "Track and report cluster resources uses by different app components.",
     "dcos_version": ["1.7","1.8","1.9"],
     "difficulty": "Intermediate",
     "tutorial" : "/docs/latest/tutorials/task-labels/",
