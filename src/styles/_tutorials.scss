@@ -1,0 +1,92 @@
+.tutorial-cards,
+.tutorial-cards-featured {
+  .tutorial {
+    width: 100%;
+    background-color: $snow;
+    border-radius: 4px;
+    @include box-shadow(0px 0px 0px 1px rgba($black, 0.10), 0px 1px 2px 0px rgba($black, 0.05));
+
+      @include break($tablet-landscape) {
+        width: 32.1%;
+
+        &:nth-child(3n+1) {
+          margin-right: 1rem;
+        }
+
+        &:nth-child(3n+3) {
+          margin-left: 1rem;
+        }
+
+      }
+
+      .tutorial-content {
+        position: relative;
+        min-height: 245px;
+      }
+
+      .btn-primary {
+        position: absolute;
+        bottom: 0; left: 0;
+        margin-left: 1rem;
+      }
+
+      p a {
+        color: $black;
+      }
+
+      .specs {
+        width: 100%;
+        border-top: 1px solid rgba($black, 0.10);
+
+          .advanced {
+            color: #f24455;
+          }
+
+          .beginner {
+            color: #a1d966;
+          }
+
+          .intermediate {
+            color: #f88161;
+          }
+      }
+  }
+
+  h3 a {
+    color: $black;
+  }
+
+  .tutorial-versions {
+    clear: both;
+  }
+
+  .tutorial-versions a {
+    display: inline-block;
+    background-color: $heliotrope20;
+    color: $heliotrope;
+    font-size: 0.75rem;
+    border-radius: 3px;
+    margin: 0 0.125rem;
+    padding: 0.25rem 0.325rem;
+  }
+}
+
+.tutorial-cards-featured {
+  .tutorial {
+    width: 100%;
+    margin-left: auto !important;
+    margin-right: auto !important;
+
+      @include break($tablet-landscape) {
+        width: 49%;
+      }
+
+      .tutorial-content {
+        min-height: 200px;
+      }
+  }
+}
+
+.tutorial-title {
+  overflow: hidden;
+}
