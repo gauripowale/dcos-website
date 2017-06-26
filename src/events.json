@@ -241,7 +241,7 @@
   { "title": "Paris Container Day",
       "image": "/assets/images/events/Paris.jpg",
       "date": "2017-06-13",
-      "url": "http://paris-container-day.fr/?utm_content=buffer08ba2&utm_medium=social&utm_source=twitter.com&utm_campaign=buffer"
+      "url": "https://docs.google.com/presentation/d/1ddTVipeUnvo7N1W39nFUxjsL55DJFLGjovwGrjo64IE/edit?usp=sharing"
   },
 
   { "title": "O'Reilly Velocity Conference",
@@ -286,6 +286,12 @@
       "url": "https://ep2017.europython.eu/en/"
   },
 
+  { "title": "Meetup - Service Discovery on DC/OS",
+      "image": "/assets/images/events/San_Francisco_2.jpg",
+      "date": "2017-07-11",
+      "url": "https://www.eventbrite.com/e/1-service-discovery-on-dcos-2-tba-tickets-35463839298"
+  },
+
   { "title": "Cloud+Data Next",
       "image": "/assets/images/events/San_Francisco.jpg",
       "date": "2017-07-15",
@@ -307,6 +313,30 @@
       "image": "/assets/images/events/Philadelphia.jpg",
       "date": "2017-08-26",
       "url": "https://fosscon.us/about"
+  },
+
+  { "title": "Open Source Summit - Building Open Source Project Infrastructures",
+      "image": "/assets/images/events/Los_Angeles.jpg",
+      "date": "2017-09-11",
+      "url": "http://sched.co/BCtF"
+  },
+
+  { "title": "Open Source Summit - Advanced Continuous Delivery Strategies",
+      "image": "/assets/images/events/Los_Angeles_2.jpg",
+      "date": "2017-09-12",
+      "url": "http://sched.co/BDpb"
+  },
+
+  { "title": "Open Source Summit - SMACK stack and beyond",
+      "image": "/assets/images/events/Los_Angeles_3.jpg",
+      "date": "2017-09-13",
+      "url": "http://sched.co/BDqG"
+  },
+
+  { "title": "Open Source Summit - Nightmares of a Container Orchestration System",
+      "image": "/assets/images/events/Los_Angeles_4.jpg",
+      "date": "2017-09-13",
+      "url": "http://sched.co/BDpP"
   },
 
   { "title": "Meetup - Laying down the SMACK on your datapipelines",
