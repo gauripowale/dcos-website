@@ -280,6 +280,12 @@
       "url": "https://www.eventbrite.com/e/managing-microservices-fast-data-w-apache-mesos-dcos-tickets-35096724247"
   },
 
+  { "title": "Meetup - Microservices and SMACK Stack on Azure",
+      "image": "/assets/images/events/San_Francisco_3.jpg",
+      "date": "2017-06-28",
+      "url": "https://www.eventbrite.com/e/microservices-and-smack-stack-on-azure-tickets-35644483610"
+  },
+
   { "title": "EuroPython",
       "image": "/assets/images/events/palacongressi_di_rimini.jpg",
       "date": "07-09-2017",
@@ -295,7 +301,14 @@
   { "title": "Cloud+Data Next",
       "image": "/assets/images/events/San_Francisco.jpg",
       "date": "2017-07-15",
-      "url": "http://www.cdnextcon.com/" },
+      "url": "http://www.cdnextcon.com/"
+  },
+
+  { "title": "Meetup - Containerized, Cloud-Native Operations for Big Data Analytics",
+      "image": "/assets/images/events/Los_Angeles_4.jpg",
+      "date": "2017-07-19",
+      "url": "https://www.meetup.com/SoCal-DevOps-Users-Group/events/241030253/"
+  },
 
   { "title": "Meetup - Tobi Knaup, CTO and Co-Founder of Mesosphere",
       "image": "/assets/images/events/Salt_Lake_City.jpg",
