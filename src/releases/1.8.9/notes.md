@@ -125,22 +125,23 @@ For more information, see the [documentation](https://docs.mesosphere.com/1.8/us
 
 ## <a name="1-8-9"></a>1.8.9 - June 2017
 
-<!-- ### New and changed features -->
+- Marathon 1.3.12 [release notes](https://github.com/mesosphere/marathon/releases/tag/v1.3.12).
+- Apache Mesos 1.0.4 [CHANGELOG](https://github.com/mesosphere/mesos/blob/dcos-mesos-1.0.4/CHANGELOG).
 
 ### Fixed issues DC/OS
 
-- DCOS-16208 - When deploying or restarting a Docker image there is a delay of 5-10 minutes before the `myapp-subgroup-outergroup.marathon.containerip.dcos.thisdcos.directory` is resolvable.
+- DCOS_OSS-519 - Universe fails to list packages that are behind corporate web proxy.
+- DCOS_OSS-683 - Latest Stable version of CoreOS breaks Admin Router.
+- DCOS_OSS-796 - Navstar unhealthy in 1000 node cluster.
+- DCOS_OSS-927 Failed to parse task error in Navstar logs.
+- DCOS-10426 - Custom VIP label overwritten in JSON.
+- DCOS-11781 - Zeppelin package has disappeared from DC/OS Universe GUI.
+- DCOS-12054 - DC/OS GUI shows the wrong CPU percent allocation usage.
+- DCOS-14866 - Cross-site scripting vulnerabilities in Metronome.
+- DCOS-15077 - Confusing error when a package is removed from Universe, for an already installed service.
 - DCOS-15652 - Marathon HAProxy Bridge and USER networked Docker containers are not supported.
-
-<!-- #### DC/OS UI -->
-
-<!-- #### Networking Services -->
-
-<!-- ### Fixed issues Marathon -->
-
-<!-- ### Fixed issues Mesos -->
-
-<!-- ### Known issues -->
+- DCOS-15653 - Excessive log rotation for Mesos logs.
+- DCOS-16208 - When deploying or restarting a Docker image there is a delay of 5-10 minutes before the `myapp-subgroup-outergroup.marathon.containerip.dcos.thisdcos.directory` is resolvable.
 
 ## <a name="1-8-8"></a>1.8.8 - Feb 10, 2017
 
