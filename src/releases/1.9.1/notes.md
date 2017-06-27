@@ -111,10 +111,6 @@ For more information, see the [documentation](/docs/1.9/installing/upgrading/).
 - DCOS-14433 - The [Universal container runtime](/docs/1.9/deploying-services/containerizers/) does not support Azure cloud with Ubuntu.
 - Marathon-7133 - Marathon application history is lost after Marathon restart.
 
-# <a name="fixed-issues"></a>Issues Fixed since 1.9.0
-
-- DCOS_OSS-876 - Unable to designate a resource as "scarce" (e.g., GPUs and any other type of resource). For more information, see the [configuration documentation](/docs/1.9/installing/custom/configuration/configuration-parameters/).
-
 # <a name="fixed-issues"></a>Issues Fixed since 1.8
 
 - CORE-735 - Large node count leads to failed overlay config and failed replog recovery.
@@ -129,3 +125,32 @@ For more information, see the [documentation](/docs/1.9/installing/upgrading/).
 - DCOS-13448 - Missing explicit file descriptor limits for DC/OS services.
 - DCOS-13672 - Mesos reports over allocated CPU during DC/OS upgrade.
 - DCOS-14228 - Disabled schedules keep firing in jobs.
+
+# Minor Releases
+
+## <a name="1-9-1"></a>1.9.1 - June 2017
+
+### New and changed features
+
+- Marathon 1.4.5 [release notes](https://github.com/mesosphere/marathon/releases/tag/v1.4.5).
+- Apache Mesos 1.2.1 [CHANGELOG](https://github.com/mesosphere/mesos/blob/dcos-mesos-1.2.1-rc1/CHANGELOG).
+
+### Fixed issues DC/OS
+
+- CORE-1062 - Chronos launching a Docker container causes Mesos agent to crash.
+- DCOS_OSS-720 - Cryptographic Cluster ID is longer than ~50 characters.
+- DCOS_OSS-743 - The prerequisite install script breaks Docker 1.13 on CentOS 7.3.
+- DCOS_OSS-790 - The pid isolator is disabled for containers launched via the UCR.
+- DCOS_OSS-796 - Navstar unhealthy in 1000 node cluster.
+- DCOS_OSS-804 - Log messages do not contain the originating module or function name.
+- DCOS_OSS-812 - Minuteman crashes for non-TCP protocol.
+- DCOS_OSS-876 - Unable to designate whether GPUs (or any other type of resource) should be considered a "scarce" resource in their cluster or not. For more information, see the [`gpus_are_scarce` parameter for config.yaml](/docs/1.9/installing/custom/configuration/configuration-parameters/#gpus_are_scarce).
+- DCOS_OSS-947 - When upgrading from 1.8 to 1.9, `/etc/profile.d/dcos.sh` symlink is not updated.
+- DCOS_OSS-1064 - Unable to configure Exhibitor to use HTTP basic auth.
+- DCOS_OSS-1102 - `dcos-signal` sends the packaging version of installed package rather than packaging version.
+- DCOS-13590 - Mesos DNS compresses various fields in records that should not be compressed (e.g., SRV's Target field).
+- DCOS-14302 - Chronos requires the hostname inside `/etc/hosts`.
+- DCOS-14750 - Cannot see or download the logs when using the GUI installer.
+- DCOS-15317 - `myid` is missing from the ZooKeeper logs.
+- DCOS-15653 - Log rotation happens 256 times more often than intended.
+- OPS-578 - DC/OS CentOS 7 AMI has broken hostname config.
