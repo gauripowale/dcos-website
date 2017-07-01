@@ -123,7 +123,7 @@ For more information, see the [documentation](https://docs.mesosphere.com/1.8/us
 
 # <a name="minor"></a>Minor releases
 
-## <a name="1-8-9"></a>1.8.9 - June 2017
+## <a name="1-8-9"></a>1.8.9 - June 30, 2017
 
 - Marathon 1.3.12 [release notes](https://github.com/mesosphere/marathon/releases/tag/v1.3.12).
 - Apache Mesos 1.0.4 [CHANGELOG](https://github.com/mesosphere/mesos/blob/dcos-mesos-1.0.4/CHANGELOG).
