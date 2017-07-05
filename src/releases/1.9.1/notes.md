@@ -13,8 +13,8 @@ DC/OS 1.9 includes many new capabilities for Operators, and expands the collecti
 
 ### Apache Mesos 1.2 and Marathon 1.4 integrated
 
-- Apache Mesos 1.2 [CHANGELOG](https://github.com/apache/mesos/blob/1.2.x/CHANGELOG).
-- Marathon 1.4 [release notes](https://github.com/mesosphere/marathon/releases).
+- Marathon 1.4.5 [release notes](https://github.com/mesosphere/marathon/releases/tag/v1.4.5).
+- Apache Mesos 1.2.1 [CHANGELOG](https://github.com/mesosphere/mesos/blob/dcos-mesos-1.2.1-rc1/CHANGELOG).
 
 ## Container Orchestration
 Added support for pods, GPUs, and made significant scalability improvements.
@@ -110,6 +110,11 @@ For more information, see the [documentation](/docs/1.9/installing/upgrading/).
 - DCOS-14021 - [Task logging to journald](/docs/1.9/monitoring/logging/) disabled by default, so task logs will continue to be written to their sandboxes, and logrotated out. The `- DCOS task log` command will work as it did before.
 - DCOS-14433 - The [Universal container runtime](/docs/1.9/deploying-services/containerizers/) does not support Azure cloud with Ubuntu.
 - Marathon-7133 - Marathon application history is lost after Marathon restart.
+- DCOS-16608 - If you are using Docker 1.12 or Docker 1.13, you must add `MountFlags=private` in `/etc/systemd/system/docker.service.d/execstart.conf` and then restart the Docker daemon with this command:
+
+  ```bash
+  systemctl daemon-reload; systemctl restart docker
+  ```
 
 # <a name="fixed-issues"></a>Issues Fixed since 1.8
 
@@ -126,16 +131,7 @@ For more information, see the [documentation](/docs/1.9/installing/upgrading/).
 - DCOS-13672 - Mesos reports over allocated CPU during DC/OS upgrade.
 - DCOS-14228 - Disabled schedules keep firing in jobs.
 
-# Minor Releases
-
-## <a name="1-9-1"></a>1.9.1 - June 2017
-
-### New and changed features
-
-- Marathon 1.4.5 [release notes](https://github.com/mesosphere/marathon/releases/tag/v1.4.5).
-- Apache Mesos 1.2.1 [CHANGELOG](https://github.com/mesosphere/mesos/blob/dcos-mesos-1.2.1-rc1/CHANGELOG).
-
-### Fixed issues DC/OS
+# Issues Fixed since 1.9.0
 
 - CORE-1062 - Chronos launching a Docker container causes Mesos agent to crash.
 - DCOS_OSS-720 - Cryptographic Cluster ID is longer than ~50 characters.
@@ -154,3 +150,5 @@ For more information, see the [documentation](/docs/1.9/installing/upgrading/).
 - DCOS-15317 - `myid` is missing from the ZooKeeper logs.
 - DCOS-15653 - Log rotation happens 256 times more often than intended.
 - OPS-578 - DC/OS CentOS 7 AMI has broken hostname config.
+
+
