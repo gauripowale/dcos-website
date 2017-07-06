@@ -14,12 +14,6 @@ mixin header(lightHeader)
 
     ul.menu-mobile
       li.menu-item
-        if(locals.filename === 'why-dcos.html')
-          a(href='/why-dcos/').active Why&nbsp;DC/OS
-        else
-          a(href='/why-dcos/') Why&nbsp;DC/OS
-
-      li.menu-item
         if(locals.filename === 'install.html')
           a(href='/install/').active Install
         else
@@ -32,7 +26,19 @@ mixin header(lightHeader)
           a(href='/releases/') Releases
 
       li.menu-item
-        a(href='/docs/latest/') Docs
+        a(href='/docs/latest/') Documentation
+
+      li.menu-item
+        if(locals.filename === 'demos.html')
+          a(href='/demos/').active Demos
+        else
+          a(href='/demos/') Demos
+
+      li.menu-item
+        if(locals.filename === 'learning.html')
+          a(href='/learning/').active Learning
+        else
+          a(href='/learning/') Learning
 
       li.menu-item
         if(locals.filename === 'community.html')
@@ -51,12 +57,6 @@ mixin header(lightHeader)
 
     ul.menu
       li.menu-item
-        if(locals.filename === 'why-dcos.html')
-          a(href='/why-dcos/').active Why&nbsp;DC/OS
-        else
-          a(href='/why-dcos/') Why&nbsp;DC/OS
-
-      li.menu-item
         if(locals.filename === 'install.html')
           a(href='/install/').active Install
         else
@@ -69,7 +69,19 @@ mixin header(lightHeader)
           a(href='/releases/') Releases
 
       li.menu-item
-        a(href='/docs/latest/') Docs
+        a(href='/docs/latest/') Documentation
+
+      li.menu-item
+        if(locals.filename === 'demos.html')
+          a(href='/demos/').active Demos
+        else
+          a(href='/demos/') Demos
+
+      li.menu-item
+        if(locals.filename === 'learning.html')
+          a(href='/learning/').active Learning
+        else
+          a(href='/learning/') Learning
 
       li.menu-item
         if(locals.filename === 'community.html')
