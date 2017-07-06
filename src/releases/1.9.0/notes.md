@@ -107,7 +107,7 @@ For more information, see the [documentation](/docs/1.9/installing/upgrading/).
 
 - DCOS_OSS-691 - DNS becomes briefly unavailable during DC/OS version upgrades.
 - DCOS-14005 - Marathon-LB does not support pods.
-- DCOS-14021 - [Task logging to journald](/docs/1.9/monitoring/logging/) disabled by default, so task logs will continue to be written to their sandboxes, and logrotated out. The `- DCOS task log` command will work as it did before.
+- DCOS-14021 - [Task logging to journald](/docs/1.9/monitoring/logging/) disabled by default, so task logs will continue to be written to their sandboxes, and logrotated out. The `dcos task log` command will work as it did before.
 - DCOS-14433 - The [Universal container runtime](/docs/1.9/deploying-services/containerizers/) does not support Azure cloud with Ubuntu.
 - Marathon-7133 - Marathon application history is lost after Marathon restart.
 
