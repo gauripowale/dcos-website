@@ -30,7 +30,7 @@
   {
     "featured": false,
     "image": "/assets/images/demos/FinTrans.jpg",
-    "name": "Finacial Transactions",
+    "name": "Financial Transactions",
     "use_cases": ["Fast Data"],
     "dcos_version": ["1.8", "1.9"],
     "language": ["Go"],
