@@ -109,12 +109,6 @@ For more information, see the [documentation](/docs/1.9/installing/upgrading/).
 - DCOS-14005 - Marathon-LB does not support pods.
 - DCOS-14021 - [Task logging to journald](/docs/1.9/monitoring/logging/) disabled by default, so task logs will continue to be written to their sandboxes, and logrotated out. The `- DCOS task log` command will work as it did before.
 - DCOS-14433 - The [Universal container runtime](/docs/1.9/deploying-services/containerizers/) does not support Azure cloud with Ubuntu.
-- DCOS-16608 - If you are using Docker 1.12 or Docker 1.13, you must add `MountFlags=private` in `/etc/systemd/system/docker.service.d/execstart.conf` and then restart the Docker daemon with this command:
-
-  ```bash
-  systemctl daemon-reload; systemctl restart docker
-  ```
-
 - DCOS-16737 - You cannot [generate and publish AWS Advanced Templates](/docs/1.9/installing/cloud/aws/advanced/#create-your-templates) to AWS Govcloud regions. When running the command `dcos_generate_config.sh --aws-cloudformation` you will see an error similar to this:
 
   ```bash
