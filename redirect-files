@@ -264,8 +264,8 @@
 /docs/1.9/usage/debugging/stuck-deployment/index.html /docs/1.9/monitoring/debugging/stuck-deployment/
 /docs/1.9/usage/faq/index.html /docs/1.9/deploying-services/faq/
 /docs/1.9/usage/gpu/index.html /docs/1.9/deploying-services/gpu/
-/docs/1.9/usage/gpu/index.html /docs/1.9/deploying-services/gpu/config/
-/docs/1.9/usage/gpu/limitations/index.html /docs/1.9/deploying-services/gpu/limitations/
+/docs/1.9/usage/gpu/index.html /docs/1.9/deploying-services/gpu/
+/docs/1.9/usage/gpu/limitations/index.html /docs/1.9/deploying-services/gpu/
 /docs/1.9/usage/index.html /docs/1.9/
 /docs/1.9/usage/jobs/examples/index.html /docs/1.9/deploying-jobs/examples/
 /docs/1.9/usage/jobs/getting-started/index.html /docs/1.9/deploying-jobs/quickstart/
