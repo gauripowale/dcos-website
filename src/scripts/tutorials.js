@@ -44,7 +44,7 @@ function getTutorialItem(demo) {
         <a class="btn btn-primary inline-block mb0" href="${demo.tutorial}" title="Start tutorial">Start tutorial</a>
       </div>
       <div class="specs clearfix px2 py2">
-        <div class="left mb2"><strong>Difficultly:</strong> <span class="${demo.difficulty.toLowerCase()}">${demo.difficulty}</span></div>
+        <div class="left mb2"><strong>Difficulty:</strong> <span class="${demo.difficulty.toLowerCase()}">${demo.difficulty}</span></div>
         <div class="left tutorial-versions">
           ${$.map(demo.callouts, (url, version) => `<a href="${url}">${version}</a>`).reverse().join(' ').toString()}
         </div>
