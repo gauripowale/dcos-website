@@ -276,6 +276,9 @@
 /docs/1.9/usage/managing-services/config-universe-service/index.html /docs/1.9/deploying-services/config-universe-service/
 /docs/1.9/usage/managing-services/config/index.html /docs/1.9/usage/managing-services/config-universe-service/
 /docs/1.9/usage/managing-services/developing-services/index.html /docs/1.9/developing-services/
+/docs/1.9/developing-services/create-package/ https://github.com/mesosphere/universe/blob/version-3.x/docs/tutorial/GetStarted.md
+/docs/1.9/developing-services/service-requirements-spec/ https://github.com/mesosphere/universe/blob/version-3.x/docs/tutorial/GetStarted.md
+/docs/1.9/developing-services/dcos-integration/ https://github.com/mesosphere/universe/blob/version-3.x/docs/tutorial/GetStarted.md
 /docs/1.9/usage/managing-services/expose-service/index.html /docs/1.9/deploying-services/expose-service/
 /docs/1.9/usage/managing-services/index.html /docs/1.9/deploying-services/
 /docs/1.9/usage/managing-services/install/index.html /docs/1.9/deploying-services/install/
