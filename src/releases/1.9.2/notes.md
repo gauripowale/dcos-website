@@ -138,6 +138,11 @@ For more information, see the [documentation](/docs/1.9/installing/upgrading/).
 
 # Issues Fixed since 1.9.1
 
-<!-- Suzanne content here -->
-
-
+- DCOS-17262 - Bug in DC/OS 1.9.1 - cannot edit marathon app from UI form
+- DCOS-17242 - UI Bug - No warning when trying to create a service without specifying an ID
+- DCOS-17241 - UI Bug in DC/OS 1.9.1 - Unable to select a task
+- DCOS-16737 - Unable to build and publish AWS templates to govcloud regions
+- DCOS-16424 - Metrics plugins don't collect app-level metrics
+- DCOS-16350 - dcos-metrics drops nearly all app data
+- DCOS-14880 - GUI bug: container type must be defined
+- CORE-1149 - Unhealthy Mesos agents after upgrade to 1.9.1 on a soak cluster
