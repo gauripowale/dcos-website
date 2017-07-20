@@ -358,16 +358,16 @@
       "url": "https://www.meetup.com/San-Francisco-Bay-Area-Big-Data-and-Scalable-Systems/events/238629855/"
   },
 
-  { "title": "",
-      "image": "/assets/images/events/.jpg",
-      "date": "",
-      "url": ""
+  { "title": "MesosCon North America",
+      "image": "/assets/images/events/Los_Angeles.jpg",
+      "date": "2017-09-13",
+      "url": "http://events.linuxfoundation.org/events/mesoscon-north-america"
   },
 
-  { "title": "",
-      "image": "/assets/images/events/.jpg",
-      "date": "",
-      "url": ""
+  { "title": "DevOpsCon München: Nightmares of a Container Orchestration System",
+      "image": "/assets/images/events/Munich.jpg",
+      "date": "2017-11-20",
+      "url": "https://devopsconference.de/container-technologies/nightmares-of-a-container-orchestration-system/"
   },
 
   { "title": "",
