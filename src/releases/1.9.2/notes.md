@@ -120,6 +120,12 @@ For more information, see the [documentation](/docs/1.9/installing/upgrading/).
   aws_template_storage_region_name: Unable to determine region location of s3 bucket testbucket: An error occurred (InvalidAccessKeyId) when calling the GetBucketLocation operation: The AWS Access Key Id you provided does not exist in our records.
   ```
 - Marathon-7133 - Marathon application history is lost after Marathon restart.
+- CORE-1191 - Master's event queue is backlogged (soak 1.9). This causes performance problems that can be mitigated by setting the following configuration parameters in your `config.yaml` file at install time. See the [Configuration Reference](https://dcos.io/docs/1.9/installing/custom/configuration/configuration-parameters/) for more information.
+
+  ```yaml
+  MESOS_MAX_COMPLETED_FRAMEWORKS=10
+  MESOS_MAX_COMPLETED_TASKS_PER_FRAMEWORK=20
+  ```
 
 # <a name="fixed-issues"></a>Issues Fixed since 1.8
 
