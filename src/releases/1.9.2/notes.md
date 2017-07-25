@@ -144,19 +144,19 @@ For more information, see the [documentation](/docs/1.9/installing/upgrading/).
 # Issues Fixed since 1.9.1
 
 - Critical fix: Enables editing Marathon app in the UI. Encompasses the following:
-  - DCOS_OSS-1350 - Nodes Page error on checkbox
-  - DCOS-17262 - Bug in DC/OS 1.9.1 - cannot edit marathon app from UI form
-  - DCOS-17242 - UI Bug - No warning when trying to create a service without specifying an ID
-  - DCOS-17241 - UI Bug in DC/OS 1.9.1 - Unable to select a task
+  - DCOS_OSS-1350 - Nodes Page error on checkbox.
+  - DCOS-17262 - Bug in DC/OS 1.9.1 - cannot edit marathon app from UI form.
+  - DCOS-17242 - UI Bug - No warning when trying to create a service without specifying an ID.
+  - DCOS-17241 - UI Bug in DC/OS 1.9.1 - Unable to select a task.
 - Fix for dcos-metrics dropping data. Encompasses the following:
-  - DCOS-16350 - dcos-metrics drops nearly all app data
-  - DCOS-15939 - Long labels can cause errors in datadog plugin for dcos-metrics
-  - DCOS-16424 - Metrics plugins don't collect app-level metrics
+  - DCOS-16350 - dcos-metrics drops nearly all app data.
+  - DCOS-15939 - Long labels can cause errors in datadog plugin for dcos-metrics.
+  - DCOS-16424 - Metrics plugins don't collect app-level metrics.
 - Ability to override storage region in AWS templates/ Encompasses the following:
-  - DCOS-16737 - Unable to build and publish AWS templates to govcloud regions
+  - DCOS-16737 - Unable to build and publish AWS templates to govcloud regions.
 - Fix for bug in persistent volume handling in the Mesos containerizer. Encompasses:
   - MESOS-7770 - Persistent volume might not be mounted if there is a sandbox volume whose source is the same as the target of the persistent volume.
 -  Fix for agent failure with Docker 1.12 and Docker 1.13. Encompasses:
-  - MESOS-7777 - Agent failed to recover due to mount namespace leakage in Docker 1.12/1.13
-- DCOS-14880 - GUI bug: container type must be defined
-- CORE-1149 - Unhealthy Mesos agents after upgrade to 1.9.1 on a soak cluster
+  - MESOS-7777 - Agent failed to recover due to mount namespace leakage in Docker 1.12/1.13.
+- DCOS-14880 - GUI bug: container type must be defined.
+- CORE-1149 - Unhealthy Mesos agents after upgrade to 1.9.1 on a soak cluster.
