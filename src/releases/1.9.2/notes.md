@@ -109,7 +109,6 @@ For more information, see the [documentation](/docs/1.9/installing/upgrading/).
 - DCOS-14005 - Marathon-LB does not support pods.
 - DCOS-14021 - [Task logging to journald](/docs/1.9/monitoring/logging/) disabled by default, so task logs will continue to be written to their sandboxes, and logrotated out. The `- DCOS task log` command will work as it did before.
 - DCOS-14433 - The [Universal container runtime](/docs/1.9/deploying-services/containerizers/) does not support Azure cloud with Ubuntu.
-- DCOS-16350 - You cannot retrieve metrics emitted by an application over statsd unless they are sent in a single batch. If statsd metrics are sent as a sequence of messages, only the most recently received metric will be available from the `/app` endpoint.
 - DCOS-16737 - You cannot [generate and publish AWS Advanced Templates](/docs/1.9/installing/cloud/aws/advanced/#create-your-templates) to AWS GovCloud regions. When running the command `dcos_generate_config.sh --aws-cloudformation` with GovCloud credentials you will see an error similar to this:
 
   ```bash
@@ -159,4 +158,3 @@ For more information, see the [documentation](/docs/1.9/installing/upgrading/).
 -  Fix for agent failure with Docker 1.12 and Docker 1.13. Encompasses:
   - MESOS-7777 - Agent failed to recover due to mount namespace leakage in Docker 1.12/1.13.
 - DCOS-14880 - GUI bug: container type must be defined.
-- CORE-1149 - Unhealthy Mesos agents after upgrade to 1.9.1 on a soak cluster.
