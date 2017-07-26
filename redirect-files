@@ -403,7 +403,7 @@
 /blog/2016/who-wants-to-run-my-container/index.html https://mesosphere.com/blog/who-wants-to-run-my-container/
 /blog/2016/zero-downtime-deployments-lab/index.html https://mesosphere.com/blog/zero-downtime-deployments-lab/
 /blog /blog/
-/blog/ https://mesosphere.com/blog/
+/blog/index.html https://mesosphere.com/blog/
 /assets/images/blog/2016-06-15-wellframe-2.jpg https://mesosphere.com/wp-content/uploads/2017/07/2016-06-15-wellframe-2.jpg
 /assets/images/blog/2016-06-15-wellframe.jpg https://mesosphere.com/wp-content/uploads/2017/07/2016-06-15-wellframe.jpg
 /assets/images/blog/2016-06-17-concord-1_dynamic_topology.png https://mesosphere.com/wp-content/uploads/2017/07/2016-06-17-concord-1_dynamic_topology.png
