@@ -322,37 +322,49 @@
       "url": "https://mesos.connpass.com/event/58545/"
   },
 
-  { "title": "FOSSCON 2017",
-      "image": "/assets/images/events/Philadelphia.jpg",
-      "date": "2017-08-26",
-      "url": "https://fosscon.us/about"
+  { "title": "Mesos, Marathon, SMACK and Beyond (Meetup)",
+      "image": "/assets/images/events/Hamburg.jpg",
+      "date": "2017-08-01",
+      "url": "http://bit.ly/2h1vW8R"
   },
 
-  { "title": "Open Source Summit - Building Open Source Project Infrastructures",
+  { "title": "From SMACK to SMAACK Running Alluxio on DC/OS (Meetup)",
+      "image": "/assets/images/events/San_Francisco.jpg",
+      "date": "2017-08-17",
+      "url": "http://bit.ly/2h1hXQt"
+  },
+
+  { "title": "The Open Sourcing Of Infrastructure (FOSSCON 2017)",
+      "image": "/assets/images/events/Philadelphia.jpg",
+      "date": "2017-08-26",
+      "url": "https://fosscon.us/node/12637"
+  },
+
+  { "title": "Building Open Source Project Infrastructures (Open Source Summit)",
       "image": "/assets/images/events/Los_Angeles.jpg",
       "date": "2017-09-11",
       "url": "http://sched.co/BCtF"
   },
 
-  { "title": "Open Source Summit - Advanced Continuous Delivery Strategies",
+  { "title": "Advanced Continuous Delivery Strategies (Open Source Summit)",
       "image": "/assets/images/events/Los_Angeles_2.jpg",
       "date": "2017-09-12",
       "url": "http://sched.co/BDpb"
   },
 
-  { "title": "Open Source Summit - SMACK stack and beyond",
+  { "title": "SMACK stack and beyond (Open Source Summit)",
       "image": "/assets/images/events/Los_Angeles_3.jpg",
       "date": "2017-09-13",
       "url": "http://sched.co/BDqG"
   },
 
-  { "title": "Open Source Summit - Nightmares of a Container Orchestration System",
+  { "title": "Nightmares of a Container Orchestration System (Open Source Summit)",
       "image": "/assets/images/events/Los_Angeles_4.jpg",
       "date": "2017-09-13",
       "url": "http://sched.co/BDpP"
   },
 
-  { "title": "Meetup - Laying down the SMACK on your datapipelines",
+  { "title": "Laying down the SMACK on your datapipelines (Meetup)",
       "image": "/assets/images/events/San_Francisco_3.jpg",
       "date": "2017-09-14",
       "url": "https://www.meetup.com/San-Francisco-Bay-Area-Big-Data-and-Scalable-Systems/events/238629855/"
@@ -364,7 +376,31 @@
       "url": "http://events.linuxfoundation.org/events/mesoscon-north-america"
   },
 
-  { "title": "DevOpsCon München: Nightmares of a Container Orchestration System",
+  { "title": "DC/OS for Java Devs (JavaZone)",
+      "image": "/assets/images/events/Oslo.jpg",
+      "date": "2017-09-13",
+      "url": "http://bit.ly/2eM7UxX"
+  },
+
+  { "title": "All about Container 2.0 (code.talks)",
+      "image": "/assets/images/events/Berlin.jpg",
+      "date": "2017-09-29",
+      "url": "http://bit.ly/2eMnqdf"
+  },
+
+  { "title": "Mesos and the Architecture of the New Datacenter (Topconf)",
+      "image": "/assets/images/events/Duesseldorf.jpg",
+      "date": "2017-10-05",
+      "url": "http://bit.ly/2h3lgqz"
+  },
+
+  { "title": "Microservices mit Apache Mesos und DC/OS betreiben (W-jax)",
+      "image": "/assets/images/events/Munich_2.jpg",
+      "date": "2017-11-09",
+      "url": "http://bit.ly/2v6v7lk"
+  },
+
+  { "title": "Nightmares of a Container Orchestration System (DevOpsCon München)",
       "image": "/assets/images/events/Munich.jpg",
       "date": "2017-11-20",
       "url": "https://devopsconference.de/container-technologies/nightmares-of-a-container-orchestration-system/"
