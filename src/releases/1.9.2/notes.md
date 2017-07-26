@@ -111,13 +111,14 @@ For more information, see the [documentation](/docs/1.9/installing/upgrading/).
 - DCOS-14433 - The [Universal container runtime](/docs/1.9/deploying-services/containerizers/) does not support Azure cloud with Ubuntu.
 - DCOS-16737 - You cannot [generate and publish AWS Advanced Templates](/docs/1.9/installing/cloud/aws/advanced/#create-your-templates) to AWS GovCloud regions. When running the command `dcos_generate_config.sh --aws-cloudformation` with GovCloud credentials you will see an error similar to this:
 
-  ```bash
-  $ ./dcos_generate_config.ee.sh --aws-cloudformation
+  ```
+  ./dcos_generate_config.ee.sh --aws-cloudformation
   ====> EXECUTING AWS CLOUD FORMATION TEMPLATE GENERATION
   Generating configuration files...
   Starting new HTTPS connection (1): s3.amazonaws.com
   aws_template_storage_region_name: Unable to determine region location of s3 bucket testbucket: An error occurred (InvalidAccessKeyId) when calling the GetBucketLocation operation: The AWS Access Key Id you provided does not exist in our records.
   ```
+
 - Marathon-7133 - Marathon application history is lost after Marathon restart.
 - CORE-1191 -  The Mesos master's event queue can get backlogged with the default settings, causing performance problems.  These can be mitigated by setting the following configuration parameter in your `config.yaml` file at install time. See the [Configuration Reference](/1.9/installing/custom/configuration/configuration-parameters/) for more information.
 
@@ -140,6 +141,7 @@ For more information, see the [documentation](/docs/1.9/installing/upgrading/).
 - DCOS-13672 - Mesos reports over allocated CPU during DC/OS upgrade.
 - DCOS-14228 - Disabled schedules keep firing in jobs.
 
+<a name="1-9-2"></a>
 # Issues Fixed since 1.9.1
 
 - Critical fix: Enables editing Marathon app in the UI. Encompasses the following:
