@@ -328,6 +328,12 @@
       "url": "http://bit.ly/2h1vW8R"
   },
 
+  { "title": "Introduction to DC/OS (Philadelphia LUG West)",
+      "image": "/assets/images/events/Philadelphia.jpg",
+      "date": "2017-08-21",
+      "url": "http://www.phillylinux.org/meetings.html"
+  },
+
   { "title": "From SMACK to SMAACK Running Alluxio on DC/OS (Meetup)",
       "image": "/assets/images/events/San_Francisco.jpg",
       "date": "2017-08-17",
@@ -335,7 +341,7 @@
   },
 
   { "title": "The Open Sourcing Of Infrastructure (FOSSCON 2017)",
-      "image": "/assets/images/events/Philadelphia.jpg",
+      "image": "/assets/images/events/Philadelphia_2.jpg",
       "date": "2017-08-26",
       "url": "https://fosscon.us/node/12637"
   },
