@@ -28,7 +28,7 @@ function getDemoItem(demo) {
   const contentClass = demo.featured ? 'px2 lg-col-6 col-6 xs-col-12' : 'pt3';
   const imageClass = demo.featured ? 'lg-col-6 col-6 xs-col-12 pr2 thumb' : 'thumb';
   let media = demo.image ? `<div class="${imageClass}" style="background-image: url('${ demo.image }')"></div>` : ``;
-  media = demo.youtube_id && demo.featured ? `<div class="${imageClass}"><div class="youtube"><iframe width="480" height="220" src="https://www.youtube.com/embed/${ demo.youtube_id }" frameborder="0" allowfullscreen></iframe></div></div>` : media;
+  media = demo.youtube_id ? `<div class="${imageClass}"><div class="youtube"><iframe width="480" height="220" src="https://www.youtube.com/embed/${ demo.youtube_id }" frameborder="0" allowfullscreen></iframe></div></div>` : media;
   const classNames = demo.featured ? 'lg-col-12 col-12 xs-col-12 flex flex-wrap' : 'lg-col-6 col-6 xs-col-12 bg-white'
 
   return `
@@ -48,7 +48,6 @@ function getDemoItem(demo) {
         </div>
         <div class="callouts">
           ${$.map(demo.callouts, (calloutUrl, name) => `<a class="cta cta--button" href="${calloutUrl}">Try demo</a>`).join(' &bull; ').toString()}
-          ${ demo.youtube_id && !demo.featured ? `<a class="cta cta--text" href="https://www.youtube.com/watch?v=${demo.youtube_id}">Watch Video</a>` : ``  }
         </div>
       </div>
     </div>
@@ -108,4 +107,8 @@ function main () {
 //   }
 // }
 
+/*************************
+Add this at the bottom of the return section to add a "watch video" link to the youtube video to non-featured cards:
+          ${ demo.youtube_id && !demo.featured ? `<a class="cta cta--text" href="https://www.youtube.com/watch?v=${demo.youtube_id}">Watch Video</a>` : ``  }
+***************************/
 $(document).ready(main)
