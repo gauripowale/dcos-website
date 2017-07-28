@@ -48,7 +48,6 @@ function getDemoItem(demo) {
         </div>
         <div class="callouts">
           ${$.map(demo.callouts, (calloutUrl, name) => `<a class="cta cta--button" href="${calloutUrl}">Try demo</a>`).join(' &bull; ').toString()}
-          ${ demo.youtube_id && !demo.featured ? `<a class="cta cta--text" href="https://www.youtube.com/watch?v=${demo.youtube_id}">Watch Video</a>` : ``  }
         </div>
       </div>
     </div>
@@ -108,4 +107,8 @@ function main () {
 //   }
 // }
 
+/*************************
+Add this at the bottom of the return section to add a "watch video" link to the youtube video to non-featured cards:
+          ${ demo.youtube_id && !demo.featured ? `<a class="cta cta--text" href="https://www.youtube.com/watch?v=${demo.youtube_id}">Watch Video</a>` : ``  }
+***************************/
 $(document).ready(main)
