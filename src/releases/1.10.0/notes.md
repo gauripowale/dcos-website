@@ -52,3 +52,14 @@ The new command to change your cluster URL is `dcos cluster setup <dcos_url>`. T
 - CORE-1081 - Agent upgrade from 1.7.4-verizon7 causes tasks to re-start.
 - CORE-1062 - Chronos launching Docker container causes Mesos agent to crash.
 - CORE-933 - The linux filesystem isolator should set mode and ownership for host volumes.
+- SPARK-266	- Cannot use spark-shell
+- KAF-334 - Unable to replace/restart kafka brokers after node restart
+- INFINITY-1784- PortsSpec/PortSpec compatibility in latest beta-elastic
+- ELASTIC-79 - Elastic package doesn't work offline
+- DCOS-15505 - Jenkins Marathon Plug-in so it does not strip out the VIP specifications
+- DCOS-15332 - DC/OS login prompt vulnerability
+- DCOS-15307 - Cannot "dcos task exec" to tasks in pods
+- DCOS-15302 - Pkgpanda redirects stderr to stdout
+- DCOS-15247 - Spartan repeatedly crashing on some nodes
+- DCOS-15044 - Metrics API returning null value for datapoint for Cassandra service
+<!-- working off of https://jira.mesosphere.com/issues/?jql=issuetype%20%3D%20%22Customer%20Issue%22%20AND%20resolution%20in%20(Done%2C%20Fixed)%20AND%20fixVersion%20%3D%20%22DC%2FOS%201.10%22 -->
