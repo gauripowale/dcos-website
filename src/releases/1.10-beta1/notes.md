@@ -39,7 +39,7 @@ Synopsis of release here
 ## Upgrades not supported in 1.10 Beta 1.
 Upgrades from 1.9 to 1.10 are _not supported_ in 1.10 Beta 1. Upgrades will be supported in 1.10 Beta 2.
 
-## TLS is no longer enabled by default in Admin Router.
+## TLS 1.0 is no longer enabled by default in Admin Router.
 TLS 1.0 no longer meets common minimum security requirements. To use TLS 1.0, set `adminrouter_tls_1_0_enabled` to `true` in your `config.yaml` at install time. The default is `false`.
 
 ## Latest version of Marathon-LB is required for 1.10
@@ -62,9 +62,19 @@ The new command to change your cluster URL is `dcos cluster setup <dcos_url>`. T
 - DCOS-14534 - Marathon: Verbose Server Banner.
 - DCOS-9444 - Task Remaining on Marathon 15.7 from guano backup. <!-- unclear from the Jira if this has been resolved or is even relevant -->
 - CORE-932 - Launching two tasks with the same Docker image simultaneously may cause a staging dir never cleaned up.
+- MARATHON-7654 - Marathon cannot replace persistent tasks for rebooted hosts until the Mesos Master forgets about the old agent.
+- INFINITY-2003 - Make C* backup and restore tests work in strict mode.
+- INFINITY-1356 - Support strict mode for DSE.
+- DCOS_OSS-1486 - Metrics agent crashes when the mesos containers endpoint is missing fields.
+- DCOS_OSS-1340 - Spartan "autoip" DNS should resolve to host IP for UCR in bridge network.
+- DCOS-17502 - AdminRouter rejecting request to install package.
+- DCOS-17321 - Fix upgrade of Marathon-lb from 1.9-1.10.
+- DCOS-17294 - Unable to curl (resolve) applications using Mesos DNS names.
+- DCOS-16564 - UI error message references Marathon command.
+- DCOS-16547 - Task state does not update after the agent running it was removed from the cluster.
 
 
-# <a name="fixed-issues"></a>Issues Fixed since 1.9
+# <a name="fixed-issues"></a>Major Issues Fixed since 1.9
 
 - [DCOS-14872] - Filesystem corruption in dcos-ui container.
 - [DCOS_OSS-839] - Upgrade script fails silently.
@@ -99,3 +109,8 @@ The new command to change your cluster URL is `dcos cluster setup <dcos_url>`. T
 - DCOS-12154 - Minuteman: Failed to parse task.
 - DCOS-10928 - Marathon leader election fails after OS upgrade.
 - CASSANDRA-613 - Replace of Cassandra Nodes doesn't work with duplicate Hostname/IPs.
+- DCOS-16151 - Marathon Endpoints are not responding.
+- DCOS-15937 - Pods do not receive SIGTERM.
+- DCOS-15914 - Support for CentOS/RHEL 7.4 with 1.9.
+- DCOS-15590 - DCOS cli confirm() is not non-interactive safe.
+- CORE-1196 - Mesos authorizer module unable to handle image pull secrets for pods. <!-- I think this was fixed -- pinged Kapil to verify -->
