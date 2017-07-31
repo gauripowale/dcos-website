@@ -1,42 +1,48 @@
-DC/OS 1.10 <!-- what are the highlights? -->:
+DC/OS 1.10 Beta 1:
 
-<!-- synopsis of release -->
+Synopsis of release here
 
-- <!-- list of highlights -->
-
-
+- List of highlights here
 
 ### Contents
 - [What's New](#whats-new)
+- [Breaking Changes](#breaking-changes)
 - [Known Issues and Limitations](#known-issues)
 - [Fixed Issues](#fixed-issues)
 
 # <a name="whats-new"></a>What's New
 
-- Node and Cluster health checks.
-  Write your own custom health checks or use the predefined checks to access and use information about your cluster, including available ports, Mesos agent status, and IP detect script validation. [View the documentation](/docs/1.10/installing/custom/node-cluster-health-check.md)
+## Networking
+- Configurable Spartan upstreams for domains (dnames).
+  You can now configure Spartan to delegate a particular domain (e.g. "\*.foo.company.com") to a particular upstream. <!-- I could use more information here -->
 
 - Increased CNI network support.
   <!-- text all about this... -->
 
+## Provisioning
+- Enhanced upgrades with backup and restore, and pre/post flight checks.
+
+## Health Checks
+- Node and Cluster health checks.
+  Write your own custom health checks or use the predefined checks to access and use information about your cluster, including available ports, Mesos agent status, and IP detect script validation. [View the documentation](/docs/1.10/installing/custom/node-cluster-health-check.md)
+
+## CLI
+- Multi-cluster support <!-- docs? -->
+
+## GUI
 - Updated, more intuitive GUI.
-  <!-- list of UI changes -->
+    <!-- list of UI changes -->
 
-- Custom CA certificate support.
-  <!-- description, link to doc, enterprise-only? -->
+<a name="breaking-changes"></a>
+# Breaking Changes
 
-- Increased Adminrouter security. <!-- ie TLS not supported out-of-the-box; where is the doc? is this enterprise-only?-->
+## Upgrades not supported in 1.10 Beta 1.
+Upgrades from 1.9 to 1.10 are _not supported_ in 1.10 Beta 1. Upgrades will be supported in 1.10 Beta 2.
 
-- Configurable Spartan upstreams for domains (dnames). You can now configure Spartan to delegate a particular domain (e.g. "\*.foo.company.com") to a particular upstream. <!-- I could use more information here -->
-
-- Pods are now supported in [strict security mode](/docs/1.10/)
-
-## Breaking Changes
-
-### TLS is no longer enabled by default in Admin Router.
+## TLS is no longer enabled by default in Admin Router.
 TLS 1.0 no longer meets common minimum security requirements. To use TLS 1.0, set `adminrouter_tls_1_0_enabled` to `true` in your `config.yaml` at install time. The default is `false`.
 
-### Latest version of Marathon-LB is required for 1.10
+## Latest version of Marathon-LB is required for 1.10
 Before upgrading to 1.10, uninstall your existing Marathon-LB package and reinstall the updated version.
 
 ## RexRay configuration change
@@ -60,6 +66,14 @@ The new command to change your cluster URL is `dcos cluster setup <dcos_url>`. T
 
 # <a name="fixed-issues"></a>Issues Fixed since 1.9
 
+- [DCOS-14872] - Filesystem corruption in dcos-ui container.
+- [DCOS_OSS-839] - Upgrade script fails silently.
+- [PR 1395] - Add HTTP routing for Azure templates.
+- [DCOS-14886] - Updated the internal diagnostics utility (`dcos-3dt.service`).
+- Updated `dcos-launch`, now includes [user's guide](https://github.com/dcos/dcos/blob/master/packages/dcos-launch/extra/README.md).
+- [DCOS-14644] - Cannot use systemd socket for pkgpanda API.
+- [DCOS_OSS-902] - Minuteman code in separate repo from navstar.
+- [DCOS_OSS-980] - Docker 1.12 and later breaks virtual networks.
 - DCOS-16725 - Marathon /ping Response Headers Changes on DC/OS 1.8.7 to 1.9.
 - DCOS-16588 - In 1.9, the mesos-dns component by default did not set the truncate bit in responses. This is non-conforming behavior. The new default in 1.10 will be to set the truncate bit if the response is too large to fit in a single packet and therefore gets truncated. If you do not want TCP fallback, set `mesos_dns_set_truncate_bit` to `true` in your `config.yaml` file at install time. The default is `false`. <!-- not sure if this is resolved; depends on https://jira.mesosphere.com/browse/DCOS-15771 -->
 - DCOS-15653 - Excessive log rotation for Mesos logs.
