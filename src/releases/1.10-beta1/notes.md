@@ -12,6 +12,9 @@ Synopsis of release here
 
 # <a name="whats-new"></a>What's New
 
+## Marathon 1.5 integrated
+- DC/OS 1.10 is integrated with the latest release of Marathon, version 1.5. Resulting breaking changes and new features are documented below. For more information about Marathon 1.5, consult the [Marathon changelog](https://github.com/mesosphere/marathon/blob/7fd237fc19035d6e10e55448b89afad0a84dccec/changelog.md). <!-- not sure if this is the best link; I don't think there are release notes yet -->
+
 ## Networking
 - Configurable Spartan upstreams for domains (dnames).
   You can now configure Spartan to delegate a particular domain (e.g. "\*.foo.company.com") to a particular upstream. <!-- I could use more information here -->
@@ -38,6 +41,9 @@ Synopsis of release here
 
 ## Upgrades not supported in 1.10 Beta 1.
 Upgrades from 1.9 to 1.10 are _not supported_ in 1.10 Beta 1. Upgrades will be supported in 1.10 Beta 2.
+
+## Marathon Networking API Changes in 1.5
+The networking section of the Marathon API has changed significantly in version 1.5. Marathon can still accept requests using the 1.4 version of the API, but it will always reply with the 1.5 version of the app definition. This will break tools that consume networking-related fields of the service definition. [View the documentation](https://github.com/mesosphere/marathon/blob/2a7f22c6f34e911cec2a1365428809c12203eb34/docs/docs/upgrade/network-api-migration.md). <!-- linking to the marathon doc until I port the relevant information to the dc/os site -->
 
 ## TLS 1.0 is no longer enabled by default in Admin Router.
 TLS 1.0 no longer meets common minimum security requirements. To use TLS 1.0, set `adminrouter_tls_1_0_enabled` to `true` in your `config.yaml` at install time. The default is `false`.
