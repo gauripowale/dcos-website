@@ -1,5 +1,7 @@
 DC/OS 1.10 <!-- what are the highlights? -->:
 
+<!-- synopsis of release -->
+
 - <!-- list of highlights -->
 
 
@@ -11,7 +13,23 @@ DC/OS 1.10 <!-- what are the highlights? -->:
 
 # <a name="whats-new"></a>What's New
 
+- Node and Cluster health checks.
+  Write your own custom health checks or use the predefined checks to access and use information about your cluster, including available ports, Mesos agent status, and IP detect script validation. [View the documentation](/docs/1.10/installing/custom/node-cluster-health-check.md)
+
+- Increased CNI network support.
+  <!-- text all about this... -->
+
+- Updated, more intuitive GUI.
+  <!-- list of UI changes -->
+
+- Custom CA certificate support.
+  <!-- description, link to doc, enterprise-only? -->
+
+- Increased Adminrouter security. <!-- ie TLS not supported out-of-the-box; where is the doc? is this enterprise-only?-->
+
 - Configurable Spartan upstreams for domains (dnames). You can now configure Spartan to delegate a particular domain (e.g. "\*.foo.company.com") to a particular upstream. <!-- I could use more information here -->
+
+- Pods are now supported in [strict security mode](/docs/1.10/)
 
 ## Breaking Changes
 
