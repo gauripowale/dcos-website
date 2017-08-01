@@ -1,8 +1,31 @@
 DC/OS 1.10 Beta 1:
 
-Synopsis of release here
+<table class="table" bgcolor="#FAFAFA"> <tr> <td style="border-left: thin solid; border-top: thin solid; border-bottom: thin solid;border-right: thin solid;"><b>DC/OS 1.10 Beta 1 has a number of limitations that will be resolved at GA time:</b>
 
-- List of highlights here
+<ul>
+<li>Upgrades from 1.9 are not supported.</li>
+<li>You must upgrade to DC/OS CLI version 0.5.3.</li><!-- link to how to do that -->
+</ul>
+
+<b>The following data services packages are also in beta and are compatible with DC/OS 1.10</b>
+<ul>
+<li>Beta Cassandra. <a href="https://docs.mesosphere.com/service-docs/beta-program/beta-cassandra/v1.0.31-3.0.13-beta/">Documentation</a>. <a href="https://github.com/mesosphere/dcos-commons/releases/tag/cassandra-1.0.31-3.0.13-beta">Release Notes</a>.</li>
+
+<li>Beta Elastic. <a href="https://docs.mesosphere.com/service-docs/beta-program/beta-elastic/v1.0.15-5.5.1-beta/">Documentation</a>. <a href="https://github.com/mesosphere/dcos-commons/releases/tag/untagged-466bafb811c900f9bd69">Release Notes</a>.</li>
+
+<li>Beta HDFS. <a href="https://docs.mesosphere.com/service-docs/beta-program/beta-hdfs/v1.3.3-2.6.0-cdh5.11.0-beta/">Documentation</a>. <a href="https://github.com/mesosphere/dcos-commons/releases/tag/untagged-897c7d54d0100b86ca76">Release Notes</a>.</li>
+
+<li>Beta Kafka. <a href="https://docs.mesosphere.com/service-docs/beta-program/beta-kafka/v1.1.26-0.10.1.0-beta/">Documentation</a>. <a href="https://github.com/mesosphere/dcos-commons/releases/tag/untagged-4edb1e9a15056ec5ef29">Release Notes</a>.</li>
+
+<li>Spark. <a href="  ">Documentation</a>. <a href="  ">Release Notes</a>.</li>
+</ul>
+
+Please try out the new features and updated data services. Provide any feedback through our support channel: support@mesosphere.com. <!-- or slack? -->
+<!-- TODO: list of other major highlights + their docs -->
+
+</td> </tr> </table>
+
+
 
 ### Contents
 - [What's New](#whats-new)
