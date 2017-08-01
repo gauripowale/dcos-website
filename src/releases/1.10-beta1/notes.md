@@ -1,13 +1,13 @@
-DC/OS 1.10 Beta 1:
+# DC/OS 1.10 Beta 1
 
-<table class="table" bgcolor="#FAFAFA"> <tr> <td style="border-left: thin solid; border-top: thin solid; border-bottom: thin solid;border-right: thin solid;"><b>DC/OS 1.10 Beta 1 has a number of limitations that will be resolved at GA time:</b>
-
+<div style="padding: 10px; border: 2px solid black; background-color: #e3e4e5;">
+<h4>DC/OS 1.10 Beta 1 has a number of limitations that will be resolved at GA time:</h4>
 <ul>
 <li>Upgrades from 1.9 are not supported.</li>
 <li>You must upgrade to DC/OS CLI version 0.5.3.</li><!-- link to how to do that -->
 </ul>
 
-<b>The following data services packages are also in beta and are compatible with DC/OS 1.10</b>
+<b>The following data services packages are also in beta and compatible with DC/OS 1.10</b>
 <ul>
 <li>Beta Cassandra. <a href="https://docs.mesosphere.com/service-docs/beta-program/beta-cassandra/v1.0.31-3.0.13-beta/">Documentation</a>. <a href="https://github.com/mesosphere/dcos-commons/releases/tag/cassandra-1.0.31-3.0.13-beta">Release Notes</a>.</li>
 
@@ -17,14 +17,24 @@ DC/OS 1.10 Beta 1:
 
 <li>Beta Kafka. <a href="https://docs.mesosphere.com/service-docs/beta-program/beta-kafka/v1.1.26-0.10.1.0-beta/">Documentation</a>. <a href="https://github.com/mesosphere/dcos-commons/releases/tag/untagged-4edb1e9a15056ec5ef29">Release Notes</a>.</li>
 
+<li>Beta Confluent-Kafka. <a href="  ">Documentation</a>. <a href="  ">Release Notes</a>.</li>
+
 <li>Spark. <a href="  ">Documentation</a>. <a href="  ">Release Notes</a>.</li>
+</ul>
+
+<b>Try out the following new features!</b>
+
+<ul>
+<li>Increased CNI network support.</li>
+<li>Backup and restore functionality.</li>
+<li><a href="/docs/1.10/installing/custom/node-cluster-health-check.md">Node and cluster health checks</a>.</li>
+<li>Multi-cluster support in the DC/OS CLI.</li>
+<li>Updated, more intuitive GUI.</li>
 </ul>
 
 Please try out the new features and updated data services. Provide any feedback through our support channel: support@mesosphere.com. <!-- or slack? -->
 <!-- TODO: list of other major highlights + their docs -->
-
-</td> </tr> </table>
-
+</div>
 
 
 ### Contents
@@ -50,10 +60,10 @@ Please try out the new features and updated data services. Provide any feedback 
 
 ## Health Checks
 - Node and Cluster health checks.
-  Write your own custom health checks or use the predefined checks to access and use information about your cluster, including available ports, Mesos agent status, and IP detect script validation. [View the documentation](/docs/1.10/installing/custom/node-cluster-health-check.md)
+  Write your own custom health checks or use the predefined checks to access and use information about your cluster, including available ports, Mesos agent status, and IP detect script validation. [View the documentation](/docs/1.10/installing/custom/node-cluster-health-check.md).
 
 ## CLI
-- Multi-cluster support <!-- docs? -->
+- Multi-cluster support. <!-- docs? -->
 
 ## GUI
 - Updated, more intuitive GUI.
