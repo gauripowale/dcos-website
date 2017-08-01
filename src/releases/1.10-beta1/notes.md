@@ -13,7 +13,7 @@ Synopsis of release here
 # <a name="whats-new"></a>What's New
 
 ## Marathon 1.5 integrated
-- DC/OS 1.10 is integrated with the latest release of Marathon, version 1.5. Resulting breaking changes and new features are documented below. For more information about Marathon 1.5, consult the [Marathon changelog](https://github.com/mesosphere/marathon/blob/7fd237fc19035d6e10e55448b89afad0a84dccec/changelog.md). <!-- not sure if this is the best link; I don't think there are release notes yet -->
+- DC/OS 1.10 is integrated with the latest release of Marathon, version 1.5. Resulting breaking changes and new features are documented below. For more information about Marathon 1.5, consult the [Marathon changelog](https://github.com/mesosphere/marathon/blob/master/changelog.md). <!-- not sure if this is the best link; I don't think there are release notes yet -->
 
 ## Networking
 - Configurable Spartan upstreams for domains (dnames).
