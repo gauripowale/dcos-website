@@ -1,6 +1,7 @@
 # DC/OS 1.10 Beta 1
 
 <div style="padding: 10px; border: 2px solid black; background-color: #e3e4e5;">
+<h3>This beta release is for testing only and not to be used in production. It will only support new installations.</h3>
 <h4>DC/OS 1.10 Beta 1 has a number of limitations that will be resolved at GA time:</h4>
 <ul>
 <li>Upgrades from 1.9 are not supported.</li>
