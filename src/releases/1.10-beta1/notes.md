@@ -108,6 +108,8 @@ The new command to change your cluster URL is `dcos cluster setup <dcos_url>`. T
 - DCOS-17502 - AdminRouter rejecting request to install package.
 - DCOS_OSS-1340 - Spartan "autoip" DNS should resolve to host IP for UCR in bridge network.
 - DCOS_OSS-1486 - Metrics agent crashes when the mesos containers endpoint is missing fields.
+- INFINITY-1143 - Update / Uninstall. DSE does not support rolling upgrade.
+- INFINITY-1809 - [Data Svc] DC/OS Service Update / Config Update / Maintenance.
 - INFINITY-2054	- Extend --replace={true|false} for <framework> CLI. <!-- this doesn't seem like a known issue? -->
 - MESOS-6950 - Launching two tasks with the same Docker image simultaneously may cause a staging dir never cleaned up.
 - MARATHON-7654 - Marathon cannot replace persistent tasks for rebooted hosts until the Mesos Master forgets about the old agent.
