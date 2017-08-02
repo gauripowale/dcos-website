@@ -62,15 +62,15 @@ The GUI sidebar tabs have been updated to offer a more intuitive experience.
 - The "System Overview" tab has been renamed to "Overview".
 
 ## DC/OS Data Services
-The following updated data services packages are also in beta and are compatible with DC/OS 1.10
+The following updated data services packages are also in beta and are compatible with DC/OS 1.10.
 
-- Beta Cassandra. [Documentation](/service-docs/beta-program/beta-cassandra/v1.0.31-3.0.13-beta/). [Release Notes](https://github.com/mesosphere/dcos-commons/releases/tag/cassandra-1.0.31-3.0.13-beta).
+- Beta Cassandra. [Documentation](/service-docs/beta-cassandra/v1.0.31-3.0.13-beta/). [Release Notes](https://github.com/mesosphere/dcos-commons/releases/tag/cassandra-1.0.31-3.0.13-beta).
 
-- Beta Elastic. [Documentation](/service-docs/beta-program/beta-elastic/v1.0.15-5.5.1-beta/). [Release Notes](https://github.com/mesosphere/dcos-commons/releases/tag/untagged-466bafb811c900f9bd69).
+- Beta Elastic. [Documentation](/service-docs/beta-elastic/v1.0.15-5.5.1-beta/). [Release Notes](https://github.com/mesosphere/dcos-commons/releases/tag/untagged-466bafb811c900f9bd69).
 
-- Beta HDFS. [Documentation](/service-docs/beta-program/beta-hdfs/v1.3.3-2.6.0-cdh5.11.0-beta/). [Release Notes](https://github.com/mesosphere/dcos-commons/releases/tag/untagged-897c7d54d0100b86ca76).
+- Beta HDFS. [Documentation](/service-docs/beta-hdfs/v1.3.3-2.6.0-cdh5.11.0-beta/). [Release Notes](https://github.com/mesosphere/dcos-commons/releases/tag/untagged-897c7d54d0100b86ca76).
 
-- Beta Kafka. [Documentation](/service-docs/beta-program/beta-kafka/v1.1.26-0.10.1.0-beta/). [Release Notes](https://github.com/mesosphere/dcos-commons/releases/tag/untagged-4edb1e9a15056ec5ef29).
+- Beta Kafka. [Documentation](/service-docs/beta-kafka/v1.1.26-0.10.1.0-beta/). [Release Notes](https://github.com/mesosphere/dcos-commons/releases/tag/untagged-4edb1e9a15056ec5ef29).
 <!-- <li>Spark. <a href="  ">Documentation</a>. <a href="  ">Release Notes</a>.</li> -->
 
 <a name="breaking-changes"></a>
