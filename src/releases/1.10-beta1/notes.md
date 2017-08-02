@@ -75,8 +75,11 @@ DC/OS 1.10 is is based on Mesos 1.4.0, here using master branch (pre-release) SH
 - Multi-cluster support. <!-- docs? -->
 
 ## GUI
-- Updated, more intuitive GUI.
-    <!-- list of UI changes -->
+The GUI sidebar tabs have been updated to offer a more intuitive experience.
+
+- The "Deployments" subpage under the "Services" tab has been moved to a toggle-able modal in the "Services" page.
+- The "Universe" tab has been renamed to "Catalog" and the "Installed" subpage has been removed.
+- The "System Overview" tab has been renamed to "Overview".
 
 <a name="breaking-changes"></a>
 # Breaking Changes
