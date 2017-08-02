@@ -6,65 +6,49 @@
 
 <ul>
 <li>Upgrades from 1.9 are not supported.</li>
-<li><a href="/1.10/cli/uninstall/">Uninstall the existing CLI</a>.</li>
-<li>Install version 0.5.3 using the <strong>Install CLI</strong> instructions in the dropdown in the upper left hand corner of the 1.10 DC/OS GUI.</li>
+<li>DC/OS 1.10 requires CLI version 0.5.3.
+  <ul>
+  <li><a href="/docs/1.10/cli/uninstall/">Uninstall the existing CLI</a>.</li>
+  <li>Install version 0.5.3 using the <strong>Install CLI</strong> instructions in the dropdown in the upper left hand corner of the 1.10 DC/OS GUI.</li>
+  </ul>
 <strong>Note:</strong> CLI version 0.5.3 is not compatible with DC/OS 1.9.</li>
 <li>If you cannot access marathon and you see <code>the trustAnchors parameter must be non-empty</code> in the logs, restart Marathon. Restart Marathon by entering the following command on the master node with the leading Marathon master: <code>sudo systemctl restart dcos-marathon.service</code>.</li>
 </ul>
 
-<b>The following data services packages are also in beta and are compatible with DC/OS 1.10</b>
-<ul>
-<li>Beta Cassandra. <a href="/service-docs/beta-program/beta-cassandra/v1.0.31-3.0.13-beta/">Documentation</a>. <a href="https://github.com/mesosphere/dcos-commons/releases/tag/cassandra-1.0.31-3.0.13-beta">Release Notes</a>.</li>
-
-<li>Beta Elastic. <a href="/service-docs/beta-program/beta-elastic/v1.0.15-5.5.1-beta/">Documentation</a>. <a href="https://github.com/mesosphere/dcos-commons/releases/tag/untagged-466bafb811c900f9bd69">Release Notes</a>.</li>
-
-<li>Beta HDFS. <a href="/service-docs/beta-program/beta-hdfs/v1.3.3-2.6.0-cdh5.11.0-beta/">Documentation</a>. <a href="https://github.com/mesosphere/dcos-commons/releases/tag/untagged-897c7d54d0100b86ca76">Release Notes</a>.</li>
-
-<li>Beta Kafka. <a href="/service-docs/beta-program/beta-kafka/v1.1.26-0.10.1.0-beta/">Documentation</a>. <a href="https://github.com/mesosphere/dcos-commons/releases/tag/untagged-4edb1e9a15056ec5ef29">Release Notes</a>.</li>
-
-<!--
-<li>Beta Confluent-Kafka. <a href="  ">Documentation</a>. <a href="  ">Release Notes</a>.</li> -->
-
-<!-- <li>Spark. <a href="  ">Documentation</a>. <a href="  ">Release Notes</a>.</li> -->
-</ul>
-
-<b>Try out the following new features!</b>
-
-<ul>
-<li>Increased CNI network support.</li>
-<li><a href="/docs/1.10/installing/custom/node-cluster-health-check.md">Node and cluster health checks</a>.</li>
-<li>Multi-cluster support in the DC/OS CLI.</li>
-<li>Updated, more intuitive GUI.</li>
-</ul>
-
-Please try out the new features and updated data services. Provide any feedback through Jira: https://jira.dcos.io. <!-- or slack? -->
-<!-- TODO: list of other major highlights + their docs -->
+Please try out the new features and updated data services. Provide any feedback through Jira: https://jira.dcos.io.
 </div>
 
+DC/OS 1.10 includes many new capabilities for Operators and expands the collection of Data & Developer Services with a focus on:
+- Core DC/OS Service Continuity - System resilience, cluster and node checks, UCR and Pods Improvements.
+- CNI Networking Enhancements for Broader Networking Support.
+- Data Services enhancements.
 
 ### Contents
-- [What's New](#whats-new)
+- [New Features and Capabilities](#new-features)
 - [Breaking Changes](#breaking-changes)
 - [Known Issues and Limitations](#known-issues)
-- [Fixed Issues](#fixed-issues)
+- [Issues Fixed since 1.9.0](#fixed-issues)
 
-# <a name="whats-new"></a>What's New
+# <a name="new-features"></a>New Features and Capabilities
 
-## Marathon 1.5 integrated
-- DC/OS 1.10 is integrated with the latest release of Marathon, version 1.5. Resulting breaking changes and new features are documented below. For more information about Marathon 1.5, consult the [Marathon changelog](https://github.com/mesosphere/marathon/blob/master/changelog.md). <!-- not sure if this is the best link; I don't think there are release notes yet -->
+## Apache Mesos 1.4 and Marathon 1.5 Integrated.
+- DC/OS 1.10 is is based on Mesos 1.4.0, here using master branch (pre-release) SHA 013f7e21, with over 1200 commits since the previous Mesos version. View the [changelog](https://github.com/apache/mesos/blob/master/CHANGELOG).
 
-## Mesos 1.4.0 integrated
-DC/OS 1.10 is is based on Mesos 1.4.0, here using master branch (pre-release) SHA 013f7e21, with over 1200 commits since the previous Mesos version. View the [changelog](https://github.com/apache/mesos/blob/master/CHANGELOG).
+- DC/OS 1.10 is integrated with the latest release of Marathon, version 1.5. Resulting breaking changes and new features are documented below. For more information about Marathon 1.5, consult the [Marathon changelog](https://github.com/mesosphere/marathon/blob/master/changelog.md).
 
 ## Networking
 - Configurable Spartan upstreams for domains (dnames).
   You can now configure Spartan to delegate a particular domain (e.g. "\*.foo.company.com") to a particular upstream. <!-- I could use more information here -->
 
 - Increased CNI network support.
-  <!-- text all about this... -->
+  DC/OS now supports any type of CNI network. [View the documentation](/docs/1.10/networking/virtual-networks/cni-plugins.md).
 
-## Provisioning
+## Platform
+- Node and Cluster health checks.
+  Write your own custom health checks or use the predefined checks to access and use information about your cluster, including available ports, Mesos agent status, and IP detect script validation. [View the documentation](/docs/1.10/installing/custom/node-cluster-health-check.md).
 - Enhanced upgrades with pre/post flight checks.
+- UCR.
+- Scale and performance limits.
 
 ## Health Checks
 - Node and Cluster health checks.
@@ -81,25 +65,37 @@ The GUI sidebar tabs have been updated to offer a more intuitive experience.
 - The "Universe" tab has been renamed to "Catalog" and the "Installed" subpage has been removed.
 - The "System Overview" tab has been renamed to "Overview".
 
+## DC/OS Data Services
+The following updated data services packages are also in beta and are compatible with DC/OS 1.10
+
+- Beta Cassandra. [Documentation](/service-docs/beta-program/beta-cassandra/v1.0.31-3.0.13-beta/). [Release Notes](https://github.com/mesosphere/dcos-commons/releases/tag/cassandra-1.0.31-3.0.13-beta).
+
+- Beta Elastic. [Documentation](/service-docs/beta-program/beta-elastic/v1.0.15-5.5.1-beta/). [Release Notes](https://github.com/mesosphere/dcos-commons/releases/tag/untagged-466bafb811c900f9bd69).
+
+- Beta HDFS. [Documentation](/service-docs/beta-program/beta-hdfs/v1.3.3-2.6.0-cdh5.11.0-beta/). [Release Notes](https://github.com/mesosphere/dcos-commons/releases/tag/untagged-897c7d54d0100b86ca76).
+
+- Beta Kafka. [Documentation](/service-docs/beta-program/beta-kafka/v1.1.26-0.10.1.0-beta/). [Release Notes](https://github.com/mesosphere/dcos-commons/releases/tag/untagged-4edb1e9a15056ec5ef29).
+<!-- <li>Spark. <a href="  ">Documentation</a>. <a href="  ">Release Notes</a>.</li> -->
+
 <a name="breaking-changes"></a>
 # Breaking Changes
 
-## Upgrades not supported in 1.10 Beta 1.
-Upgrades from 1.9 to 1.10 are _not supported_ in 1.10 Beta 1. Upgrades will be supported in 1.10 Beta 2.
+- Upgrades not supported in 1.10 Beta 1.
+  Upgrades from 1.9 to 1.10 are _not supported_ in 1.10 Beta 1. Upgrades will be supported in 1.10 Beta 2.
 
-## Marathon Networking API Changes in 1.5
-The networking section of the Marathon API has changed significantly in version 1.5. Marathon can still accept requests using the 1.4 version of the API, but it will always reply with the 1.5 version of the app definition. This will break tools that consume networking-related fields of the service definition. [View the documentation](https://github.com/mesosphere/marathon/blob/2a7f22c6f34e911cec2a1365428809c12203eb34/docs/docs/upgrade/network-api-migration.md). <!-- linking to the marathon doc until I port the relevant information to the dc/os site -->
+- Marathon Networking API Changes in 1.5
+  The networking section of the Marathon API has changed significantly in version 1.5. Marathon can still accept requests using the 1.4 version of the API, but it will always reply with the 1.5 version of the app definition. This will break tools that consume networking-related fields of the service definition. [View the documentation](https://github.com/mesosphere/marathon/blob/master/docs/docs/networking.md). <!-- linking to the marathon doc until I port the relevant information to the dc/os site -->
 
 <!-- relevant to beta 2
 ## Latest version of Marathon-LB is required for 1.10
 Before upgrading to 1.10, uninstall your existing Marathon-LB package and reinstall the updated version from the **Catalog** (previously known as **Universe**) in the DC/OS GUI.
 -->
 
-## REX-Ray configuration change
-DC/OS 1.10 upgrades REX-Ray from v03.3. to v0.9.0 and therefore the REX-Ray configuration format has changed. If you have specified custom REX-Ray configuration in the `REX-Ray_config` parameter of your `config.yaml` file, change the parameter to `REX-Ray_config_preset: aws`.
+- REX-Ray configuration change
+  DC/OS 1.10 upgrades REX-Ray from v03.3. to v0.9.0 and therefore the REX-Ray configuration format has changed. If you have specified custom REX-Ray configuration in the `REX-Ray_config` parameter of your `config.yaml` file, change the parameter to `REX-Ray_config_preset: aws`.
 
-## New flow to change the `dcos_url` and login
-The new command to change your cluster URL is `dcos cluster setup <dcos_url>`. This change will break any existing tooling that uses the former command. Backwards compatibility is slated for a future patch release.
+- New flow to change the `dcos_url` and login
+  The new command to change your cluster URL is `dcos cluster setup <dcos_url>`. This change will break any existing tooling that uses the former command. Backwards compatibility is slated for a future patch release.
 
 # <a name="known-issues"></a>Known Issues and Limitations
 
