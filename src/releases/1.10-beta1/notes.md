@@ -1,29 +1,26 @@
 # DC/OS 1.10 Beta 1
 
 <div style="padding: 10px; border: 2px solid black; background-color: #e3e4e5;">
-<h3>This beta release is for testing only and not to be used in production. It will only support new installations.</h3>
-<h4>DC/OS 1.10 Beta 1 has a number of limitations that will be resolved at GA time:</h4>
+<h2>This beta release is for testing only and not to be used in production. It will only support new installations.</h2>
+<h3>DC/OS 1.10 Beta 1 has a number of limitations that will be resolved at GA time:</h3>
+
 <ul>
 <li>Upgrades from 1.9 are not supported.</li>
-<li>You must upgrade to DC/OS CLI version 0.5.3.
-<br />
-<ol>
 <li><a href="/1.10/cli/uninstall/">Uninstall the existing CLI</a>.</li>
-<li>Install version 0.5.3 using the **Install CLI** instructions in the dropdown in the upper left hand corner of the 1.10 DC/OS GUI.</li>
-<br />
-**Note:** CLI version 0.5.3 is not compatible with DC/OS 1.9.</li>
-<li>If you cannot access marathon and you see `the trustAnchors parameter must be non-empty` in the logs, restart Marathon. Restart Marathon by entering the following command on the master node with the leading Marathon master: `sudo systemctl restart dcos-marathon.service`.</li>
+<li>Install version 0.5.3 using the <strong>Install CLI</strong> instructions in the dropdown in the upper left hand corner of the 1.10 DC/OS GUI.</li>
+<strong>Note:</strong> CLI version 0.5.3 is not compatible with DC/OS 1.9.</li>
+<li>If you cannot access marathon and you see <code>the trustAnchors parameter must be non-empty</code> in the logs, restart Marathon. Restart Marathon by entering the following command on the master node with the leading Marathon master: <code>sudo systemctl restart dcos-marathon.service</code>.</li>
 </ul>
 
-<b>The following data services packages are also in beta and compatible with DC/OS 1.10</b>
+<b>The following data services packages are also in beta and are compatible with DC/OS 1.10</b>
 <ul>
-<li>Beta Cassandra. <a href="https://docs.mesosphere.com/service-docs/beta-program/beta-cassandra/v1.0.31-3.0.13-beta/">Documentation</a>. <a href="https://github.com/mesosphere/dcos-commons/releases/tag/cassandra-1.0.31-3.0.13-beta">Release Notes</a>.</li>
+<li>Beta Cassandra. <a href="/service-docs/beta-program/beta-cassandra/v1.0.31-3.0.13-beta/">Documentation</a>. <a href="https://github.com/mesosphere/dcos-commons/releases/tag/cassandra-1.0.31-3.0.13-beta">Release Notes</a>.</li>
 
-<li>Beta Elastic. <a href="https://docs.mesosphere.com/service-docs/beta-program/beta-elastic/v1.0.15-5.5.1-beta/">Documentation</a>. <a href="https://github.com/mesosphere/dcos-commons/releases/tag/untagged-466bafb811c900f9bd69">Release Notes</a>.</li>
+<li>Beta Elastic. <a href="/service-docs/beta-program/beta-elastic/v1.0.15-5.5.1-beta/">Documentation</a>. <a href="https://github.com/mesosphere/dcos-commons/releases/tag/untagged-466bafb811c900f9bd69">Release Notes</a>.</li>
 
-<li>Beta HDFS. <a href="https://docs.mesosphere.com/service-docs/beta-program/beta-hdfs/v1.3.3-2.6.0-cdh5.11.0-beta/">Documentation</a>. <a href="https://github.com/mesosphere/dcos-commons/releases/tag/untagged-897c7d54d0100b86ca76">Release Notes</a>.</li>
+<li>Beta HDFS. <a href="/service-docs/beta-program/beta-hdfs/v1.3.3-2.6.0-cdh5.11.0-beta/">Documentation</a>. <a href="https://github.com/mesosphere/dcos-commons/releases/tag/untagged-897c7d54d0100b86ca76">Release Notes</a>.</li>
 
-<li>Beta Kafka. <a href="https://docs.mesosphere.com/service-docs/beta-program/beta-kafka/v1.1.26-0.10.1.0-beta/">Documentation</a>. <a href="https://github.com/mesosphere/dcos-commons/releases/tag/untagged-4edb1e9a15056ec5ef29">Release Notes</a>.</li>
+<li>Beta Kafka. <a href="/service-docs/beta-program/beta-kafka/v1.1.26-0.10.1.0-beta/">Documentation</a>. <a href="https://github.com/mesosphere/dcos-commons/releases/tag/untagged-4edb1e9a15056ec5ef29">Release Notes</a>.</li>
 
 <!--
 <li>Beta Confluent-Kafka. <a href="  ">Documentation</a>. <a href="  ">Release Notes</a>.</li> -->
