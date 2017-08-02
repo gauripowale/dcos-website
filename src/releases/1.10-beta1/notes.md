@@ -12,6 +12,7 @@
 <li>Install version 0.5.3 using the **Install CLI** instructions in the dropdown in the upper left hand corner of the 1.10 DC/OS GUI.</li>
 <br />
 **Note:** CLI version 0.5.3 is not compatible with DC/OS 1.9.</li>
+<li>If you cannot access marathon and you see `the trustAnchors parameter must be non-empty` in the logs, restart Marathon. Restart Marathon by entering the following command on the master node with the leading Marathon master: `sudo systemctl restart dcos-marathon.service`.</li>
 </ul>
 
 <b>The following data services packages are also in beta and compatible with DC/OS 1.10</b>
@@ -24,7 +25,8 @@
 
 <li>Beta Kafka. <a href="https://docs.mesosphere.com/service-docs/beta-program/beta-kafka/v1.1.26-0.10.1.0-beta/">Documentation</a>. <a href="https://github.com/mesosphere/dcos-commons/releases/tag/untagged-4edb1e9a15056ec5ef29">Release Notes</a>.</li>
 
-<li>Beta Confluent-Kafka. <a href="  ">Documentation</a>. <a href="  ">Release Notes</a>.</li>
+<!--
+<li>Beta Confluent-Kafka. <a href="  ">Documentation</a>. <a href="  ">Release Notes</a>.</li> -->
 
 <!-- <li>Spark. <a href="  ">Documentation</a>. <a href="  ">Release Notes</a>.</li> -->
 </ul>
@@ -72,7 +74,7 @@ DC/OS 1.10 is is based on Mesos 1.4.0, here using master branch (pre-release) SH
   Write your own custom health checks or use the predefined checks to access and use information about your cluster, including available ports, Mesos agent status, and IP detect script validation. [View the documentation](/docs/1.10/installing/custom/node-cluster-health-check.md).
 
 ## CLI
-- Multi-cluster support. <!-- docs? -->
+- Multi-cluster support. [View the documentation](/docs/1.10/cli/multi-cluster-cli/).
 
 ## GUI
 The GUI sidebar tabs have been updated to offer a more intuitive experience.
@@ -90,9 +92,6 @@ Upgrades from 1.9 to 1.10 are _not supported_ in 1.10 Beta 1. Upgrades will be s
 
 ## Marathon Networking API Changes in 1.5
 The networking section of the Marathon API has changed significantly in version 1.5. Marathon can still accept requests using the 1.4 version of the API, but it will always reply with the 1.5 version of the app definition. This will break tools that consume networking-related fields of the service definition. [View the documentation](https://github.com/mesosphere/marathon/blob/2a7f22c6f34e911cec2a1365428809c12203eb34/docs/docs/upgrade/network-api-migration.md). <!-- linking to the marathon doc until I port the relevant information to the dc/os site -->
-
-## TLS 1.0 is no longer enabled by default in Admin Router.
-TLS 1.0 no longer meets common minimum security requirements. To use TLS 1.0, set `adminrouter_tls_1_0_enabled` to `true` in your `config.yaml` at install time. The default is `false`.
 
 <!-- relevant to beta 2
 ## Latest version of Marathon-LB is required for 1.10
