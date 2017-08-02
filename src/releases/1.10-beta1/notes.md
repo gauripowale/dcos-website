@@ -37,7 +37,7 @@
 <li>Updated, more intuitive GUI.</li>
 </ul>
 
-Please try out the new features and updated data services. Provide any feedback through our support channel: support@mesosphere.com. <!-- or slack? -->
+Please try out the new features and updated data services. Provide any feedback through Jira: https://jira.dcos.io. <!-- or slack? -->
 <!-- TODO: list of other major highlights + their docs -->
 </div>
 
