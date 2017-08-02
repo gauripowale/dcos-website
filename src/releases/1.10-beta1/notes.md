@@ -12,7 +12,7 @@
   <li>Install version 0.5.3 using the <strong>Install CLI</strong> instructions in the dropdown in the upper left hand corner of the 1.10 DC/OS GUI.</li>
   </ul>
 <strong>Note:</strong> CLI version 0.5.3 is not compatible with DC/OS 1.9.</li>
-<li>If you cannot access marathon and you see <code>the trustAnchors parameter must be non-empty</code> in the logs, restart Marathon. Restart Marathon by entering the following command on the master node with the leading Marathon master: <code>sudo systemctl restart dcos-marathon.service</code>.</li>
+<li>If you cannot access Marathon and you see <code>the trustAnchors parameter must be non-empty</code> in the logs, restart Marathon. Restart Marathon by entering the following command on the master node with the leading Marathon master: <code>sudo systemctl restart dcos-marathon.service</code>.</li>
 </ul>
 
 Please try out the new features and updated data services. Provide any feedback through Jira: https://jira.dcos.io.
@@ -49,10 +49,6 @@ DC/OS 1.10 includes many new capabilities for Operators and expands the collecti
 - Enhanced upgrades with pre/post flight checks.
 - UCR.
 - Scale and performance limits.
-
-## Health Checks
-- Node and Cluster health checks.
-  Write your own custom health checks or use the predefined checks to access and use information about your cluster, including available ports, Mesos agent status, and IP detect script validation. [View the documentation](/docs/1.10/installing/custom/node-cluster-health-check.md).
 
 ## CLI
 - Multi-cluster support. [View the documentation](/docs/1.10/cli/multi-cluster-cli/).
