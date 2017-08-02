@@ -4,7 +4,13 @@
 <h4>DC/OS 1.10 Beta 1 has a number of limitations that will be resolved at GA time:</h4>
 <ul>
 <li>Upgrades from 1.9 are not supported.</li>
-<li>You must upgrade to DC/OS CLI version 0.5.3.</li><!-- link to how to do that -->
+<li>You must upgrade to DC/OS CLI version 0.5.3.
+<br />
+<ol>
+<li><a href="/1.10/cli/uninstall/">Uninstall the existing CLI</a>.</li>
+<li>Install version 0.5.3 using the **Install CLI** instructions in the dropdown in the upper left hand corner of the 1.10 DC/OS GUI.</li>
+<br />
+**Note:** CLI version 0.5.3 is not compatible with DC/OS 1.9.</li>
 </ul>
 
 <b>The following data services packages are also in beta and compatible with DC/OS 1.10</b>
@@ -26,7 +32,6 @@
 
 <ul>
 <li>Increased CNI network support.</li>
-<li>Backup and restore functionality.</li>
 <li><a href="/docs/1.10/installing/custom/node-cluster-health-check.md">Node and cluster health checks</a>.</li>
 <li>Multi-cluster support in the DC/OS CLI.</li>
 <li>Updated, more intuitive GUI.</li>
@@ -48,6 +53,9 @@ Please try out the new features and updated data services. Provide any feedback 
 ## Marathon 1.5 integrated
 - DC/OS 1.10 is integrated with the latest release of Marathon, version 1.5. Resulting breaking changes and new features are documented below. For more information about Marathon 1.5, consult the [Marathon changelog](https://github.com/mesosphere/marathon/blob/master/changelog.md). <!-- not sure if this is the best link; I don't think there are release notes yet -->
 
+## Mesos 1.4.0 integrated
+DC/OS 1.10 is is based on Mesos 1.4.0, here using master branch (pre-release) SHA 013f7e21, with over 1200 commits since the previous Mesos version. View the [changelog](https://github.com/apache/mesos/blob/master/CHANGELOG).
+
 ## Networking
 - Configurable Spartan upstreams for domains (dnames).
   You can now configure Spartan to delegate a particular domain (e.g. "\*.foo.company.com") to a particular upstream. <!-- I could use more information here -->
@@ -56,7 +64,7 @@ Please try out the new features and updated data services. Provide any feedback 
   <!-- text all about this... -->
 
 ## Provisioning
-- Enhanced upgrades with backup and restore, and pre/post flight checks.
+- Enhanced upgrades with pre/post flight checks.
 
 ## Health Checks
 - Node and Cluster health checks.
@@ -95,6 +103,7 @@ The new command to change your cluster URL is `dcos cluster setup <dcos_url>`. T
 # <a name="known-issues"></a>Known Issues and Limitations
 
 - DCOS-9444 - Task Remaining on Marathon 15.7 from guano backup. <!-- unclear from the Jira if this has been resolved or is even relevant -->
+- DCOS-13762 - SDK Integration with DC/OS Folders.
 - DCOS-14534 - Marathon: Verbose Server Banner.
 - DCOS-14535 - Marathon GUI: Error Messages are Too Verbose.
 - DCOS-14536 - UI Vulnerable to Clickjacking (aka UI Redressing).
