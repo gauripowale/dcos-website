@@ -26,7 +26,7 @@
 
 <li>Beta Confluent-Kafka. <a href="  ">Documentation</a>. <a href="  ">Release Notes</a>.</li>
 
-<li>Spark. <a href="  ">Documentation</a>. <a href="  ">Release Notes</a>.</li>
+<!-- <li>Spark. <a href="  ">Documentation</a>. <a href="  ">Release Notes</a>.</li> -->
 </ul>
 
 <b>Try out the following new features!</b>
@@ -78,6 +78,7 @@ DC/OS 1.10 is is based on Mesos 1.4.0, here using master branch (pre-release) SH
 The GUI sidebar tabs have been updated to offer a more intuitive experience.
 
 - The "Deployments" subpage under the "Services" tab has been moved to a toggle-able modal in the "Services" page.
+- The "Security" tab has been removed. The "Secrets" tab that used to be under "Security" is now a top-level tab.
 - The "Universe" tab has been renamed to "Catalog" and the "Installed" subpage has been removed.
 - The "System Overview" tab has been renamed to "Overview".
 
@@ -112,7 +113,6 @@ The new command to change your cluster URL is `dcos cluster setup <dcos_url>`. T
 - DCOS-14535 - Marathon GUI: Error Messages are Too Verbose.
 - DCOS-14536 - UI Vulnerable to Clickjacking (aka UI Redressing).
 - DCOS-15284 - Marathon Task Stuck.
-- DCOS-15468 Exhibitor and Bouncer Issue in NA-2c [JPMC]. <!-- not sure this needs a note -- seems it's been resolved and I don't think I see any user-facing consequences. I left a question in the Jira -->
 - DCOS-16547 - Task state does not update after the agent running it was removed from the cluster.
 - DCOS-16564 - UI error message references Marathon command.
 - DCOS-17219 - Marathon-LB broken in DC/OS 1.10.
