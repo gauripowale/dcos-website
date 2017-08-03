@@ -69,14 +69,15 @@ The GUI sidebar tabs have been updated to offer a more intuitive experience.
 
 The following updated data services packages are also in beta and are compatible with DC/OS 1.10.
 
-- Beta Cassandra. [Documentation](/service-docs/beta-cassandra/v1.0.31-3.0.13-beta/). [Release Notes](https://github.com/mesosphere/dcos-commons/releases/tag/cassandra-1.0.31-3.0.13-beta).
+- Beta Cassandra. [Documentation](https://docs.mesosphere.com/service-docs/service-docs/beta-cassandra/v1.0.31-3.0.13-beta/). [Release Notes](https://github.com/mesosphere/dcos-commons/releases/tag/cassandra-1.0.31-3.0.13-beta).
 
-- Beta Elastic. [Documentation](/service-docs/beta-elastic/v1.0.15-5.5.1-beta/). [Release Notes](https://github.com/mesosphere/dcos-commons/releases/tag/untagged-466bafb811c900f9bd69).
+- Beta Elastic. [Documentation](https://docs.mesosphere.com/service-docs/service-docs/beta-elastic/v1.0.15-5.5.1-beta/). [Release Notes](https://github.com/mesosphere/dcos-commons/releases/tag/elastic-1.0.15-5.5.1-beta).
 
-- Beta HDFS. [Documentation](/service-docs/beta-hdfs/v1.3.3-2.6.0-cdh5.11.0-beta/). [Release Notes](https://github.com/mesosphere/dcos-commons/releases/tag/untagged-897c7d54d0100b86ca76).
+- Beta HDFS. [Documentation](https://docs.mesosphere.com/service-docs/service-docs/beta-hdfs/v1.3.3-2.6.0-cdh5.11.0-beta/). [Release Notes](https://github.com/mesosphere/dcos-commons/releases/tag/hdfs-1.3.3-2.6.0-cdh5.9.1-beta).
 
-- Beta Kafka. [Documentation](/service-docs/beta-kafka/v1.1.26-0.10.1.0-beta/). [Release Notes](https://github.com/mesosphere/dcos-commons/releases/tag/untagged-4edb1e9a15056ec5ef29).
-<!-- <li>Spark. <a href="  ">Documentation</a>. <a href="  ">Release Notes</a>.</li> -->
+- Beta Kafka. [Documentation](https://docs.mesosphere.com/service-docs/service-docs/beta-kafka/v1.1.26-0.10.1.0-beta/). [Release Notes](https://github.com/mesosphere/dcos-commons/releases/tag/kafka-1.1.26-0.10.1.0-beta).
+
+- Spark. [Documentation](https://docs.mesosphere.com/service-docs/spark/v1.1.1-2.2.0/). [Release Notes](https://github.com/mesosphere/spark-build/releases/tag/1.1.1-2.2.0).
 
 <a name="breaking-changes"></a>
 # Breaking Changes
