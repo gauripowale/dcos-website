@@ -41,7 +41,7 @@ DC/OS 1.10 includes many new capabilities for Operators and expands the collecti
   You can now configure Spartan to delegate a particular domain (e.g. "\*.foo.company.com") to a particular upstream. <!-- I could use more information here -->
 
 - Increased CNI network support.
-  DC/OS now supports any type of CNI network. [View the documentation](/docs/1.10/networking/virtual-networks/cni-plugins.md).
+  DC/OS now supports any type of CNI network. [View the documentation](/docs/1.10/networking/virtual-networks/cni-plugins/).
 
 ## Platform
 - Node and Cluster health checks.
