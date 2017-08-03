@@ -61,7 +61,12 @@ The GUI sidebar tabs have been updated to offer a more intuitive experience.
 - The "Universe" tab has been renamed to "Catalog" and the "Installed" subpage has been removed.
 - The "System Overview" tab has been renamed to "Overview".
 
-## DC/OS Data Services
+## Updated DC/OS Data Services
+
+- Rolling Configuration Update and Upgrades support via CLI.
+- Ability to deploy Data Services into Folders to enable multi team deployments.
+- Ability to deploy to CNI-Based Virtual Networks.
+
 The following updated data services packages are also in beta and are compatible with DC/OS 1.10.
 
 - Beta Cassandra. [Documentation](/service-docs/beta-cassandra/v1.0.31-3.0.13-beta/). [Release Notes](https://github.com/mesosphere/dcos-commons/releases/tag/cassandra-1.0.31-3.0.13-beta).
@@ -103,7 +108,6 @@ Before upgrading to 1.10, uninstall your existing Marathon-LB package and reinst
 - DCOS-15284 - Marathon Task Stuck.
 - DCOS-16547 - Task state does not update after the agent running it was removed from the cluster.
 - DCOS-16564 - UI error message references Marathon command.
-- DCOS-17219 - Marathon-LB broken in DC/OS 1.10.
 - DCOS-17294 - Unable to curl (resolve) applications using Mesos DNS names.
 - DCOS-17321 - Fix upgrade of Marathon-lb from 1.9-1.10.
 - DCOS-17502 - AdminRouter rejecting request to install package.
