@@ -45,7 +45,7 @@ DC/OS 1.10 includes many new capabilities for Operators and expands the collecti
 
 ## Platform
 - Node and Cluster health checks.
-  Write your own custom health checks or use the predefined checks to access and use information about your cluster, including available ports, Mesos agent status, and IP detect script validation. [View the documentation](/docs/1.10/installing/custom/node-cluster-health-check.md).
+  Write your own custom health checks or use the predefined checks to access and use information about your cluster, including available ports, Mesos agent status, and IP detect script validation. [View the documentation](/docs/1.10/installing/custom/node-cluster-health-check/).
 - Enhanced upgrades with pre/post flight checks.
 - UCR.
 - Scale and performance limits.
@@ -69,13 +69,13 @@ The GUI sidebar tabs have been updated to offer a more intuitive experience.
 
 The following updated data services packages are also in beta and are compatible with DC/OS 1.10.
 
-- Beta Cassandra. [Documentation](https://docs.mesosphere.com/service-docs/service-docs/beta-cassandra/v1.0.31-3.0.13-beta/). [Release Notes](https://github.com/mesosphere/dcos-commons/releases/tag/cassandra-1.0.31-3.0.13-beta).
+- Beta Cassandra. [Documentation](https://docs.mesosphere.com/service-docs/beta-cassandra/v1.0.31-3.0.13-beta/). [Release Notes](https://github.com/mesosphere/dcos-commons/releases/tag/cassandra-1.0.31-3.0.13-beta).
 
-- Beta Elastic. [Documentation](https://docs.mesosphere.com/service-docs/service-docs/beta-elastic/v1.0.15-5.5.1-beta/). [Release Notes](https://github.com/mesosphere/dcos-commons/releases/tag/elastic-1.0.15-5.5.1-beta).
+- Beta Elastic. [Documentation](https://docs.mesosphere.com/service-docs/beta-elastic/v1.0.15-5.5.1-beta/). [Release Notes](https://github.com/mesosphere/dcos-commons/releases/tag/elastic-1.0.15-5.5.1-beta).
 
-- Beta HDFS. [Documentation](https://docs.mesosphere.com/service-docs/service-docs/beta-hdfs/v1.3.3-2.6.0-cdh5.11.0-beta/). [Release Notes](https://github.com/mesosphere/dcos-commons/releases/tag/hdfs-1.3.3-2.6.0-cdh5.9.1-beta).
+- Beta HDFS. [Documentation](https://docs.mesosphere.com/service-docs/beta-hdfs/v1.3.3-2.6.0-cdh5.11.0-beta/). [Release Notes](https://github.com/mesosphere/dcos-commons/releases/tag/hdfs-1.3.3-2.6.0-cdh5.9.1-beta).
 
-- Beta Kafka. [Documentation](https://docs.mesosphere.com/service-docs/service-docs/beta-kafka/v1.1.26-0.10.1.0-beta/). [Release Notes](https://github.com/mesosphere/dcos-commons/releases/tag/kafka-1.1.26-0.10.1.0-beta).
+- Beta Kafka. [Documentation](https://docs.mesosphere.com/service-docs/beta-kafka/v1.1.26-0.10.1.0-beta/). [Release Notes](https://github.com/mesosphere/dcos-commons/releases/tag/kafka-1.1.26-0.10.1.0-beta).
 
 - Spark. [Documentation](https://docs.mesosphere.com/service-docs/spark/v1.1.1-2.2.0/). [Release Notes](https://github.com/mesosphere/spark-build/releases/tag/1.1.1-2.2.0).
 
@@ -151,4 +151,4 @@ Before upgrading to 1.10, uninstall your existing Marathon-LB package and reinst
 - MESOS-7057 - Consider using the relink functionality of libprocess in the executor driver.
 - MESOS-7830 - Sandbox_path volume does not have ownership set correctly.
 - PR 1395 - Add HTTP routing for Azure templates.
-- Updated `dcos-launch`, now includes [user's guide](https://github.com/dcos/dcos/blob/master/packages/dcos-launch/extra/README.md).
+- Updated `dcos-launch`, now includes [user's guide](https://github.com/dcos/dcos-launch/blob/master/README.md).
