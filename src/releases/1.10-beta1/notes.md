@@ -19,8 +19,8 @@ Please try out the new features and updated data services. Provide any feedback 
 </div>
 
 DC/OS 1.10 includes many new capabilities for Operators and expands the collection of Data & Developer Services with a focus on:
-- Core DC/OS Service Continuity - System resilience, cluster and node checks, UCR and Pods Improvements.
-- CNI Networking Enhancements for Broader Networking Support.
+- Core DC/OS Service Continuity - System resilience, cluster and node checks, UCR and Pods improvements.
+- CNI Networking enhancements for broader networking support.
 - Data Services enhancements.
 
 ### Contents
