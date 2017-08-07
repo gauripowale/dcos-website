@@ -57,6 +57,20 @@
   },
   {
     "featured": false,
+    "image": "/assets/images/demos/applogs.JPG",
+    "name": "Application Logs",
+    "use_cases": ["Fast Data", "Logging"],
+    "dcos_version": ["1.8", "1.9"],
+    "language": ["Go"],
+    "description": "In this demo we have a look into interactively analyzing application logs. As a source for the application logs we're using WordPress, a popular blogging engine.The demo shows how to ingest the application logs into Minio, an object store akin to Amazon S3 and demonstrates how to query those logs with SQL, using Apache Drill, a distributed schema-free query engine.",
+    "packages": ["Minio", "WordPress", "Apache Drill"],
+    "youtube_id": "",
+    "callouts": {
+    "GitHub": "https://github.com/dcos/demos/tree/master/applogs",
+    }
+  },
+  {
+    "featured": false,
     "image": "/assets/images/demos/Bus.jpg",
     "name": "Bus Tracking SMACK Stack",
     "use_cases": ["IoT", "Fast Data", "Full Stack", "SMACK"],
