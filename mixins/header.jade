@@ -52,9 +52,6 @@ mixin header(lightHeader)
         else
           a(href='/blog/') Blog
 
-      li.menu-item
-        a(href='https://github.com/dcos/dcos', target='_blank') GitHub
-
     ul.menu
       li.menu-item
         if(locals.filename === 'install.html')
@@ -94,7 +91,3 @@ mixin header(lightHeader)
           a(href='/blog/').active Blog
         else
           a(href='/blog/') Blog
-
-      li.menu-item
-        .menu-item__github-button
-          a.github-button(href='https://github.com/dcos/dcos', data-count-href='/dcos/dcos/stargazers', data-count-api='/repos/dcos/dcos#stargazers_count', data-count-aria-label='# stargazers on GitHub', aria-label='Star dcos/dcos on GitHub') Star
