@@ -14,6 +14,20 @@
     }
   },
   {
+    "featured": false,
+    "image": "/assets/images/demos/fraud-detect.jpg",
+    "name": "Fraud Detection with Apache Flink",
+    "use_cases": ["Fast Data"],
+    "dcos_version": ["1.8", "1.9"],
+    "language": ["Go, Java"],
+    "description": "During this demo we use Apache Flink and Apache Kafka to detect fraud in streams of financials transaction.",
+    "packages": ["Apache Flink", "Apache Kafka"],
+    "youtube_id": "",
+    "callouts": {
+      "GitHub": "https://github.com/dcos/demos/tree/master/flink",
+    }
+  },
+  {
     "featured": true,
     "image": "/assets/images/demos/FinTrans.jpg",
     "name": "Financial Transactions",
