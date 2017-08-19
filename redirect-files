@@ -62,7 +62,6 @@
 /docs/1.8/usage/tutorials/public-app/index.html /docs/1.8/usage/managing-services/expose-service/
 /docs/1.8/usage/tutorials/registry/index.html https://github.com/dcos/examples/tree/master/1.8/registry
 /docs/1.9/administration/access-node/index.html /docs/1.9/administering-clusters/
-/docs/1.9/administration/access-node/index.html /docs/1.9/administering-clusters/sshcluster/
 /docs/1.9/administration/access-node/sshcluster/index.html /docs/1.9/administering-clusters/sshcluster/
 /docs/1.9/administration/access-node/tunnel/index.html /docs/1.9/developing-services/tunnel/
 /docs/1.9/administration/component-management/index.html /docs/1.9/administering-clusters/component-management/
