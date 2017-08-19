@@ -62,7 +62,6 @@
 /docs/1.8/usage/tutorials/public-app/index.html /docs/1.8/usage/managing-services/expose-service/
 /docs/1.8/usage/tutorials/registry/index.html https://github.com/dcos/examples/tree/master/1.8/registry
 /docs/1.9/administration/access-node/index.html /docs/1.9/administering-clusters/
-/docs/1.9/administration/access-node/index.html /docs/1.9/administering-clusters/sshcluster/
 /docs/1.9/administration/access-node/sshcluster/index.html /docs/1.9/administering-clusters/sshcluster/
 /docs/1.9/administration/access-node/tunnel/index.html /docs/1.9/developing-services/tunnel/
 /docs/1.9/administration/component-management/index.html /docs/1.9/administering-clusters/component-management/
@@ -162,7 +161,6 @@
 /docs/1.9/usage/cli/command-reference/dcos-auth/dcos-auth-list-providers/index.html /docs/1.9/cli/command-reference/dcos-auth/dcos-auth-list-providers/
 /docs/1.9/usage/cli/command-reference/dcos-auth/dcos-auth-login/index.html /docs/1.9/cli/command-reference/dcos-auth/dcos-auth-login/
 /docs/1.9/usage/cli/command-reference/dcos-auth/dcos-auth-logout/index.html /docs/1.9/cli/command-reference/dcos-auth/dcos-auth-logout/
-/docs/1.9/usage/cli/command-reference/dcos-auth/index.html /docs/1.9/cli/command-reference/dcos-auth/
 /docs/1.9/usage/cli/command-reference/dcos-auth/index.html /docs/1.9/cli/command-reference/dcos-auth/dcos-auth-login/
 /docs/1.9/usage/cli/command-reference/dcos-config/dcos-config-set/index.html /docs/1.9/cli/command-reference/dcos-config/dcos-config-set/
 /docs/1.9/usage/cli/command-reference/dcos-config/dcos-config-show/index.html /docs/1.9/cli/command-reference/dcos-config/dcos-config-show/
@@ -264,7 +262,6 @@
 /docs/1.9/usage/debugging/stuck-deployment/index.html /docs/1.9/monitoring/debugging/stuck-deployment/
 /docs/1.9/usage/faq/index.html /docs/1.9/deploying-services/faq/
 /docs/1.9/usage/gpu/index.html /docs/1.9/deploying-services/gpu/
-/docs/1.9/usage/gpu/index.html /docs/1.9/deploying-services/gpu/
 /docs/1.9/usage/gpu/limitations/index.html /docs/1.9/deploying-services/gpu/
 /docs/1.9/usage/index.html /docs/1.9/
 /docs/1.9/usage/jobs/examples/index.html /docs/1.9/deploying-jobs/examples/
@@ -272,7 +269,6 @@
 /docs/1.9/usage/jobs/index.html /docs/1.9/deploying-jobs/
 /docs/1.9/usage/managing-services/application-basics/deploy-docker-app/index.html /docs/1.9/deploying-services/creating-services/deploy-docker-app/
 /docs/1.9/usage/managing-services/application-basics/index.html /docs/1.9/deploying-services/creating-services/
-/docs/1.9/usage/managing-services/config-universe-service/index.html /docs/1.9/deploying-services/application-basics/config-universe-service/
 /docs/1.9/usage/managing-services/config-universe-service/index.html /docs/1.9/deploying-services/config-universe-service/
 /docs/1.9/usage/managing-services/config/index.html /docs/1.9/usage/managing-services/config-universe-service/
 /docs/1.9/usage/managing-services/developing-services/index.html /docs/1.9/developing-services/
@@ -302,14 +298,12 @@
 /docs/1.9/usage/pods/index.html /docs/1.9/deploying-services/pods/
 /docs/1.9/usage/pods/pods-cli/index.html /docs/1.9/usage/pods/using-pods/
 /docs/1.9/usage/pods/quickstart/index.html /docs/1.9/deploying-services/pods/quickstart/
-/docs/1.9/usage/pods/technical-overview/index.html /docs/1.9/deploying-services/pods/technical-/docs/1.9/overview/
 /docs/1.9/usage/pods/technical-overview/index.html /docs/1.9/deploying-services/pods/technical-overview/
 /docs/1.9/usage/pods/using-pods/index.html /docs/1.9/deploying-services/pods/using-pods/
 /docs/1.9/usage/repo/index.html /docs/1.9/administering-clusters/repo/
 /docs/1.9/usage/service-discovery/custom-domain-service-discovery/index.html /docs/1.9/usage/service-discovery/mesos-dns/custom-domain-service-discovery/
 /docs/1.9/usage/service-discovery/dns-naming/index.html /docs/1.9/usage/service-discovery/mesos-dns/service-naming/#dns-naming
 /docs/1.9/usage/service-discovery/dns-overview/index.html /docs/1.9/networking/dns-/docs/1.9/overview/
-/docs/1.9/usage/service-discovery/dns-overview/index.html /docs/1.9/networking/dns-overview/
 /docs/1.9/usage/service-discovery/index.html /docs/1.9/networking/
 /docs/1.9/usage/service-discovery/load-balancing-vips/index.html /docs/1.9/networking/load-balancing-vips/
 /docs/1.9/usage/service-discovery/load-balancing-vips/overlay-networks/index.html /docs/1.9/usage/service-discovery/load-balancing-vips/virtual-networks/
