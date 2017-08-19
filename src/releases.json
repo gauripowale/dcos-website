@@ -15,7 +15,7 @@
     "downloadlink": {
       "amazon": "https://downloads.dcos.io/dcos/stable/aws.html",
       "azure": "https://downloads.dcos.io/dcos/stable/azure.html",
-      "direct": "https://downloads.dcos.io/dcos/stable/commit/0ce03387884523f02624d3fb56c7fbe2e06e181b/dcos_generate_config.sh"
+      "direct": "https://downloads.dcos.io/dcos/stable/dcos_generate_config.sh"
     },
     "subreleases": [
       { "name": "1.9.2", "url": "/releases/1.9.2/"},
@@ -40,9 +40,9 @@
       "Marathon 1.3.9 (native in the DC/OS UI)."
     ],
     "downloadlink": {
-      "amazon": "https://downloads.dcos.io/dcos/stable/aws.html",
-      "azure": "https://downloads.dcos.io/dcos/stable/azure.html",
-      "direct": "https://downloads.dcos.io/dcos/stable/commit/0ce03387884523f02624d3fb56c7fbe2e06e181b/dcos_generate_config.sh"
+      "amazon": "https://downloads.dcos.io/dcos/stable/1.8.9/aws.html",
+      "azure": "https://downloads.dcos.io/dcos/stable/1.8.9/azure.html",
+      "direct": "https://downloads.dcos.io/dcos/stable/1.8.9/dcos_generate_config.sh"
     },
     "subreleases": [
       { "name": "1.8.9", "url": "/releases/1.8.9/#1-8-9"},
