@@ -27,7 +27,7 @@ DC/OS 1.10 includes many new capabilities for Operators and expands the collecti
 - [New Features and Capabilities](#new-features)
 - [Breaking Changes](#breaking-changes)
 - [Known Issues and Limitations](#known-issues)
-- [Issues Fixed since 1.9.0](#fixed-issues)
+- [Issues Fixed since 1.10 Beta 1](#fixed-issues)
 
 # <a name="new-features"></a>New Features and Capabilities
 
@@ -57,7 +57,6 @@ DC/OS 1.10 includes many new capabilities for Operators and expands the collecti
 The GUI sidebar tabs have been updated to offer a more intuitive experience.
 
 - The "Deployments" subpage under the "Services" tab has been moved to a toggle-able modal in the "Services" page.
-- The "Security" tab has been removed. The "Secrets" tab that used to be under "Security" is now a top-level tab.
 - The "Universe" tab has been renamed to "Catalog" and the "Installed" subpage has been removed.
 - The "System Overview" tab has been renamed to "Overview".
 
@@ -73,7 +72,7 @@ The following updated data services packages are also in beta and are compatible
 
 - Beta Elastic. [Documentation](https://docs.mesosphere.com/service-docs/beta-elastic/v1.0.15-5.5.1-beta/). [Release Notes](https://github.com/mesosphere/dcos-commons/releases/tag/elastic-1.0.15-5.5.1-beta).
 
-- Beta HDFS. [Documentation](https://docs.mesosphere.com/service-docs/beta-hdfs/v1.3.3-2.6.0-cdh5.11.0-beta/). [Release Notes](https://github.com/mesosphere/dcos-commons/releases/tag/hdfs-1.3.3-2.6.0-cdh5.9.1-beta).
+- Beta HDFS. [Documentation](https://docs.mesosphere.com/service-docs/beta-hdfs/v1.3.3-2.6.0-cdh5.11.0-beta/). [Release Notes](https://github.com/mesosphere/dcos-commons/releases/tag/hdfs-1.3.3-2.6.0-cdh5.11.0-beta).
 
 - Beta Kafka. [Documentation](https://docs.mesosphere.com/service-docs/beta-kafka/v1.1.26-0.10.1.0-beta/). [Release Notes](https://github.com/mesosphere/dcos-commons/releases/tag/kafka-1.1.26-0.10.1.0-beta).
 
