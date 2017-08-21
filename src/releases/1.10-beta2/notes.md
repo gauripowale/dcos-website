@@ -13,7 +13,7 @@
 <li>You must upgrade Marathon-LB _before_ upgrading to DC/OS 1.10. See the [upgrade section](/1.10/installing/upgrading/) for more information.</li>
 <strong>Note:</strong> CLI version 0.5.3 is not compatible with DC/OS 1.9.</li>
 </ul>
-
+<br />
 Please try out the new features and updated data services. Provide any feedback through Jira: https://jira.dcos.io.
 </div>
 
@@ -117,7 +117,7 @@ The following updated data services packages are also in beta and are compatible
 - MARATHON-7654 - Marathon cannot replace persistent tasks for rebooted hosts until the Mesos Master forgets about the old agent.
 - MESOS-6950 - Launching two tasks with the same Docker image simultaneously may cause a staging dir never cleaned up.
 
-# <a name="fixed-issues"></a>Major Issues Fixed Since 1.10.0-beta1
+# <a name="fixed-issues"></a>Major Issues Fixed Since 1.10 Beta1
 
 - Upgrades from DC/OS 1.9 are supported.
 - DCOS-5809	- Admin Router: use "variables approach" for DNS name re-resolution instead of periodic worker process reload.
