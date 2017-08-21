@@ -9,8 +9,8 @@
   <ul>
   <li><a href="/docs/1.10/cli/uninstall/">Uninstall the existing CLI</a>.</li>
   <li>Install version 0.5.3 using the <strong>Install CLI</strong> instructions in the dropdown in the upper left hand corner of the 1.10 DC/OS GUI.</li>
-  <li>You must upgrade Marathon-LB _before_ upgrading to DC/OS 1.10. See the [upgrade section](/1.10/installing/upgrading/) for more information.</li>
   </ul>
+<li>You must upgrade Marathon-LB _before_ upgrading to DC/OS 1.10. See the [upgrade section](/1.10/installing/upgrading/) for more information.</li>
 <strong>Note:</strong> CLI version 0.5.3 is not compatible with DC/OS 1.9.</li>
 </ul>
 
@@ -121,15 +121,12 @@ The following updated data services packages are also in beta and are compatible
 
 - Upgrades from DC/OS 1.9 are supported.
 - DCOS-5809	- Admin Router: use "variables approach" for DNS name re-resolution instead of periodic worker process reload.
-- DCOS-9794	- secrets CLI subcommand: bad error handling when an unauthorized user tries to fetch a secret.
 - DCOS-14469 - Pods displaying duplicate image of same container.
 - DCOS-15902 - Add documentation for the dcos-backup CLI.
 - DCOS-16088 - The flow for changing the dcos_url and login has changed.
 - DCOS-16225 - Edit modal for SDK services should mention the CLI.
 - DCOS-16144 - DC/OS CLI: AttributeError: 'str' object has no attribute 'status_code'.
 - DCOS-16528 - Incorrect command in Edit Service modal.
-- DCOS-16643 - dcos tunnel doesn't work with DC/OS CLI 0.5.x.
-- DCOS-16658 - Move "Secrets" back to "Resources" menu section.
 - DCOS-17219 - Marathon-LB broken in DC/OS 1.10.
 - DCOS-17284 - [1.10] GUI bug: container type must be defined.
 - DCOS-17321 - Fix upgrade of Marathon-lb from 1.9-1.10.
@@ -138,12 +135,10 @@ The following updated data services packages are also in beta and are compatible
 - DCOS-17473 - bouncer: stay close to official transaction retry logic.
 - DCOS-17502 - Marathon cannot retrieve JSON web key set: 'the trustAnchors parameter must be non-empty'.
 - DCOS-17511 - cockroachdb: upgrade to v1.0.4.
-- DCOS-17553 - dcos-backup should prevent concurrent backup/restores.
 - DCOS-17560 - bouncer: bump ldap3 to 2.2.4 (2017.05.07).
 - DCOS-17581 - bootstrap: consolidate write_java_truststore_with_dcos_ca_bundle for concurrent execution.
 - DCOS-17593 - bouncer: optimize policyquery endpoint.
 - DCOS-17631 - Bouncer: fix transaction retry rollback condition.
-- DCOS-17844 - 1.10 disabled->permissive upgrade fails due to node health checks when upgrading masters.
 - DCOS-17979 - Remove "Open Service" from UI for SDK-based Services.
 - DCOS-17982 - Remove the suspend button for SDK services.
 - DCOS_OSS-1014	- Admin Router: Document /service endpoint behaviour and limitations.
