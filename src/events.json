@@ -335,9 +335,9 @@
   },
 
   { "title": "Introduction to DC/OS (Philadelphia LUG West)",
-      "image": "/assets/images/events/Philadelphia.jpg",
+      "image": "/assets/images/events/2017-08-21_plug_intro_dcos.jpg",
       "date": "2017-08-21",
-      "url": "http://www.phillylinux.org/meetings.html"
+      "url": "https://docs.google.com/presentation/d/1ZPziBDHIOwqBwVirw7AAa0tA5ulJuppvVPhIwrLGGsY/edit?usp=sharing"
   },
 
   { "title": "From SMACK to SMAACK Running Alluxio on DC/OS (Meetup)",
