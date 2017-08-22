@@ -1,8 +1,8 @@
-# DC/OS 1.10 Beta 1
+# DC/OS 1.10.0 Beta 1
 
 <div style="padding: 10px; border: 2px solid black; background-color: #e3e4e5;">
 <h2>This beta release is for testing only and not to be used in production. It will only support new installations.</h2>
-<h3>DC/OS 1.10 Beta 1 has a number of limitations that will be resolved at GA time:</h3>
+<h3>DC/OS 1.10.0 Beta 1 has a number of limitations that will be resolved at GA time:</h3>
 
 <ul>
 <li>Upgrades from 1.9 are not supported.</li>
@@ -82,8 +82,8 @@ The following updated data services packages are also in beta and are compatible
 <a name="breaking-changes"></a>
 # Breaking Changes
 
-- Upgrades not supported in 1.10 Beta 1.
-  Upgrades from 1.9 to 1.10 are _not supported_ in 1.10 Beta 1. Upgrades will be supported in 1.10 Beta 2.
+- Upgrades not supported in 1.10.0 Beta 1.
+  Upgrades from 1.9 to 1.10 are _not supported_ in 1.10.0 Beta 1. Upgrades will be supported in a future 1.10 release.
 
 - Marathon Networking API Changes in 1.5
   The networking section of the Marathon API has changed significantly in version 1.5. Marathon can still accept requests using the 1.4 version of the API, but it will always reply with the 1.5 version of the app definition. This will break tools that consume networking-related fields of the service definition. [View the documentation](https://github.com/mesosphere/marathon/blob/master/docs/docs/networking.md). <!-- linking to the marathon doc until I port the relevant information to the dc/os site -->
