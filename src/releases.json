@@ -13,9 +13,9 @@
       "Marathon 1.4."
     ],
     "downloadlink": {
-      "amazon": "https://downloads.dcos.io/dcos/stable/aws.html",
-      "azure": "https://downloads.dcos.io/dcos/stable/azure.html",
-      "direct": "https://downloads.dcos.io/dcos/stable/dcos_generate_config.sh"
+      "amazon": "https://downloads.dcos.io/dcos/stable/1.9.2/aws.html",
+      "azure": "https://downloads.dcos.io/dcos/stable/1.9.2/azure.html",
+      "direct": "https://downloads.dcos.io/dcos/stable/1.9.2/dcos_generate_config.sh"
     },
     "subreleases": [
       { "name": "1.9.2", "url": "/releases/1.9.2/"},
