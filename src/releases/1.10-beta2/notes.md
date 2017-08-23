@@ -117,7 +117,7 @@ The following updated data services packages are also in beta and are compatible
 - MARATHON-7654 - Marathon cannot replace persistent tasks for rebooted hosts until the Mesos Master forgets about the old agent.
 - MESOS-6950 - Launching two tasks with the same Docker image simultaneously may cause a staging dir never cleaned up.
 
-# <a name="fixed-issues"></a>Major Issues Fixed Since 1.10.0 Beta1
+# <a name="fixed-issues"></a>Major Issues Fixed Since 1.10.0 Beta 1
 
 - Upgrades from DC/OS 1.9 are supported.
 - DCOS-5809	- Admin Router: use "variables approach" for DNS name re-resolution instead of periodic worker process reload.
@@ -130,15 +130,9 @@ The following updated data services packages are also in beta and are compatible
 - DCOS-17219 - Marathon-LB broken in DC/OS 1.10.
 - DCOS-17284 - [1.10] GUI bug: container type must be defined.
 - DCOS-17321 - Fix upgrade of Marathon-lb from 1.9-1.10.
-- DCOS-17412 - bouncer: aces must be unique for [user,resource] and [group,resource].
-- DCOS-17430 - bouncer: policyquery is slow against cockroachdb.
-- DCOS-17473 - bouncer: stay close to official transaction retry logic.
 - DCOS-17502 - Marathon cannot retrieve JSON web key set: 'the trustAnchors parameter must be non-empty'.
 - DCOS-17511 - cockroachdb: upgrade to v1.0.4.
-- DCOS-17560 - bouncer: bump ldap3 to 2.2.4 (2017.05.07).
 - DCOS-17581 - bootstrap: consolidate write_java_truststore_with_dcos_ca_bundle for concurrent execution.
-- DCOS-17593 - bouncer: optimize policyquery endpoint.
-- DCOS-17631 - Bouncer: fix transaction retry rollback condition.
 - DCOS-17979 - Remove "Open Service" from UI for SDK-based Services.
 - DCOS-17982 - Remove the suspend button for SDK services.
 - DCOS_OSS-1014	- Admin Router: Document /service endpoint behaviour and limitations.
