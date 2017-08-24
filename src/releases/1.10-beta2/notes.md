@@ -82,7 +82,7 @@ The following updated data services packages are also in beta and are compatible
 # Breaking Changes
 
 - Upgrades not supported from 1.10.0 Beta 1 to 1.10.0 Beta 2.
-  Upgrades from 1.10.0 Beta 1 to 1.10.0 Beta 2 are _not supported_ in 1.10.0 Beta 2. This Upgrade will be supported in a future 1.10 release.
+  Upgrades from 1.10.0 Beta 1 to 1.10.0 Beta 2 are _not supported_ in 1.10.0 Beta 2. This upgrade will be supported in a future 1.10 release.
 
 - Marathon Networking API Changes in 1.5
   The networking section of the Marathon API has changed significantly in version 1.5. Marathon can still accept requests using the 1.4 version of the API, but it will always reply with the 1.5 version of the app definition. This will break tools that consume networking-related fields of the service definition. [View the documentation](https://github.com/mesosphere/marathon/blob/master/docs/docs/networking.md). <!-- linking to the marathon doc until I port the relevant information to the dc/os site -->
