@@ -82,7 +82,7 @@ The following updated data services packages are also in beta and are compatible
 # Breaking Changes
 
 - Upgrades not supported from 1.10.0 Beta 1 to 1.10.0 Beta 2.
-  Upgrades from 1.10.0 Beta 1 to 1.10.0 Beta 2 are _not supported_ in 1.10.0 Beta 2. This upgrade will be supported in a future 1.10 release.
+  Upgrades from 1.10.0 Beta 1 to 1.10.0 Beta 2 are _not supported_ in 1.10.0 Beta 2. This Upgrade will be supported in a future 1.10 release.
 
 - Marathon Networking API Changes in 1.5
   The networking section of the Marathon API has changed significantly in version 1.5. Marathon can still accept requests using the 1.4 version of the API, but it will always reply with the 1.5 version of the app definition. This will break tools that consume networking-related fields of the service definition. [View the documentation](https://github.com/mesosphere/marathon/blob/master/docs/docs/networking.md). <!-- linking to the marathon doc until I port the relevant information to the dc/os site -->
@@ -98,37 +98,32 @@ The following updated data services packages are also in beta and are compatible
 
 # <a name="known-issues"></a>Known Issues and Limitations
 
-- CASSANDRA-613 - Replace of Cassandra Nodes doesn't work with duplicate Hostname/IPs.
 - DCOS-13762 - SDK Integration with DC/OS Folders. <!-- resolved? -->
 - DCOS-14534 - Marathon: Verbose Server Banner.
-- DCOS-14535 - Marathon GUI: Error Messages are Too Verbose.
 - DCOS-14536 - UI Vulnerable to Clickjacking (aka UI Redressing).
-- DCOS-15284 - Marathon Task Stuck.
 - DCOS-15590 - DCOS cli confirm() is not non-interactive safe.
-- DCOS-15937 - Pods do not receive SIGTERM.
-- DCOS-16151 - Marathon Endpoints are not responding.
 - DCOS-16547 - Task state does not update after the agent running it was removed from the cluster.
-- DCOS-16564 - UI error message references Marathon command.
-- DCOS-17294 - Unable to curl (resolve) applications using Mesos DNS names.
-- DCOS-17502 - AdminRouter rejecting request to install package.
 - DCOS_OSS-1340 - Spartan "autoip" DNS should resolve to host IP for UCR in bridge network.
-- DCOS_OSS-1486 - Metrics agent crashes when the mesos containers endpoint is missing fields.
 - INFINITY-1143 - Update / Uninstall. DSE does not support rolling upgrade.
-- MARATHON-7654 - Marathon cannot replace persistent tasks for rebooted hosts until the Mesos Master forgets about the old agent.
-- MESOS-6950 - Launching two tasks with the same Docker image simultaneously may cause a staging dir never cleaned up.
 
 # <a name="fixed-issues"></a>Major Issues Fixed Since 1.10.0 Beta 1
 
 - Upgrades from DC/OS 1.9 are supported.
+- CASSANDRA-613 - Replace of Cassandra Nodes doesn't work with duplicate Hostname/IPs.
 - DCOS-5809	- Admin Router: use "variables approach" for DNS name re-resolution instead of periodic worker process reload.
 - DCOS-14469 - Pods displaying duplicate image of same container.
+- DCOS-14535 - Marathon GUI: Error Messages are Too Verbose.
 - DCOS-15902 - Add documentation for the dcos-backup CLI.
+- DCOS-15937 - Pods do not receive SIGTERM.
 - DCOS-16088 - The flow for changing the dcos_url and login has changed.
 - DCOS-16225 - Edit modal for SDK services should mention the CLI.
 - DCOS-16144 - DC/OS CLI: AttributeError: 'str' object has no attribute 'status_code'.
+- DCOS-16151 - Marathon Endpoints are not responding.
 - DCOS-16528 - Incorrect command in Edit Service modal.
+- DCOS-16564 - UI error message references Marathon command.
 - DCOS-17219 - Marathon-LB broken in DC/OS 1.10.
 - DCOS-17284 - [1.10] GUI bug: container type must be defined.
+- DCOS-17294 - Unable to curl (resolve) applications using Mesos DNS names.
 - DCOS-17321 - Fix upgrade of Marathon-lb from 1.9-1.10.
 - DCOS-17502 - Marathon cannot retrieve JSON web key set: 'the trustAnchors parameter must be non-empty'.
 - DCOS-17511 - cockroachdb: upgrade to v1.0.4.
@@ -150,3 +145,4 @@ The following updated data services packages are also in beta and are compatible
 - MARATHON-7575	- DeleteAppAndBackupIntegrationTest fails 3% of the time.
 - MARATHON-7654	- Marathon cannot replace persistent tasks for rebooted hosts until the Mesos Master forgets about the old agent.
 - MARATHON-7688	- VIP does not work with pods on overlay.
+- MESOS-6950 - Launching two tasks with the same Docker image simultaneously may cause a staging dir never cleaned up.
