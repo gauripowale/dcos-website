@@ -98,7 +98,6 @@ The following updated data services packages are also in beta and are compatible
 
 # <a name="known-issues"></a>Known Issues and Limitations
 
-- DCOS-13762 - SDK Integration with DC/OS Folders. <!-- resolved? -->
 - DCOS-14534 - Marathon: Verbose Server Banner.
 - DCOS-14536 - UI Vulnerable to Clickjacking (aka UI Redressing).
 - DCOS-15590 - DCOS cli confirm() is not non-interactive safe.
