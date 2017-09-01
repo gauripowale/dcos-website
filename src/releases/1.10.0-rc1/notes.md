@@ -1,18 +1,14 @@
 # DC/OS 1.10.0 Release Candidate 1
 
 <div style="padding: 10px; border: 2px solid black; background-color: #e3e4e5;">
-<h2>This beta release is for testing only and not to be used in production. It will only support new installations.</h2>
-<h3>DC/OS 1.10.0 Beta 2 has a number of limitations that will be resolved at GA time:</h3>
+<h2>This release candidate is for testing only and not to be used in production.</h2>
+ <h3>Limitations:</h3>
 
 <ul>
-<li>Upgrades from 1.10.0 Beta 1 to 1.10.0 Beta 2 are not supported.</li>
-<li>DC/OS 1.10 requires CLI version 0.5.3.
-  <ul>
-  <li><a href="/docs/1.10/cli/uninstall/">Uninstall the existing CLI</a>.</li>
-  <li>Install version 0.5.3 using the <strong>Install CLI</strong> instructions in the dropdown in the upper left hand corner of the 1.10 DC/OS GUI.</li>
-  </ul>
 <li>You must upgrade Marathon-LB _before_ upgrading to DC/OS 1.10. See the [upgrade section](/1.10/installing/upgrading/) for more information.</li>
-<strong>Note:</strong> CLI version 0.5.3 is not compatible with DC/OS 1.9.</li>
+
+<li>During upgrade to 1.10, there is a brief moment when the DNS resolution does not work. If a health check runs at that moment, it will fail and services will be reported as unhealthy.</li>
+
 </ul>
 <br />
 Please try out the new features and updated data services. Provide any feedback through Jira: https://jira.dcos.io.
@@ -81,13 +77,10 @@ The following updated data services packages are also in beta and are compatible
 <a name="breaking-changes"></a>
 # Breaking Changes
 
-- Upgrades not supported from 1.10.0 Beta 1 to 1.10.0 Beta 2.
-  Upgrades from 1.10.0 Beta 1 to 1.10.0 Beta 2 are _not supported_ in 1.10.0 Beta 2. This upgrade will be supported in a future 1.10 release.
-
 - Marathon Networking API Changes in 1.5
   The networking section of the Marathon API has changed significantly in version 1.5. Marathon can still accept requests using the 1.4 version of the API, but it will always reply with the 1.5 version of the app definition. This will break tools that consume networking-related fields of the service definition. [View the documentation](https://github.com/mesosphere/marathon/blob/master/docs/docs/networking.md). <!-- linking to the marathon doc until I port the relevant information to the dc/os site -->
 
-<- The latest version of Marathon-LB is required for 1.10.
+- The latest version of Marathon-LB is required for 1.10.
   Before upgrading to 1.10, uninstall your existing Marathon-LB package and reinstall the updated version. See the [upgrade section](/docs/1.10/installing/upgrading/) for more information.
 
 - REX-Ray configuration change.
@@ -95,6 +88,9 @@ The following updated data services packages are also in beta and are compatible
 
 - New flow to change the `dcos_url` and login.
   The new command to change your cluster URL is `dcos cluster setup <dcos_url>`. This change will break any existing tooling that uses the former command. Backwards compatibility is slated for a future patch release.
+
+- Marathon Jenkins Plugin and Marathon-Client.
+  Marathon 1.5, released with DCOS 1.10, made breaking changes to the API around Docker and management of networks. This breaking change has not yet been incorporated in the marathon-client, which is used by the marathon jenkins plugin. Marathon client and Marathon Jenkins Plugin _will_ work in general, however they will _fail_ to propagate configurations for networks if working with DCOS 1.10 or Marathon 1.5. A solution will be provided for the DCOS 1.10 GA release.
 
 # <a name="known-issues"></a>Known Issues and Limitations
 
@@ -104,6 +100,7 @@ The following updated data services packages are also in beta and are compatible
 - DCOS-16547 - Task state does not update after the agent running it was removed from the cluster.
 - DCOS_OSS-1340 - Spartan "autoip" DNS should resolve to host IP for UCR in bridge network.
 - INFINITY-1143 - Update / Uninstall. DSE does not support rolling upgrade.
+- MARATHON-7736 - Marathon Client does NOT work with Marathon 1.5.
 
 # <a name="fixed-issues"></a>Major Issues Fixed Since 1.10.0 Beta 2
 
@@ -112,7 +109,6 @@ The following updated data services packages are also in beta and are compatible
 - DCOS-5809	- Admin Router: use "variables approach" for DNS name re-resolution instead of periodic worker process reload.
 - DCOS-14469 - Pods displaying duplicate image of same container.
 - DCOS-14535 - Marathon GUI: Error Messages are Too Verbose.
-- DCOS-15902 - Add documentation for the dcos-backup CLI.
 - DCOS-15937 - Pods do not receive SIGTERM.
 - DCOS-16088 - The flow for changing the dcos_url and login has changed.
 - DCOS-16225 - Edit modal for SDK services should mention the CLI.
@@ -125,7 +121,6 @@ The following updated data services packages are also in beta and are compatible
 - DCOS-17294 - Unable to curl (resolve) applications using Mesos DNS names.
 - DCOS-17321 - Fix upgrade of Marathon-lb from 1.9-1.10.
 - DCOS-17502 - Marathon cannot retrieve JSON web key set: 'the trustAnchors parameter must be non-empty'.
-- DCOS-17511 - cockroachdb: upgrade to v1.0.4.
 - DCOS-17581 - bootstrap: consolidate write_java_truststore_with_dcos_ca_bundle for concurrent execution.
 - DCOS-17979 - Remove "Open Service" from UI for SDK-based Services.
 - DCOS-17982 - Remove the suspend button for SDK services.
