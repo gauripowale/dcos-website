@@ -22,7 +22,7 @@
       { "name": "1.10.0-beta2", "url": "/releases/1.10-beta2/"},
       { "name": "1.10.0-beta1", "url": "/releases/1.10-beta1/"}
     ],
-    "docslink": "/docs/1.9/"
+    "docslink": "/docs/1.10/"
   },
   {
     "title": "DC/OS 1.9",
