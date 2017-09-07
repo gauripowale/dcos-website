@@ -1,5 +1,30 @@
 [
   {
+    "title": "DC/OS 1.10 (Beta)",
+    "date": "2017-08-02",
+    "description": "DC/OS 1.10 includes core DC/OS service improvements, CNI networking enhancements, and data service enhancements.",
+    "features": [
+      "User Interface: Streamlined GUI, multi-cluster CLI support.",
+      "Container Orchestration: UCR improvements.",
+      "Platform: Node health checks, enhanced upgrades with pre/post flight checks.",
+      "Networking: Increased CNI support, configurable Spartan upstreams for domains.",
+      "Data Services: Deployment into folders, deployment to CNI-based virtual networks.",
+      "Apache Mesos 1.4.",
+      "Marathon 1.5."
+    ],
+    "downloadlink": {
+      "amazon": "https://downloads.dcos.io/dcos/EarlyAccess/aws.html",
+      "azure": "https://downloads.dcos.io/dcos/EarlyAccess/azure.html",
+      "direct": "https://downloads.dcos.io/dcos/EarlyAccess/commit/a5ecc9af5d9ca903f53fa16f6f0ebd597095652e/dcos_generate_config.sh"
+    },
+    "subreleases": [
+      { "name": "1.10.0-rc1", "url": "/releases/1.10.0-rc1/"},
+      { "name": "1.10.0-beta2", "url": "/releases/1.10-beta2/"},
+      { "name": "1.10.0-beta1", "url": "/releases/1.10-beta1/"}
+    ],
+    "docslink": "/docs/1.9/"
+  },
+  {
     "title": "DC/OS 1.9",
     "date": "2017-03-28",
     "description": "DC/OS 1.9 includes many new capabilities for operators, and expands the collection of data and developer services.",
