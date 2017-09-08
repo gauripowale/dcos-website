@@ -41,12 +41,6 @@
     "url": "https://www.youtube.com/watch?v=JFkOmETATYc&feature=youtu.be"
   },
 
-  { "title": "Javaland",
-    "image": "/assets/images/events/Bruehl.jpg",
-    "date": "2017-03-28",
-    "url": "https://programm.javaland.eu/2017/talk.html#talk?talkId=529298"
-  },
-
   { "title": "Meetup - Running Production Containers and Big Data Services Gets Even Better",
     "image": "/assets/images/events/Berlin.jpg",
     "date": "2017-03-28",
