@@ -1,22 +1,11 @@
 # DC/OS 1.10.0
 
-<div style="padding: 10px; border: 2px solid black; background-color: #e3e4e5;">
- <h3>Limitations:</h3>
-
-<ul>
-<li>You must upgrade Marathon-LB _before_ upgrading to DC/OS 1.10. See the [upgrade section](/1.10/installing/upgrading/) for more information.</li>
-
-<li>During upgrade to 1.10, there is a brief moment when the DNS resolution does not work. If a health check runs at that moment, it will fail and services will be reported as unhealthy.</li>
-
-</ul>
-<br />
-Please try out the new features and updated data services. Provide any feedback through Jira: https://jira.dcos.io.
-</div>
-
 DC/OS 1.10 includes many new capabilities for Operators and expands the collection of Data & Developer Services with a focus on:
 - Core DC/OS Service Continuity - System resilience, cluster and node checks, UCR and Pods improvements.
 - CNI Networking enhancements for broader networking support.
 - Data Services enhancements.
+
+Please try out the new features and updated data services. Provide any feedback through Jira: https://jira.dcos.io.
 
 ### Contents
 - [New Features and Capabilities](#new-features)
@@ -73,17 +62,17 @@ The GUI sidebar tabs have been updated to offer a more intuitive experience.
 - Ability to deploy Data Services into Folders to enable multi team deployments.
 - Ability to deploy to CNI-Based Virtual Networks.
 
-The following updated data services packages are also in beta and are compatible with DC/OS 1.10.
+The following updated data services packages are compatible with DC/OS 1.10.
 
-- Beta Cassandra. [Documentation](https://docs.mesosphere.com/service-docs/beta-cassandra/v1.0.31-3.0.13-beta/). [Release Notes](https://github.com/mesosphere/dcos-commons/releases/tag/cassandra-1.0.31-3.0.13-beta).
+- Cassandra. [Documentation](https://docs.mesosphere.com/service-docs/cassandra/).
 
-- Beta Elastic. [Documentation](https://docs.mesosphere.com/service-docs/beta-elastic/v1.0.15-5.5.1-beta/). [Release Notes](https://github.com/mesosphere/dcos-commons/releases/tag/elastic-1.0.15-5.5.1-beta).
+- Elastic. [Documentation](https://docs.mesosphere.com/service-docs/elastic/).
 
-- Beta HDFS. [Documentation](https://docs.mesosphere.com/service-docs/beta-hdfs/v1.3.3-2.6.0-cdh5.11.0-beta/). [Release Notes](https://github.com/mesosphere/dcos-commons/releases/tag/hdfs-1.3.3-2.6.0-cdh5.11.0-beta).
+- HDFS. [Documentation](https://docs.mesosphere.com/service-docs/hdfs/).
 
-- Beta Kafka. [Documentation](https://docs.mesosphere.com/service-docs/beta-kafka/v1.1.26-0.10.1.0-beta/). [Release Notes](https://github.com/mesosphere/dcos-commons/releases/tag/kafka-1.1.26-0.10.1.0-beta).
+- Kafka. [Documentation](https://docs.mesosphere.com/service-docs/kafka/).
 
-- Apache Spark. [Documentation](https://docs.mesosphere.com/service-docs/spark/v1.1.1-2.2.0/). [Release Notes](https://github.com/mesosphere/spark-build/releases/tag/1.1.1-2.2.0).
+- Apache Spark. [Documentation](https://docs.mesosphere.com/service-docs/spark/).
 
 <a name="breaking-changes"></a>
 # Breaking Changes
@@ -99,9 +88,6 @@ The following updated data services packages are also in beta and are compatible
 
 - New flow to change the `dcos_url` and login.
   The new command to change your cluster URL is `dcos cluster setup <dcos_url>`. This change will break any existing tooling that uses the former command. Backwards compatibility is slated for a future patch release.
-
-- Marathon Jenkins Plugin and Marathon-Client.
-  Marathon 1.5, released with DCOS 1.10, made breaking changes to the API around Docker and management of networks. This breaking change has not yet been incorporated in the marathon-client, which is used by the marathon jenkins plugin. Marathon client and Marathon Jenkins Plugin _will_ work in general, however they will _fail_ to propagate configurations for networks if working with DCOS 1.10 or Marathon 1.5. A solution will be provided for the DCOS 1.10 GA release.
 
 # <a name="known-issues"></a>Known Issues and Limitations
 
