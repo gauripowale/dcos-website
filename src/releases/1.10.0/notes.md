@@ -3,6 +3,7 @@
 DC/OS 1.10 includes many new capabilities for Operators and expands the collection of Data & Developer Services with a focus on:
 - Core DC/OS Service Continuity - System resilience, cluster and node checks, UCR and Pods improvements.
 - CNI Networking enhancements for broader networking support.
+- Kubernetes is now available on DC/OS.
 - Data Services enhancements.
 
 Please try out the new features and updated data services. Provide any feedback through Jira: https://jira.dcos.io.
@@ -56,6 +57,10 @@ The GUI sidebar tabs have been updated to offer a more intuitive experience.
 - The "Universe" tab has been renamed to "Catalog" and the "Installed" subpage has been removed.
 - The "System Overview" tab has been renamed to "Overview".
 
+## Kubernetes on DC/OS
+
+- Kubernetes on DC/OS is beta with DC/OS 1.10.0. Install from the DC/OS Service Catalog or use the [quickstart](https://github.com/mesosphere/dcos-kubernetes-quickstart).
+
 ## Updated DC/OS Data Services
 
 - Ability to deploy Data Services into Folders to enable multi team deployments.
@@ -63,15 +68,15 @@ The GUI sidebar tabs have been updated to offer a more intuitive experience.
 
 The following updated data services packages are compatible with DC/OS 1.10.
 
-- Cassandra. [Documentation](https://docs.mesosphere.com/service-docs/cassandra/).
+- Cassandra. [Documentation](https://docs.mesosphere.com/service-docs/cassandra/).[Release Notes](https://docs.mesosphere.com/service-docs/cassandra/v2.0.0-3.0.14/release-notes/).
 
-- Elastic. [Documentation](https://docs.mesosphere.com/service-docs/elastic/).
+- Elastic. [Documentation](https://docs.mesosphere.com/service-docs/elastic/). [Release Notes](service-docs/elastic/v2.0.0-5.5.1/release-notes/).
 
-- HDFS. [Documentation](https://docs.mesosphere.com/service-docs/hdfs/).
+- HDFS. [Documentation](https://docs.mesosphere.com/service-docs/hdfs/). [Release Notes](https://docs.mesosphere.com/service-docs/hdfs/v2.0.0-2.6.0-cdh5.11.0/release-notes/).
 
-- Kafka. [Documentation](https://docs.mesosphere.com/service-docs/kafka/).
+- Kafka. [Documentation](https://docs.mesosphere.com/service-docs/kafka/). [Release Notes](https://docs.mesosphere.com/service-docs/kafka/v2.0.0-0.11.0/release-notes/).
 
-- Apache Spark. [Documentation](https://docs.mesosphere.com/service-docs/spark/).
+- Apache Spark. [Documentation](https://docs.mesosphere.com/service-docs/spark/). [Release Notes]((https://github.com/mesosphere/spark-build/releases/tag/1.1.1-2.2.0).
 
 <a name="breaking-changes"></a>
 # Breaking Changes
@@ -93,7 +98,7 @@ The following updated data services packages are compatible with DC/OS 1.10.
 - Upgrade: During upgrade to DC/OS 1.10, there is a brief moment when the DNS resolution does not work. If a health check runs at that moment, it will fail and services will be reported as unhealthy.
 - CORE-1125 - Docker image pull config is re-used.
 - DCOS-16547 - Task state does not update after the agent running it was removed from the cluster.
-- MARATHON-7736 - Marathon Client does NOT work with Marathon 1.5
+- MARATHON-7736 - Marathon Client Java library does NOT work with Marathon 1.5.
 
 # <a name="fixed-issues"></a>Major Issues Fixed Since 1.10.0 Release Candidate 1
 
