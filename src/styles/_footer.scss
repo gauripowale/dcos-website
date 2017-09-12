@@ -13,7 +13,7 @@
 
 .footer {
   display: flex;
-  flex-flow: column nowrap;
+  flex-flow: column wrap;
   justify-content: space-between;
   width: 100%;
   max-width: $max-width;
@@ -43,9 +43,22 @@
 
 .footer-main, .footer-secondary {
   display: flex;
-  flex-flow: column nowrap;
+  flex-flow: column wrap;
   justify-content: space-around;
   align-items: center;
+  width: 100%;
+}
+
+.footer__link-list {
+  width: 100%;
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: space-around;
+  align-items: center;
+}
+
+.footer__copyright-wrap {
+  width: 100%;
 }
 
 // .footer-secondary {
@@ -100,6 +113,18 @@
 }
 
 @include break($tablet-portrait) {
+  .footer {
+    display: block;
+
+    a {
+      margin: .5rem 0;
+    }
+  }
+
+  .footer__link-list {
+    flex-flow: nowrap;
+  }
+
   .footer ul {
     flex-flow: row;
   }
@@ -107,8 +132,7 @@
 
 @include break($tablet-landscape) {
   .footer {
-    display: flex;
-    flex-flow: row;
+    display: block;
   }
 
   .footer-main, .footer-secondary {
@@ -117,11 +141,15 @@
 
   .footer-secondary {
 
+    .footer-third,
+    .footer__link-list,
     .footer-item:last-child {
       padding-right: 0;
     }
   }
 
+  .footer-third,
+  .footer__link-list,
   .footer-main {
 
     .footer-item:first-child {
