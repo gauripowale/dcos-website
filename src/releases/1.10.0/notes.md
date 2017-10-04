@@ -81,17 +81,26 @@ The following updated data services packages are compatible with DC/OS 1.10.
 <a name="breaking-changes"></a>
 # Breaking Changes
 
-- Marathon Networking API Changes in 1.5
+- Marathon Networking API Changes in 1.5.
+
   The networking section of the Marathon API has changed significantly in version 1.5. Marathon can still accept requests using the 1.4 version of the API, but it will always reply with the 1.5 version of the app definition. This will break tools that consume networking-related fields of the service definition. [View the documentation](https://github.com/mesosphere/marathon/blob/master/docs/docs/networking.md). <!-- linking to the marathon doc until I port the relevant information to the dc/os site -->
 
 - The latest version of Marathon-LB is required for 1.10.
+
   Before upgrading to 1.10, uninstall your existing Marathon-LB package and reinstall the updated version. See the [upgrade section](/docs/1.10/installing/upgrading/) for more information.
 
 - REX-Ray configuration change.
+
   DC/OS 1.10 upgrades REX-Ray from v0.3.3. to v0.9.0 and therefore the REX-Ray configuration format has changed. If you have specified custom REX-Ray configuration in the `REX-Ray_config` parameter of your `config.yaml` file, change the parameter to `REX-Ray_config_preset: aws`.
 
 - New flow to change the `dcos_url` and login.
+
   The new command to change your cluster URL is `dcos cluster setup <dcos_url>`. This change will break any existing tooling that uses the former command. Backwards compatibility is slated for a future patch release.
+
+- Hard CFS CPU limits enabled by default.
+
+  DC/OS 1.10 enforces hard CPU limits with CFS isolation for both the Docker and Universal Container Runtimes. This will provide more predictable performance across all tasks, but might lead to a slowdown for tasks (and also deployments) that had previously consumed more CPU cycles than allocated.
+See [MESOS-6134](https://issues.apache.org/jira/browse/MESOS-6134) for more details.
 
 # <a name="known-issues"></a>Known Issues and Limitations
 
