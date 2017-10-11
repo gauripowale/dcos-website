@@ -174,3 +174,12 @@ For more information, see the [documentation](/docs/1.9/installing/upgrading/).
 
 - MESOS-7926 - Abnormal termination of default executor can cause MesosContainerizer::destroy to fail.
 - MESOS-7934 - OOM due to LibeventSSLSocket send incorrectly returning 0 after shutdown.
+
+<a name="1-9-5"></a>
+# Issues Fixed in 1.9.5
+
+- CORE-1292: Remove the systemd prereq requirement of `leader.mesos` for Mesos agent.
+- DOCS-2077- DC/OS 1.9 Custom Installation documentation: clarified where the `opt/mesosphere` directory must be.
+- DCOS-18830 - Dashboard CPU allocation not rounding correctly.
+- DCOS_OSS-1574 - Navstar updated due to crashes on Core OS 1465+.
+- MARATHON-7576 - Change default `UnreachableStrategy` to `0,0`.
