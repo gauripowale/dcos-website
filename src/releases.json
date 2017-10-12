@@ -44,7 +44,7 @@
       "direct": "https://downloads.dcos.io/dcos/stable/1.9.5/dcos_generate_config.sh"
     },
     "subreleases": [
-      { "name": "1.9.5", "url": "/releases/1.9.4/"},
+      { "name": "1.9.5", "url": "/releases/1.9.5/"},
       { "name": "1.9.4", "url": "/releases/1.9.4/"},
       { "name": "1.9.3", "url": "/releases/1.9.3/"},
       { "name": "1.9.2", "url": "/releases/1.9.2/"},
