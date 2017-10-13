@@ -22,7 +22,7 @@
     "language": ["Java"],
     "description": "Install an artifact store, and deploy a Spring Boot Java application using the dcos-maven plugin.",
     "packages": ["Java", "Spring Boot", "Nexus"],
-    "youtube_id": "",
+    "youtube_id": "iPmx_OJQ6PI",
     "callouts": {
       "GitHub": "https://github.com/dcos/demos/tree/master/springboot/",
     }
