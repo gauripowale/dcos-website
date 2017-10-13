@@ -94,6 +94,8 @@
 /docs/1.10/debugging/cli-debugging/task-exec/quickstart/index.html /docs/1.10/monitoring/debugging/cli-debugging/task-exec/
 /docs/1.10/development/index.html /docs/1.10/developing-services/
 /docs/1.10/monitoring/debugging/cli-debugging/task-exec/index.html /docs/1.10/monitoring/debugging/task-exec/
+/docs/1.10/networking/tls-ssl/index.html /docs/1.10/security/tls-ssl/
+/docs/1.10/networking/tls-ssl/haproxy-adminrouter.html /docs/1.10/security/tls-ssl/haproxy-adminrouter/
 /docs/1.10/overview/components/index.html /docs/1.10/overview/architecture/components/
 /docs/1.10/overview/roadmap/index.html /docs/1.10/
 /docs/1.10/usage/cli/command-reference/dcos-auth/dcos-auth-list-providers/index.html /docs/1.10/cli/command-reference/dcos-auth/dcos-auth-list-providers/
