@@ -13,11 +13,12 @@
       "Marathon 1.5."
     ],
     "downloadlink": {
-      "amazon": "https://downloads.dcos.io/dcos/stable/1.10.0/aws.html",
-      "azure": "https://downloads.dcos.io/dcos/stable/1.10.0/azure.html",
-      "direct": "https://downloads.dcos.io/dcos/stable/1.10.0/dcos_generate_config.sh"
+      "amazon": "https://downloads.dcos.io/dcos/stable/1.10.1/aws.html",
+      "azure": "https://downloads.dcos.io/dcos/stable/1.10.1/azure.html",
+      "direct": "https://downloads.dcos.io/dcos/stable/1.10.1/dcos_generate_config.sh"
     },
     "subreleases": [
+      { "name": "1.10.1", "url": "/releases/1.10.1/"},
       { "name": "1.10.0", "url": "/releases/1.10.0/"},
       { "name": "1.10.0-rc1", "url": "/releases/1.10.0-rc1/"},
       { "name": "1.10.0-beta2", "url": "/releases/1.10-beta2/"},
