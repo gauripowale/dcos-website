@@ -3,7 +3,6 @@
 - COPS-974 - Master node fails to start after configuration change. This was was due to tmp mountpoints being marked as noexec. Bug fixed.
 - DCOS-18055 - Improvements for deployment behavior in Catalog. You now have a "Review and Run" button that allows you to cancel, modify your configuration, or install with defaults.
 - DCOS-18212 - In the UI, the name of the container type in the service creation form has been changed from Mesos Containerizer to UCR.
-- DCOS-18634 - DC/OS authenticator fails to cache Bouncer's public key, causing an increase in request rates against Bouncer's JWKS endpoint. Bug fixed.
 - DCOS-18694 - Pod Endpoints protocol json parser adds 0 to json. Bug fixed.
 - DCOS-18788 - The JSON editor duplicates and fails to properly parse app definition. Bug fixed.
 - DCOS-19197 - DC/OS UI deletes environment variables with non-string values from Marathon app/pod definitions. Bug fixed.
@@ -22,7 +21,7 @@
 - DCOS-16029 - Addition of new pullConfig properties break validation.
 - DCOS-10863 - Launch containers on `DockerContainerizer` if network mode is "NONE".
 
-# DC/OS 1.10.0
+# About DC/OS 1.10
 
 DC/OS 1.10 includes many new capabilities for Operators and expands the collection of Data & Developer Services with a focus on:
 - Core DC/OS Service Continuity - System resilience, cluster and node checks, UCR and Pods improvements.
