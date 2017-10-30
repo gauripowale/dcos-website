@@ -314,6 +314,9 @@
 /docs/1.8/administration/sshcluster/index.html /docs/1.8/administration/access-node/sshcluster/
 /docs/1.8/administration/telemetry/index.html /docs/1.8/overview/telemetry/
 /docs/1.8/administration/user-management/index.html /docs/1.8/administration/id-and-access-mgt/user-management/
+/docs/1.8/development/service-requirements-spec.html https://github.com/mesosphere/universe/blob/version-3.x/docs/tutorial/GetStarted.md
+/docs/1.8/development/create-package.html https://github.com/mesosphere/universe/blob/version-3.x/docs/tutorial/GetStarted.md
+/docs/1.8/development/dcos-integration.html https://github.com/mesosphere/universe/blob/version-3.x/docs/tutorial/GetStarted.md
 /docs/1.8/usage/managing-services/application-basics/deploy-docker-app/index.html /docs/1.8/usage/managing-services/creating-services/deploy-docker-app/
 /docs/1.8/usage/managing-services/application-basics/index.html /docs/1.8/usage/managing-services/creating-services/
 /docs/1.8/usage/managing-services/config/index.html /docs/1.8/usage/managing-services/config-universe-service/
