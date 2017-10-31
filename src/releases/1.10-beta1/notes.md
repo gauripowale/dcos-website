@@ -142,7 +142,7 @@ Before upgrading to 1.10, uninstall your existing Marathon-LB package and reinst
 - DCOS-15914 - Support for CentOS/RHEL 7.4 with 1.9.
 - DCOS-15937 - Pods do not receive SIGTERM.
 - DCOS-16151 - Marathon Endpoints are not responding.
-- DCOS-16588 - In 1.9, the mesos-dns component by default did not set the truncate bit in responses. This is non-conforming behavior. The new default in 1.10 will be to set the truncate bit if the response is too large to fit in a single packet and therefore gets truncated. If you do not want TCP fallback, set `mesos_dns_set_truncate_bit` to `true` in your `config.yaml` file at install time. The default is `false`. <!-- not sure if this is resolved; depends on https://jira.mesosphere.com/browse/DCOS-15771 -->
+- DCOS-16588 - In 1.9, the Mesos-DNS component by default did not set the truncate bit in responses. This is non-conforming behavior. The new default in 1.10 will be to set the truncate bit if the response is too large to fit in a single packet and therefore gets truncated. If you do not want TCP retry, set `mesos_dns_set_truncate_bit` to `false` in your `config.yaml` file at install time. The default is `true`. <!-- not sure if this is resolved; depends on https://jira.mesosphere.com/browse/DCOS-15771 -->
 - DCOS-16725 - Marathon /ping Response Headers Changes on DC/OS 1.8.7 to 1.9.
 - DCOS_OSS-839 - Upgrade script fails silently.
 - DCOS_OSS-902 - Minuteman code in separate repo from navstar.
