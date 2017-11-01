@@ -13,6 +13,10 @@
 - Marathon 1.5.1.2 and Mesos 1.4.0-rc4 are integrated with DC/OS 1.10.1.
 - DCOS-18055 - Improvements for deployment behavior in Catalog. You now have a "Review & Run" button that allows you to cancel, modify your configuration, or install with defaults.
 
+# Known Issue
+
+- DCOS-19327 - When installing DC/OS with advanced CloudFormation templates, the expanded `config.json` includes AWS credentials. This is flagged as a high priority issue.
+
 # Major Issues Fixed in 1.10.0
 
 - CASSANDRA-457 - Redirect deprecated /v1/nodes/connect to /v1/connect.
