@@ -127,10 +127,10 @@ For more information, see the [documentation](https://docs.mesosphere.com/1.8/us
 
 ### Fixed issues
 
-- CORE-1181 - There is no longer a segfault when trying to accept an inverse offer with an unknown `offerId`.
-- CORE-1292 - 1.8+ agents no longer explicitly depend on `leader.mesos1`, so the the systemd prereq has been removed. This fixes COPS-575 - Removed leader.mesos prerequisite for `dcos-mesos-slave`(`-public`). Allows Mesos agents to start regardless of Mesos master leadership.
+- CORE-1292 - 1.8+ agents no longer explicitly depend on `leader.mesos1`, so the the systemd prereq has been removed.
 - DCOS-18348 - Update to Marathon version 1.3.13.
 - DCOS_OSS-1617 - Update to version of Apache Mesos 1.0.4 with [Critical backports from Mesos 1.1.x and 1.2.x branches](https://github.com/dcos/dcos/blob/1.8.10/packages/mesos/README.md#critical-backports-from-mesos-11x-and-12x-branches). This fixes DCOS-18345 - OOM due to LibeventSSLSocket incorrectly returning 0 after shutdown.
+MESOS-7766 - There is no longer a segfault when trying to accept an inverse offer with an unknown `offerId`.
 
 ## <a name="1-8-9"></a>1.8.9 - June 30, 2017
 
