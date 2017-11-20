@@ -63,7 +63,7 @@ block content
                       img.width-24.align-middle.inline-block.mr2(src="/assets/images/icons/community/github.svg")
                       | GitHub
                   li.pb2
-                    a.opacity-1.text-black(href='https://github.com/dcos/community/blob/master/README.md#dcos-community')
+                    a.opacity-1.text-black(href='https://github.com/dcos/community/wiki#working-groups')
                       img.width-24.align-middle.inline-block.mr2(src="/assets/images/icons/community/communities.svg")
                       | Working groups
                   li
@@ -104,15 +104,15 @@ block content
         a(href='#recent' data-events='recent' class='pl1 inline-block h3') Recent
 
       .events-carousel
-        
+
         if (locals.events.length)
           .events-carousel-btn.events-carousel-btn--next
             img(src='/assets/images/icons/chevron-dark-right.svg')
 
           .events-carousel-btn.events-carousel-btn--prev
             img(src='/assets/images/icons/chevron-dark-left.svg')
-        
-            
+
+
         .card-container.px2.upcoming-events
 
           each event in locals.events.reverse()
@@ -128,7 +128,7 @@ block content
                   .cta.cta--text More info &rarr;
 
         .card-container.px2.recent-events.hide
-        
+
           each event in locals.events.reverse()
             if (new Date(event.date)).getTime() < Date.now()
               a(href!=event.url target='_blank').card
