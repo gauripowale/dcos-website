@@ -49,6 +49,7 @@ Please try out the new features and updated data services. Provide any feedback 
   - If you have the `DCOS_CONFIG` environment variable configured:
     - After conversion to the new configuration structure, `DCOS_CONFIG` is no longer honored.
     - _Before_ you call `dcos cluster setup`, you can change the configuration pointed to by `DCOS_CONFIG` using `dcos config set`. This command prints a warning message saying the command is deprecated and recommends using `dcos cluster setup`.
+  - CLI modules are cluster-specific and stored in `~/.dcos/clusters/<cluster_id>/subcommands`. Therefore you must install a CLI module for each cluster. For example, if you connect to cluster 1, and install the Spark module, then connect to cluster 2 which is also running Spark, Spark CLI commands are not available until you install the module for that cluster.
 
 ## GUI
 The GUI sidebar tabs have been updated to offer a more intuitive experience.
