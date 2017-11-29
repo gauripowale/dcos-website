@@ -14,7 +14,7 @@
 - DCOS-17947 - Updated configuration example for a cluster that uses [custom Docker credentials](/docs/1.10/installing/custom/configuration/examples/#docker-credentials).
 - DOCS-1925 - Clarified how operators can [recover from a full agent disk](/docs/1.10/administering-clusters/recovering-agent-disk-space/).
 
-# Issues Fixed in DC/OS 1.10.1
+# Issues Fixed in DC/OS 1.10.1 
 
 - COPS-974 - Master node fails to start after configuration change. This was was due to tmp mountpoints being marked as noexec. Bug fixed.
 - DCOS-18212 - In the UI, the name of the containerizer runtime in the service creation form has been changed from MESOS RUNTIME to UNIVERSAL CONTAINER RUNTIME (UCR).
