@@ -218,10 +218,10 @@ html
                   span.rss-icon
 
             div.dropdown.z-500.relative.mb2.left-align(style='width: calc(100% - 30px);')
-                a.btn.mb0.block DC/OS #{(docsVersion === currentDevVersion ? `${docsVersion} Development` : docsVersion)}
+                a.btn.mb0.block DC/OS #{(docsVersion === currentDevVersion ? `${docsVersion} Preview` : docsVersion)}
                 ul
                   each version in docsVersionsReversed
-                    li: a(href='/docs/#{version}', data-version='#{version}', class=(version === docsVersion ? 'text-heliotrope current option' : 'option')) DC/OS #{(version === currentDevVersion ? `${version} Development` : version)}
+                    li: a(href='/docs/#{version}', data-version='#{version}', class=(version === docsVersion ? 'text-heliotrope current option' : 'option')) DC/OS #{(version === currentDevVersion ? `${version} Preview` : version)}
 
 
             +renderMenu(locals.navs.header).docs-menu
@@ -290,14 +290,14 @@ html
       apiKey: '83f08047a3b6749bf0256c1f16d7a562',
       indexName: 'dcos',
       inputSelector: '.docs-search__input',
-      algoliaOptions: { 'facetFilters': ["version:1.10"] }
+      algoliaOptions: { 'facetFilters': ["version:1.11"] }
     });
 
     docsearch({
       apiKey: '83f08047a3b6749bf0256c1f16d7a562',
       indexName: 'dcos',
       inputSelector: '.docs-search--mobile .docs-search__input',
-      algoliaOptions: { 'facetFilters': ["version:1.10"] }
+      algoliaOptions: { 'facetFilters': ["version:1.11"] }
     });
 
   script(src='//s7.addthis.com/js/300/addthis_widget.js#pubid=ra-570558ee2719a9f0')
