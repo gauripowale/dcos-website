@@ -10,6 +10,7 @@
 
 # Other Improvements in DC/OS 1.10.1
 
+- Support for Docker CE 17.03.0.
 - Marathon 1.5.1.2 and Mesos 1.4.0-rc4 are integrated with DC/OS 1.10.1.
 - DCOS-18055 - Improvements for deployment behavior in Catalog. You now have a "Review & Run" button that allows you to cancel, modify your configuration, or install with defaults.
 - Support for Centos 7.4. 

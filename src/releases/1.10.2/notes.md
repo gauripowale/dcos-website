@@ -9,6 +9,7 @@
 
 # Notable changes in DC/OS 1.10.2
 
+- Support for RHEL 7.4.
 - Updated to Mesos 1.4.0 ([changelog](https://git-wip-us.apache.org/repos/asf?p=mesos.git;a=blob_plain;f=CHANGELOG;hb=1.4.0)).
 - Updated to Marathon 1.5.2 ([changelog](https://github.com/mesosphere/marathon/releases/tag/v1.5.2)).
 - DCOS-17947 - Updated configuration example for a cluster that uses [custom Docker credentials](/docs/1.10/installing/custom/configuration/examples/#docker-credentials).
@@ -26,6 +27,7 @@
 
 # Notable Changes in DC/OS 1.10.1
 
+- Support for Docker CE 17.03.0.
 - Marathon 1.5.1.2 and Mesos 1.4.0-rc4 are integrated with DC/OS 1.10.1.
 - DCOS-18055 - Improvements for deployment behavior in Catalog. You now have a "Review & Run" button that allows you to cancel, modify your configuration, or install with defaults.
 - Support for Centos 7.4. 
