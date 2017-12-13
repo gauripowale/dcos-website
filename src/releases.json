@@ -18,6 +18,7 @@
       "direct": "https://downloads.dcos.io/dcos/stable/1.10.2/dcos_generate_config.sh"
     },
     "subreleases": [
+      { "name": "1.10.3 (skipped)", "url": "/releases/1.10.3/"},
       { "name": "1.10.2", "url": "/releases/1.10.2/"},
       { "name": "1.10.1", "url": "/releases/1.10.1/"},
       { "name": "1.10.0", "url": "/releases/1.10.0/"},
