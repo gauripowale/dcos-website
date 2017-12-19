@@ -5,7 +5,6 @@ These are the release notes for DC/OS 1.9.6.
 - COPS-980 - Marathon's default task unreachable behaviour reinstated.
 - DCOS-17947 - `cluster_docker_credentials`example corrected.
 - DCOS-19217 - Metronome adheres to crontab standard.
-- DCOS-19453 - TLS compression disabled because TLS is vulnerable to the CRIME attack.
 - DOCS-2153	- Metrics documentation improvements.
 
 # Notable Changes in DC/OS 1.9.6
