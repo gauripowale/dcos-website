@@ -3,7 +3,7 @@ These are the release notes for DC/OS 1.9.6.
 # Issues Fixed in 1.9.6
 
 - COPS-980 - Marathon's default task unreachable behaviour reinstated.
-- DCOS-17947 - `cluster_docker_credentials`example corrected.
+- DCOS-17947 - `cluster_docker_credentials` example corrected.
 - DCOS-19217 - Metronome adheres to crontab standard.
 - DOCS-2153	- Metrics documentation improvements.
 
