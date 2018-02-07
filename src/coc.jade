@@ -1,0 +1,21 @@
+extends ../layouts/base-whitefooter.jade
+
+block head
+  title DC/OS
+
+block content
+
+  .container.container--dark-background
+    +header
+
+    .container__content
+      h1 Code of Conduct
+      p.hero-subtitle Keep our community welcoming and inclusive.
+
+  .container
+    .container__content
+      .text-align-left
+        include:markdown coc.md
+
+  .container
+      +footer
