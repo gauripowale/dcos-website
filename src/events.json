@@ -646,6 +646,30 @@
        "url": "https://www.meetup.com/Bucharest-Big-Data-Meetup/events/247081621/"
    },
 
+  { "title": "Deploying Applications on a Hybrid Stack with Helm (Meetup)",
+      "image": "/assets/images/events/Portland.jpg",
+      "date": "2018-02-20",
+      "url": "https://www.meetup.com/Cloud-Native-PDX/events/246953081/"
+  },
+
+  { "title": "Apache Mesos & Artificial Intelligence (Meetup)",
+      "image": "/assets/images/events/cluj-Napoca.jpg",
+      "date": "2018-02-21",
+      "url": "https://www.meetup.com/Big-Data-Data-Science-Meetup-Cluj-Napoca/events/247378623/"
+  },
+
+  { "title": "Kubernetes on DC/OS (Meetup)",
+      "image": "/assets/images/events/London.jpg",
+      "date": "2018-02-27",
+      "url": "https://www.meetup.com/London-Mesos-User-Group/events/247540796/"
+  },
+
+  { "title": "Helm - a highway to Kubernetes (Meetup)",
+      "image": "/assets/images/events/Singapore.jpg",
+      "date": "2018-03-05",
+      "url": "https://www.meetup.com/Singapore-Kubernetes-User-Group/events/246800326/"
+  },
+
   { "title": "Advanced Continuous Delivery Strategies Using DC/OS (SCALE)",
       "image": "/assets/images/events/Pasadena_2.jpg",
       "date": "2018-03-08",
@@ -656,6 +680,18 @@
       "image": "/assets/images/events/Pasadena.jpg",
       "date": "2018-03-08",
       "url": "https://www.socallinuxexpo.org/scale/16x/presentations/container-orchestration-nightmares"
+  },
+
+  { "title": "IT OpShare 2018",
+      "image": "/assets/images/events/Boston.jpg",
+      "date": "2018-03-15",
+      "url": "http://www.itopshare.com/"
+  },
+
+  { "title": "Meetup #1 @Novencia - DC/OS",
+      "image": "/assets/images/events/Paris.jpg",
+      "date": "2018-03-19",
+      "url": "https://www.meetup.com/Apache-Mesos-Paris/events/247505732/"
   },
 
   { "title": "Operating Flink on Mesos at Scale (Flink Forward)",
