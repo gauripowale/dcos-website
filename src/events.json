@@ -643,7 +643,7 @@
   { "title": "Apache Mesos, big data architecture (Meetup)",
        "image": "/assets/images/events/Bucharest.jpg",
        "date": "2018-02-20",
-       "url": "https://www.meetup.com/Bucharest-Big-Data-Meetup/events/247081621/"
+       "url": "/events/2018/introduction-to-dc-os-and-mesos-bucharest"
    },
 
   { "title": "Deploying Applications on a Hybrid Stack with Helm (Meetup)",
