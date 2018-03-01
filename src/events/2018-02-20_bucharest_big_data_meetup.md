@@ -2,6 +2,7 @@
 title: Introduction to Mesos and DC/OS Bucharest
 date: 2018-02-20
 speaker: Matt Jarvis
+speakerurl: https://twitter.com/mattj_io
 eventimage: Bucharest.jpg
 eventlocation: Bucharest, Romania
 eventname: Bucharest Big Data Meetup
