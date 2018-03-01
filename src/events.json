@@ -631,7 +631,7 @@
   { "title": "Sheffield Devops: Mesos & DC/OS (Meetup)",
        "image": "/assets/images/events/Sheffield.jpg",
        "date": "2018-02-08",
-       "url": "http://www.sheffielddevops.org.uk/post/170162178789/sheffield-devops-february-2018-meetup"
+       "url": "/events/2018/mesos-and-dc-os-in-sheffield/"
    },
 
   { "title": "Skalierbares Kubernetes und Containers (webinar)",
