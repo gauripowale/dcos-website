@@ -631,7 +631,7 @@
   { "title": "Sheffield Devops: Mesos & DC/OS (Meetup)",
        "image": "/assets/images/events/Sheffield.jpg",
        "date": "2018-02-08",
-       "url": "http://www.sheffielddevops.org.uk/post/170162178789/sheffield-devops-february-2018-meetup"
+       "url": "/events/2018/mesos-and-dc-os-in-sheffield/"
    },
 
   { "title": "Skalierbares Kubernetes und Containers (webinar)",
@@ -643,7 +643,7 @@
   { "title": "Apache Mesos, big data architecture (Meetup)",
        "image": "/assets/images/events/Bucharest.jpg",
        "date": "2018-02-20",
-       "url": "https://www.meetup.com/Bucharest-Big-Data-Meetup/events/247081621/"
+       "url": "/events/2018/introduction-to-mesos-and-dc-os-bucharest"
    },
 
   { "title": "Deploying Applications on a Hybrid Stack with Helm (Meetup)",
@@ -655,7 +655,7 @@
   { "title": "Apache Mesos & Artificial Intelligence (Meetup)",
       "image": "/assets/images/events/cluj-napoca.jpg",
       "date": "2018-02-21",
-      "url": "https://www.meetup.com/Big-Data-Data-Science-Meetup-Cluj-Napoca/events/247378623/"
+      "url": "/events/2018/introduction-to-mesos-and-dc-os-cluj"
   },
 
   { "title": "Kubernetes on DC/OS (Meetup)",
