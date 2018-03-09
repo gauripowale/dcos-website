@@ -682,10 +682,34 @@
       "url": "https://www.socallinuxexpo.org/scale/16x/presentations/container-orchestration-nightmares"
   },
 
+  { "title": "Running Kubernetes on DC/OS (Meetup)",
+      "image": "/assets/images/events/Montreal.jpg",
+      "date": "2018-03-13",
+      "url": "https://www.meetup.com/Kubernetes-Montreal/events/248313060/"
+  },
+
+  { "title": "Container: check! Aber wohin mit Big Data oder Fast Data?! (JavaLand)",
+      "image": "/assets/images/events/Bruehl.jpg",
+      "date": "2018-03-14",
+      "url": "https://programm.javaland.eu/2018/#/scheduledEvent/549103"
+  },
+
+  { "title": "How Mesosphere DC/OS can simplifies Elastic deployment (Meetup)",
+      "image": "/assets/images/events/Milan.jpg",
+      "date": "2018-03-14",
+      "url": "https://www.meetup.com/Italia-Elastic-Fantastics/events/247764573/"
+  },
+
   { "title": "IT OpShare 2018",
       "image": "/assets/images/events/Boston.jpg",
       "date": "2018-03-15",
       "url": "http://www.itopshare.com/"
+  },
+
+  { "title": "Mesosphere DC/OS Kickstart Training",
+      "image": "/assets/images/events/Boston_2.jpg",
+      "date": "2018-03-17",
+      "url": "https://www.eventbrite.com/e/mesosphere-dcos-kickstart-training-tickets-43111418413?aff=Kelly"
   },
 
   { "title": "Meetup #1 @Novencia - DC/OS",
@@ -694,11 +718,71 @@
       "url": "https://www.meetup.com/Apache-Mesos-Paris/events/247505732/"
   },
 
+  { "title": "Serverless, AWS and Apache Mesos (Meetup)",
+      "image": "/assets/images/events/London.jpg",
+      "date": "2018-03-21",
+      "url": "https://www.meetup.com/Linuxing-In-London/events/248504576/"
+  },
+
+  { "title": "Container: check! But what about persistent data, big data or fast data?! (Microxchg)",
+      "image": "/assets/images/events/Berlin.jpg",
+      "date": "2018-03-22",
+      "url": "http://microxchg.io/2018/all-sessions.html?utm_content=buffere3b29&utm_medium=social&utm_source=twitter.com&utm_campaign=buffer#sz-session-17088"
+  },
+
+  { "title": "DC/OS Day Fundamentals Introduction",
+      "image": "/assets/images/events/Sydney.jpg",
+      "date": "2018-03-27",
+      "url": "https://www.eventbrite.com/e/dcos-day-fundamentals-introduction-tickets-43909903704?aff=Suzanne"
+  },
+
+  { "title": "Mesosphere and Confluent - Kafka Meetup in Manchester",
+      "image": "/assets/images/events/Manchester.jpg",
+      "date": "2018-03-28",
+      "url": "https://www.meetup.com/Manchester-Kafka/events/248451554/"
+  },
+
+  { "title": "Best Practices for Managing Kubernetes and Stateful Services",
+      "image": "/assets/images/events/Minneapolis.jpg",
+      "date": "2018-03-28",
+      "url": "https://www.eventbrite.com/e/best-practices-for-managing-kubernetes-and-stateful-services-tickets-43900421342?aff=utm_source%3Deb_email%26utm_medium%3Demail%26utm_campaign%3Dnew_event_email&utm_term=eventname_text"
+  },
+
+  { "title": "DC/OS Day Fundamentals Introduction",
+      "image": "/assets/images/events/Melbourne.jpg",
+      "date": "2018-03-28",
+      "url": "https://www.eventbrite.com/e/dcos-day-fundamentals-introduction-tickets-43911252739?aff=utm_source%3Deb_email%26utm_medium%3Demail%26utm_campaign%3Dnew_event_email&utm_term=eventurl_text"
+  },
+
   { "title": "Operating Flink on Mesos at Scale (Flink Forward)",
        "image": "/assets/images/events/San_Francisco.jpg",
        "date": "2018-04-09",
        "url": "https://sf-2018.flink-forward.org/kb_sessions/operating-flink-on-mesos-at-scale/"
    },
+
+  { "title": "Deep learning beyond the learning (Codemotion World)",
+      "image": "/assets/images/events/Rome.jpg",
+      "date": "2018-04-11",
+      "url": "https://rome2018.codemotionworld.com/wp-content/themes/event/detail-talk.php?detail=7653"
+  },
+
+  { "title": "Container Storage Interface: Present and Future (CloudNativeCon)",
+      "image": "/assets/images/events/Copenhagen.jpg",
+      "date": "2018-05-04",
+      "url": "https://kccnceu18.sched.com/event/Dqvo"
+  },
+
+  { "title": "Bring Existing Data Pipelines into the Machine Learning Age (CloudNativeCon)",
+      "image": "/assets/images/events/Copenhagen_2.jpg",
+      "date": "2018-05-03",
+      "url": "http://sched.co/E46y"
+  },
+
+  { "title": "Deep learning beyond the learning (Codemotion World)",
+      "image": "/assets/images/events/Amsterdam.jpg",
+      "date": "2018-05-08",
+      "url": "https://amsterdam2018.codemotionworld.com/wp-content/themes/event/detail-talk.php?detail=7259"
+  },
 
   { "title": "",
       "image": "/assets/images/events/.jpg",
