@@ -655,7 +655,7 @@
   { "title": "Apache Mesos & Artificial Intelligence (Meetup)",
       "image": "/assets/images/events/cluj-napoca.jpg",
       "date": "2018-02-21",
-      "url": "https://www.meetup.com/Big-Data-Data-Science-Meetup-Cluj-Napoca/events/247378623/"
+      "url": "/events/2018/introduction-to-mesos-and-dc-os-cluj"
   },
 
   { "title": "Kubernetes on DC/OS (Meetup)",
@@ -762,7 +762,7 @@
 
   { "title": "Deep learning beyond the learning (Codemotion World)",
       "image": "/assets/images/events/Rome.jpg",
-      "date": "2018-04-11",
+      "date": "2018-04-13",
       "url": "https://rome2018.codemotionworld.com/wp-content/themes/event/detail-talk.php?detail=7653"
   },
 
